@@ -1,0 +1,445 @@
+---
+title: "STAT4064 Assignment 2"
+author: "Jason Wang - 24839132"
+date: "Today"
+output:
+  pdf_document:
+    fig_height: 6
+    fig_width: 8
+    number_sections: yes
+    toc: yes
+    toc_depth: 3
+  word_document:
+    toc: yes
+    toc_depth: '3'
+  html_document:
+    toc: yes
+    toc_depth: '3'
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+\textbf{Assignment 2 submitted by Jason Wang, 24839132}
+
+```{r eval=FALSE, include=FALSE}
+## There are a few options in every chunk, click the setting button (greyed) near the triangle:
+# 1. to use default as in the above (show code and output, ie ECHO=TRUE) or 
+# 2. to show output only (ie ECHO=FALSE) or
+# 3. show nothing (run code) ie include=FALSE
+# 4. show nothing (dont run the code), like this chunk, ie eval=FALSE, include=FALSE
+####### 
+## You can create your own way for the submission. This template is just an example 
+## if you are going to use Rmd.
+## The main document must be submitted in a PDF. You should use this template as a tool only, 
+## to produce towards a final file in pdf. You must submit this Rmd together with the final file. 
+## My advice is to use this template to complete R code, and then use options 
+## in chunks to include or to hide. 
+## After that, knit it into Word. Do the second edit following hints in the question sheet before converting ## it into a pdf.
+## You must read the hints in the question sheet. 
+```
+
+
+# Question 1
+
+## (a)
+```{r}
+library(datasets)
+head(iris, 8)
+```
+We first import the dataset by calling datasets library and using head to show the first 8 rows of the dataset. We see the iris dataset contains 5 variables, these are Sepal.Length, Sepal.Width, Petal.Length, Petal.Width and Species of the flower.
+
+## (b) 
+The Posterior Probability is given as:
+$$P(Y=k \mid X=x)=\frac{\pi_kf_k(x)}{\sum^2_{l=1}\pi_lf_l(x)}$$
+Where: 
+$$f_k(x) = \frac{1}{\sqrt 2\pi \sigma_k}e^-{\frac{1}{2}(\frac{x- \mu_k }{\sigma_k})}^2$$
+Under LDA, we assume common variance. We can rewrite and simplify the posterior probability by rewriting it to:
+$$p_k(x) = \frac{\pi_ke^{(-\frac{x-\mu_k}{2\sigma})^2}}{\sum^K_{l=1}\pi_le^{(-\frac{x-\mu_l}{2\sigma})}}$$
+
+To write the formula for each class, we first find the mean and variance for each class then plug it into the posterior formula.
+```{r}
+#unique(iris$Species)
+setosa_n <- sum(iris$Species == 'setosa')
+versicolor_n <- sum(iris$Species == 'versicolor')
+virginica_n <- sum(iris$Species == 'virginica')
+
+setosa_length <- iris$Petal.Length[iris$Species == 'setosa']
+versicolor_length <- iris$Petal.Length[iris$Species == 'versicolor']
+virginica_length <- iris$Petal.Length[iris$Species == 'virginica']
+
+mu_setosa <- mean(setosa_length)
+var_setosa <- var(setosa_length)
+mu_versicolor <- mean(versicolor_length)
+var_versicolor <- var(versicolor_length)
+mu_virginica <- mean(virginica_length)
+var_virginica <- var(virginica_length)
+
+var <- ((setosa_n-1)*var_setosa + (versicolor_n-1)*var_versicolor + (virginica_n-1)*var_virginica) /((setosa_n-1)+(versicolor_n-1)+(virginica_n-1))
+```
+
+We can now plot the formula for each species:
+The formula for the posterior probability for setosa species is:
+$$
+P(Y=setosa\mid X=x)
+=
+\frac{\pi_{setosa}e^{-(\frac{x-1.462}{2\times0.1852})^2}}{\pi_{setosa}e^{-(\frac{x-1.462}{2\times0.1852})^2}+\pi_{versicolor}e^{-(\frac{x-4.26}{2\times0.1852})^2}+\pi_{virginica}e^{-(\frac{x-5.552}{2\times0.1852})^2}}
+$$
+
+The formula for the posterior probability for versicolor species is:
+$$
+P(Y=versicolor\mid X=x)
+=
+\frac{\pi_{versicolor}e^{-(\frac{x-4.26}{2\times0.1852})^2}}{\pi_{setosa}e^{-(\frac{x-1.462}{2\times0.1852})^2}+\pi_{versicolor}e^{-(\frac{x-4.26}{2\times0.1852})^2}+\pi_{virginica}e^{-(\frac{x-5.552}{2\times0.1852})^2}}
+$$
+The formula for the posterior probability for virginica species is:
+$$
+P(Y=virginica\mid X=x)
+=
+\frac{\pi_{virginica}e^{-(\frac{x-5.552}{2\times0.1852})^2}}{\pi_{setosa}e^{-(\frac{x-1.462}{2\times0.1852})^2}+\pi_{versicolor}e^{-(\frac{x-4.26}{2\times0.1852})^2}+\pi_{virginica}e^{-(\frac{x-5.552}{2\times0.1852})^2}}
+$$
+
+## (c)
+
+```{r}
+x_new = 2.4
+sigma <- sqrt(var)
+
+f_setosa <- dnorm(x_new, mu_setosa, sigma)
+f_versicolor <- dnorm(x_new, mu_versicolor, sigma)
+f_virginica <- dnorm(x_new, mu_virginica, sigma)
+
+pi = 1/3
+num_setosa <- pi * f_setosa
+num_versicolor <- pi * f_versicolor
+num_virginica <- pi * f_virginica
+
+denominator <- num_setosa + num_versicolor + num_virginica
+
+post_setosa <- round(num_setosa/denominator,4)
+post_versicolor <- round(num_versicolor/denominator, 4)
+post_virginica <- round(num_virginica/denominator, 4)
+
+post_setosa
+post_versicolor
+post_virginica
+```
+The results show the probability that a flower with 2.4cm Petal.Length may be classified as. The first one shows that given a flower with 2.4cm Petal.Length, there is a 0.9991 probability that it is a setosa species flower, a 0.0009 probability that is is a versicolor species flower, and lastly a 2.4708e-11 probability that it is a virginica species flower. Given that setosa has the highest posterior probability, the LDA will classify this particular flower as setosa.
+
+
+## (d)
+For QDA, the difference is that we do not use pooled variance and instead use individual variance of each class.Thus the posterior probability formula is:
+
+$$
+p_k(x) = \frac{\pi_k\frac{1}{\sqrt2\pi\sigma}e^{-\frac{1}{2}(\frac{x-\mu_k}{\sigma})^2}}{\sum^K_{l=1}\pi_l\frac{1}{\sqrt2\pi\sigma}e^{-\frac{1}{2}(\frac{x-\mu_l}{\sigma})^2}}
+$$
+
+QDA posterior probability formula for setosa is:
+\[
+\resizebox{0.95\textwidth}{!}{$
+P(Y=setosa\mid X=x)
+ = \frac{\pi_{setosa}\frac{1}{\sqrt2\pi\sigma_{setosa}}e^{-\frac{1}{2}(\frac{x-\mu_{setosa}}{\sigma_{setosa}})^2}}{\pi_{setosa}\frac{1}{\sqrt2\pi\sigma_{setosa}}e^{-\frac{1}{2}(\frac{x-\mu_{setosa}}{\sigma_{setosa}})^2}+\pi_{versicolor}\frac{1}{\sqrt2\pi\sigma_{versicolor}}e^{-\frac{1}{2}(\frac{x-\mu_{versicolor}}{\sigma_{versicolor}})^2}+\pi_{virginica}\frac{1}{\sqrt2\pi\sigma_{virginica}}e^{-\frac{1}{2}(\frac{x-\mu_{virginica}}{\sigma_{virginica}})^2}}
+$}
+\]
+
+QDA posterior probability formula for versicolor is:
+\[
+\resizebox{0.95\textwidth}{!}{$
+P(Y=versicolor\mid X=x)
+ = \frac{\pi_{versicolor}\frac{1}{\sqrt2\pi\sigma_{versicolor}}e^{-\frac{1}{2}(\frac{x-\mu_{versicolor}}{\sigma_{versicolor}})^2}}{\pi_{setosa}\frac{1}{\sqrt2\pi\sigma_{setosa}}e^{-\frac{1}{2}(\frac{x-\mu_{setosa}}{\sigma_{setosa}})^2}+\pi_{versicolor}\frac{1}{\sqrt2\pi\sigma_{versicolor}}e^{-\frac{1}{2}(\frac{x-\mu_{versicolor}}{\sigma_{versicolor}})^2}+\pi_{virginica}\frac{1}{\sqrt2\pi\sigma_{virginica}}e^{-\frac{1}{2}(\frac{x-\mu_{virginica}}{\sigma_{virginica}})^2}}
+$}
+\]
+
+QDA posterior probability formula for virginica is:
+\[
+\resizebox{0.95\textwidth}{!}{$
+P(Y=virginica\mid X=x)
+ = \frac{\pi_{virginica}\frac{1}{\sqrt2\pi\sigma_{virginica}}e^{-\frac{1}{2}(\frac{x-\mu_{virginica}}{\sigma_{virginica}})^2}}{\pi_{setosa}\frac{1}{\sqrt2\pi\sigma_{setosa}}e^{-\frac{1}{2}(\frac{x-\mu_{setosa}}{\sigma_{setosa}})^2}+\pi_{versicolor}\frac{1}{\sqrt2\pi\sigma_{versicolor}}e^{-\frac{1}{2}(\frac{x-\mu_{versicolor}}{\sigma_{versicolor}})^2}+\pi_{virginica}\frac{1}{\sqrt2\pi\sigma_{virginica}}e^{-\frac{1}{2}(\frac{x-\mu_{virginica}}{\sigma_{virginica}})^2}}
+$}
+\]
+
+To calculate the posterior probability, we need to calculate the individual sigma by square rooting each individual variance. The calculations for the posterior probability are shown below.
+```{r}
+x_new = 2.4
+sigma_setosa <- sqrt(var_setosa)
+sigma_versicolor <- sqrt(var_versicolor)
+sigma_virginica <- sqrt(var_virginica)
+
+f_setosa <- dnorm(x_new, mu_setosa, sigma_setosa)
+f_versicolor <- dnorm(x_new, mu_versicolor, sigma_versicolor)
+f_virginica <- dnorm(x_new, mu_virginica, sigma_virginica)
+
+pi = 1/3
+num_setosa <- pi * f_setosa
+num_versicolor <- pi * f_versicolor
+num_virginica <- pi * f_virginica
+
+denominator <- num_setosa + num_versicolor + num_virginica
+
+post_setosa <- round(num_setosa/denominator, 4)
+post_versicolor <- round(num_versicolor/denominator, 4)
+post_virginica <- round(num_virginica/denominator, 4)
+
+post_setosa
+post_versicolor
+post_virginica
+```
+
+Given that QDA models each class' variance, given a 2.4 cm Petal.Length flower, QDA predicts that there is a 0.0031 probability of being classified as setosa, a 0.9967 probability of being classified as versicolor, and a 0.0002 probability as virginica.Given versicolor has the highest probability, this means QDA classifies a 2.4 cm Petal.Length as versicolor species.
+
+## (e)
+Yes, there is a difference in prediction. For LDA it predicts that a 2.4 cm Petal.Length flower is setosa, while QDA classifies it as versicolor. The most likely reason is that LDA assumes linear separation, where the classes share a common variance, while QDA assumes each class' own specific variance when modeling the posterior probability. LDA is less flexible because it assumes all classes have the same covariance, while QDA is more flexible when the boundary is non-linear. Given the different variance of each species, QDA is a more appropriate model for capturing true class distributions.
+
+# Question 2
+## (a)
+We first read in the winequality-red.csv in as Wine, and we check the structure of the data set. We see quality is in integers, we will first turn them into factors using as.factor() and then check all the levels of the quality variable.
+```{r}
+Wine <- read.csv('winequality-red.csv', sep = ';')
+str(Wine)
+```
+```{r}
+Wine$quality <- as.factor(Wine$quality)
+levels(Wine$quality)
+```
+The levels of wine quality is from 3 to 8. These score the quality of the wine.
+
+## (b)
+We first import the MASS library in order to use the lda() function. Then we calculate the predictions and then we can get the classification error for the LDA model.
+```{r}
+library(MASS)
+wine_lda <- lda(quality ~ ., data = Wine)
+wine_pred <- predict(wine_lda, Wine)
+lda_class_err <- mean(wine_pred$class != Wine$quality)
+round(lda_class_err, 4)
+```
+The LDA classifier model has achieved a classification error of 0.3965, meaning it misclassifies around 39.65% of the wine samples. This suggests that the wine data overlaps and are not separable by a linear boundary.
+
+## (c)
+We first import the nnet library in order to use the multinom() function. Then we calculate the predictions and then we can get the classification error for the multinomial model.
+```{r}
+library(nnet)
+wine_multi <- multinom(quality ~ ., data = Wine, maxit = 1000)
+wine_multi_pred <- predict(wine_multi, data = Wine)
+multinom_class_err <- mean(wine_multi_pred != Wine$quality)
+round(multinom_class_err, 4)
+```
+
+The multinomial classifier model has achieved a classification error of 0.3934, meaning it misclassifies around 39.34% of the wine samples. The results are comparable with the LDA model in part b. Showing that both models capture the same amount of structure in the data, the wine data overlaps and are not separable by a linear boundary.
+
+## (d)
+```{r}
+library(e1071)
+wine_nb <- naiveBayes(quality ~ ., data = Wine)
+wine_nb_pred <- predict(wine_nb, newdata = Wine)
+nb_class_err <- mean(wine_nb_pred != Wine$quality)
+round(nb_class_err, 4)
+```
+The naive bayes classifier model has achieved a classification error of 0.4396, meaning it misclassifies around 43.96% of the wine samples. This is noticeably worse compared to the multinomial and LDA model, most likely the NB independent assumption is unrealistic for the wine dataset.
+
+## (e)
+```{r}
+set.seed(4064)
+K = 5
+n= NROW(Wine)
+idx = sample(n,n)
+nk = n/K
+
+nk = c(rep(320,4),319)
+idx1 = cumsum(c(0,nk))
+folds = list()
+for(k in 1:K){
+  folds[[k]] = idx[(idx1[k]+1):idx1[k+1]]
+}
+
+class_error_lda=0
+class_error_multinom=0
+class_error_nb = 0
+for(k in 1:K){
+  idx = folds[[k]]
+  lda_model = lda(quality ~ ., data = Wine, subset = -idx)
+  multinom_model = multinom(quality ~ ., data = Wine, subset = -idx, maxit = 1000)
+  nb_model = naiveBayes(quality ~ ., data = Wine, subset = -idx)
+  lda_pred = predict(lda_model, Wine[idx,])$class
+  multinom_pred = predict(multinom_model, Wine[idx,])
+  nb_pred = predict(nb_model, Wine[idx,])
+  class_error_lda = class_error_lda + mean(lda_pred != Wine$quality[idx])
+  class_error_multinom = class_error_multinom + mean(multinom_pred != Wine$quality[idx])
+  class_error_nb = class_error_nb + mean(nb_pred != Wine$quality[idx])
+}
+round(class_error_lda/K, 4)
+round(class_error_multinom/K, 4)
+round(class_error_nb/K, 4)
+```
+Based on the 5 fold CV results, we can see that the LDA has the smallest misclassification CV error(0.4046), followed by the multinomial model(0.4053) and lastly the naive bayes model(0.4559). The results indicate that LDA and multinomial seem to handle the wine dataset pretty well given the low classification error. In contrast, naïve bayes has a higher classification error(0.4559) compared to the other two models. A possible reason may be that the dataset may have highly correlated variables, which leads to a strong violation of naïve bayes independence assumption. Overall, based on 5-fold CV, we can see that LDA provides the best out-of-sample predictive performance out of the 3 models.
+
+# Question 3
+## (a)
+```{r}
+library(ggplot2)
+data(iris)
+iris$r <- iris$Sepal.Width/iris$Sepal.Length
+ggplot(iris, aes(x=r, fill =Species))+geom_boxplot()+coord_flip()+labs(title='Ratio of sepal width to sepal length by species', y='Species', x='Sepal Width to Length Ratio')
+```
+The boxplot shows a clear difference in class distribution on the sepal width and sepal length ratio. We can see that setosa has the highest median ratio, indicating the sepal width is relatively large compared to it's sepal length. While the remaining two classes have lower ratio. Versicolor shows a slightly higher ratio compared to virginica, but is a little lower spread compared to virginica, while virginica has a lower ratio and a bit higher spread. Moreover, the versicolor and virginica species are overlapping, suggesting these 2 are less distinct when it comes to sepal width and sepal length ratio compared to the setosa species.
+
+## (b)
+```{r}
+r_med_hat <- median(iris$r[iris$Species == 'setosa'])
+round(r_med_hat, 4)
+```
+The median sepal width by sepal length ratio for setosa species is 0.6835, this means the setosa species have a higher sepal width to sepal length median ratio compared to the other species. This is inline with what can be seen in the boxplot in part a.
+
+## (c)
+```{r}
+set.seed(4064)
+nBoot <- 1000
+xbar_boot <- rep(NA, nBoot)
+setosa_r <- iris$r[iris$Species == 'setosa']
+for(b in 1:nBoot){
+  # resample the data
+  setosa_r_boot <- sample(setosa_r, length(setosa_r), replace = TRUE)
+  # compute sample mean of the resample data
+  xbar_boot[b] <- median(setosa_r_boot)
+}
+sd_r <- round(sd(xbar_boot),4)
+sd_r
+```
+The boostrap standard error is approximately 0.0065, suggesting that the sample median of the sepal width to length ratio for setosa is fairly stable with fairly low spread.
+```{r}
+hist(xbar_boot)
+```
+
+The bootstrap of distribution of the setosa median ratio is near bell-shaped and seems to be centered between 0.68 and 0.69, which is consistent with the median ratio found in part b(0.6835). The bootstrap results show that the median sepal width to length ratio for setosa is fairly stable and well estimated.
+
+
+# Question 4
+## (a)
+Here we read in the USCrime dataset and plot the pairs plot for each variable.
+```{r}
+UScrime <- read.table('UScrime.txt', header = TRUE)
+pairs(~ Crime + Po1 + Po2 + U1 + U2 + ProbC, data = UScrime)
+```
+
+## (b)
+Yes, we can remove Po2 and U1. As seen above in part a's pairs plot, Po1 and Po2 are almost perfectly linearly related, if we keep both, we're basically adding redundant information and inflate the regression model's variance. Similarly, for U1 and U2, it's also shown a linear relationship between the 2, suggesting it does not contribute much additional information that U2 can already provide. Thus, we can opt to remove Po2 and U1.
+
+## (c)
+We first remove the 2 variables, Po2 and U1, and we double check it by populating the data frame. We can see Po2 and U1 have been successfully removed.
+```{r}
+reduced_USCrime <- UScrime[, !names(UScrime)%in%c('Po2', 'U1')]
+str(reduced_USCrime)
+```
+We then import the leaps library which contains the regsubsets() function, which we will need to apply the forward stepwise function.
+```{r}
+library(leaps)
+reg_fwd <- regsubsets(Crime~., data = reduced_USCrime, method='forward', nvmax=13)
+reg_fwd.summary <- summary(reg_fwd)
+```
+
+After running the forward stepwise function we plot the RSS, Adjusted R Square, BIC and Mallow's Cp against the number of variables, to visualize the minimum number of variables per metric.
+```{r}
+par(mfrow=c(2,2))
+plot(1:13, reg_fwd.summary$rss, xlab = 'n.var', ylab = 'RSS', type = 'b')
+plot(1:13, reg_fwd.summary$adjr2, xlab = 'n.var', ylab = 'Adjusted R Squared', type = 'b')
+plot(1:13, reg_fwd.summary$bic, xlab = 'n.var', ylab = 'BIC', type = 'b')
+plot(1:13, reg_fwd.summary$cp, xlab = 'n.var', ylab = 'Cp', type = 'b')
+```
+The plots show that for RSS, as the number of variables increase, RSS decreases, this is expected since adding more variables always reduces the residual errors. But we can see that by variable 6, it does plateau off. Overall, it shows that the most optimal number of variables is using all 13 variables. But, RSS alone is not enough to choose the best model, since the residual errors always decreases when we add more variables, thus it always wants a model with many predictors.
+The adjusted R square shows as the number of variable increase, adjusted R square increases. We can see that as more variables were added the adjusted r square up, but by the 8th variable, it starts to decline. Overall, adjusted r square suggests that only 8 variables are needed for the most optimal model.
+The BIC shows that as it increases it drops to the minimum at 6 variables. This means the optimal number of variables to have is 6 based on BIC.
+The Cp shows that as it increases it drops to the minimum at 6 variables. This means the optimal number of variables to have is 6 based on Cp.
+
+```{r}
+(rss_var <- which.min(reg_fwd.summary$rss))
+(adjr2_var <- which.max(reg_fwd.summary$adjr2))
+(bic_var <- which.min(reg_fwd.summary$bic))
+(cp_var <- which.min(reg_fwd.summary$cp))
+```
+RSS shows that the best model with a good balance of fit and complexity must have 13 variables, for Adjusted R square it is 8, and for BIC and Cp it is 6 variables. RSS alone is not enough to choose the best model, since the residual errors always decreases when we add more variables.
+
+```{r}
+round(coef(reg_fwd, rss_var), 4)
+```
+For RSS the optimal model contains the following variables:
+M, So, Ed, Po1, LF, MF, Pop, NW, U2, Wealth, Ineq, ProbC, Time.
+
+The optimal model size based on RSS is written as:
+{\small$$ \hat{Crime} = -5781.4546 + 93.9001 \times M + 77.6600 \times So + 161.1992 \times Ed + 108.7879 \times Po1 + 495.5981 \times LF + 4.1693 \times MF - 1.0745 \times Pop + 1.0884 \times NW + 86.5139 \times U2 + 0.1028 \times Wealth + 74.4182 \times Ineq - 4262.3744 \times ProbC - 0.2103 \times Time$$}
+
+```{r}
+round(coef(reg_fwd, adjr2_var), 4)
+```
+For adjusted r square the optimal model contains the following variables:
+M, Ed, Po1, Pop, U2, Wealth, Ineq, ProbC.
+
+The optimal model size based on Adjusted R Square is written as:
+$$ \hat{Crime} = -5603.0868 + 104.2903 \times M + 168.3945 \times Ed + 112.5287 \times Po1 - 1.2453 \times Pop + 84.1295 \times U2 + 0.1191 \times Wealth + 84.5217 \times Ineq - 3786.1047 \times ProbC$$
+```{r}
+round(coef(reg_fwd, bic_var), 4)
+```
+For Bic the optimal model contains the following variables:
+M, Ed, Po1, U2, Ineq, ProbC.
+
+The optimal model size based on BIC is written as:
+$$ \hat{Crime} = -5040.5050 + 105.0196 \times M + 196.4712 \times Ed + 115.0242 \times Po1 + 89.3660 \times U2 + 67.6532 \times Ineq - 3801.8363 \times ProbC$$
+
+```{r}
+round(coef(reg_fwd, cp_var), 4)
+```
+For Cp the optimal model contains the following variables:
+M, Ed, Po1, U2, Ineq, ProbC 
+
+The optimal model size based on Cp is written as:
+$$ \hat{Crime} = -5040.5050 + 105.0196 \times M + 196.4712 \times Ed + 115.0242 \times Po1 + 89.3660 \times U2 + 67.6532 \times Ineq - 3801.8363 \times ProbC$$
+
+## (d)
+We first create the code to perform 5 fold cv for the best-subset regression, computes the test MSE for the reducedUSCrime dataset and returns the cv error for each model so we can choose the best number of predictors.
+i.)
+```{r}
+K <- 5
+n <- nrow(reduced_USCrime)
+set.seed(40643406)
+folds <- sample(rep(1:K, length = n))
+cv.errors <- matrix(NA, K, 13)
+```
+ii.)
+```{r}
+for(k in 1:K){
+  id <- which(folds == k)
+  best.fit <- regsubsets(Crime~., data = reduced_USCrime[-id,], nvmax = 13)
+  
+  for(i in 1:13){
+    coefi <- coef(best.fit, id = i)
+    xvars <- names(coefi)
+    
+    form <- as.formula(best.fit$call[[2]])
+    mat <- model.matrix(form, data = reduced_USCrime[id,])
+    pred.tmp <- mat[, xvars] %*% coefi
+    cv.errors[k, i] <- (length(id) / n) * mean((reduced_USCrime$Crime[id] - as.vector(pred.tmp))^2)
+  }
+}
+(mean.cv.errors <- colSums(cv.errors))
+```
+After running the 5 fold cv, we then plot them to see which number of variables give the lowest prediction error is 6 (65709.89).
+```{r}
+plot(1:13, mean.cv.errors)
+```
+The plot supports our findings, as the number of variables reached 6, it has reached the minimum prediction error. Thus, we can conclude that the best model with a balanced of fit and complexity must have 6 variables.
+
+## (e)
+To get the variables, we first run the best fit model then we get the minimum prediction errors, which is 6.
+```{r}
+regfit.best <- regsubsets(Crime~., data=reduced_USCrime, nvmax=13)
+(minimum_var <- which.min(mean.cv.errors))
+```
+We then get the 6 variables
+```{r}
+round(coef(regfit.best, minimum_var), 4)
+```
+The model should have these 6 variables to provide the best balance between complexity and predictive accuracy:
+M, Ed, Po1, U2, Ineq, ProbC 
+
+We write the optimal model as:
+$$ \hat{Crime} = -5040.5050 + 105.0196 \times M + 196.4712 \times Ed + 115.0242 \times Po1 + 89.3660 \times U2 + 67.6532 \times Ineq - 3801.8363 \times ProbC$$

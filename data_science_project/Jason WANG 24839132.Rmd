@@ -1,0 +1,1253 @@
+---
+title: "CITS4009 Project"
+author: "Jason Wang (24839132)"
+date: "2025-09-10"
+output: 
+  html_document:
+    toc: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: true
+    toc_depth: 3
+    theme: cerulean
+    number_sections: true
+---
+Shiny App Demo: https://youtu.be/en97-toDKiE
+
+# Introduction
+The movie industry is a very competitive environment. This is because some movies barely become blockbusters due to the public opinion of the movie. These are not the only factors that can affect the performance in the box office. In fact economic factors may have a level of involvement when it comes to how successful movie may become. The easily accessibility of these data can give us the opportunity for data driven insights and predictive modeling.
+
+In this project, we will be exploring 3 different data sets consisting of box office data, population parameters and GDP across different countries and years. We will be analyzing each data set, by identifying patterns and relationships among the data sets, and clean and transform the data if needed. Our main goal will be exploring the data to generate a hypothesis and apply certain modeling techniques to compare and analyze the results.
+
+Loading Libraries
+```{r, message=FALSE, warning=FALSE}
+library("FactoMineR")
+library("factoextra")
+library("MASS")
+library("FSelectorRcpp")
+library(pander)
+library(ggcorrplot)
+library(pROC)
+library(caret)
+library(e1071)
+library(lime)
+library('ROCR')
+library('ROCit')
+library(ggplot2)
+library(tidyr)
+library(dplyr)
+library(gridExtra)
+library(rpart)
+library(rpart.plot)
+library(magrittr)
+library(shiny)
+library(shinyWidgets)
+```
+
+Loading Data sets
+```{r}
+box_office <- read.csv("Box_office_data(2000-2024).csv", sep = ',', header = TRUE, na.strings = (c("", "NA")))
+gdp <- read.csv("GDP_2000_2024.csv", sep = ',', header = TRUE, na.strings = (c("", "NA")))
+population <- read.csv("Population_2000_2024.csv", sep = ',', header = TRUE, na.strings = (c("", "NA")))
+```
+
+# Exploring Data sets
+```{r}
+str(box_office)
+```
+
+The Box Office data consist of the following:
+
+- Categorical Variables: Release.Group, Genres, Rating, Original_Language, Production_Countries
+- Continuous Variables: Rank, Release.Group, X.Worldwide, X.Domestic, Domestic., X.Foreign, Year, Vote_Count
+- The Box Office dataset contains 5000 observations of 13 variables
+
+```{r}
+str(gdp)
+```
+
+The Box Office data consist of the following:
+
+- Categorical Variables: Country.Name, Country.Code, Indicator.Name, Indicator.Code
+- Continuous Variables: X2000, X2001, X2002, ...., X2024
+- The dataset contains 266 observations of  29 variables
+
+```{r}
+str(population)
+```
+
+The Box Office data consist of the following:
+
+- Categorical Variables: Name, GENC, Year, Population, Male.Population, Female.Population, Annual.Growth.Rate, Rate.of.Natural.Increase, Population.Density, Natural.Increase, Total.Fertility.Rate, Crude.Birth.Rate, Life.Expectancy.at.Birth..Both.Sexes, Infant.Mortality.Rate..Both.Sexes, Crude.Death.Rate, Net.Migration.Rate
+- Continuous: Some of the categorical variables seem to be in the wrong data.type
+- The Population data set contains 5700 observation of 16 variables.
+
+## Explore the Summary Statistics
+```{r}
+summary(box_office)
+head(box_office)
+```
+
+- Ranking is from 1 to 200, but median shows 100.50 and observation is 5000. This suggests each year has a rank of 200 and given that it was from 2000 to 2024. Then it is consistent with 5000 observation.
+
+- X.Worldwide is the total movie revenue from both domestic and Foreign sales. No 0 or missing values found.
+
+- X.Domestic is the total domestic box office revenue while X.Foreign is the total foreign box office revenue. The sum of the 2 is equal to X.Worldwide. The 0 value in X.Domestic suggests that the movie revenue was from X.Foreign and vice versa.
+
+- Domestic.. and Foreign.. is the percentage of X.Foreign over X.Worldwide and X.Foreign over X.Worldwide respectively. Combining the 2 should equal to 100%. The 0 value in Domestic.. suggests that the movie X.Worldwide revenue did not generate revenue from Domestic sales. but from foreign sales and vice versa.
+
+- Vote_count is the number of votes it received in TMDB. The 0 means it never received any votes, and also we notice 170 observations showing NA's or missing values.
+
+- Rating just shows the average audience rating from TMDB. The variable might need to be converted to a numerical variable.
+
+- The rest of of the variables are categorical variables, we might need to use as factor() on these types of variable to properly analyze and visualize these type of variables.
+
+- The Genres and Production Countries have multiple categories that were separated by commas. This will be a problem when plotting as well, since it might produce too many legends or too many plots that might be too confusing. We might consider to clean it to only retrieve the main genre and main country it was produced (1st word).
+
+```{r}
+summary(gdp)
+head(gdp)
+```
+
+- The Country.Name, Country.Code, Indicator.Name and Indicator.Code are categorical variables, depicting the name of the country, the country code, the name of the indicator and indicator code respectively.
+
+- The rest of the variables are the GDP for every year from 2000 - 2024. We can see each year has 'X' in the beginning, we might need to get rid of those to ensure no problems occur when plotting it. Another thing we can see is that all of the years have missing variables denoted by NA with 2024 having the most NA's. We need to clean the data for these missing values.
+
+- We checked the categorical variables as well. No missing observations (NA) were found in the categorical variables. But since these are in text format, there might be sentinel values.
+
+- The data set seems to be in wide format and we will need to transform it into long format for more convenient analysis.
+
+```{r}
+summary(population)
+head(population)
+population[which(is.na(population$Year)),]
+```
+
+- It seems Only the year is showing summary statistics while the rest are categorical variables. This may suggest that the variable type of the variables are incorrect and may need to be changed. For the Year variable, there are over 25 NA's, which means 25 rows are missing the year.
+
+- In conjunction with the 25 NA's, we see is that there is a '->' followed by year in the "Name" columns and the rest of the row is populated by '--'. This might be the 25 NA's that was showing in the summary statistics. We will need to remove these to make plotting easier
+
+- Aside from the first 2 columns, every other columns show number or is a ratio. This is inline with our assumption that the variable types are incorrect and we may need to change these into numeric variables.
+
+- We also we will need to check for any sentinel values in the categorical variables and clean them correctly.
+
+- Overall, the summary statistics tells us that there are some missing values, incorrect variable types for specific values and some rows are just used as separators. The data sets will definitely require some cleaning before we can plot these.
+
+## Data Cleaning
+### Checking NAs and Invalid Data Inputs
+```{r}
+count_missing <- function(df) {
+sapply(df, FUN = function(col) sum(is.na(col)) )
+}
+
+box_office_missing <- count_missing(box_office)
+gdp_missing <- count_missing(gdp)
+population_missing <- count_missing(population)
+
+bo_hasNA = which(box_office_missing > 0)
+gdp_hasNA = which(gdp_missing > 0)
+pop_hasNA = which(population_missing > 0)
+
+check_incorrect_inputs <- function(dataset){
+  total <- 0
+  for (i in names(dataset)){
+    count <- length(dataset[,i] %in% c("--","","NA"))
+    total <- total + count
+  }
+  return(total)
+}
+
+box_office_missing[bo_hasNA]
+gdp_missing[gdp_hasNA]
+population_missing[pop_hasNA]
+
+print(check_incorrect_inputs(box_office))
+print(check_incorrect_inputs(gdp))
+print(check_incorrect_inputs(population))
+```
+
+- Box office: Genres, Rating, Vote_Count, Original_Language Production_Countries and Rating_Numerical have come NA's
+- GDP: every single year have some NA's
+- Population: show NA's for GENC and Year.
+- We can see that all of the data sets have these unique invalid inputs.
+- Box Office data set has 65000 invalid inputs
+- GDP has 7714 invalid inputs
+- Population has over 9,000 invalid inputs
+- Given the large amount of invalid inputs and NAs, we will need to clean these NA's, convert certain data types to their correct data types and transform some of the data sets.
+
+### Data Type Conversions
+```{r}
+# Change type Rating to numeric data type
+box_office$Rating <- as.numeric(sub("/10", "", box_office$Rating))
+
+# remove the unnecessary rows in population as seen above
+row_seperator <- grepl("^ ->", population$Name)
+population_v2 <- population[!row_seperator,]
+
+# function to change the non numeric data type of population to numeric data type
+# also some invalid data such as "--", "", or"NA" will be changed to NA
+replace_missing1 <- function(dataname) {
+  numerical_variables <- setdiff(names(dataname), c("Name", "GENC","Year"))
+  for (i in names(dataname)) {
+    if (i %in% numerical_variables){
+      cleaned_text <- gsub(",", "", dataname[, i])
+      cleaned_text[cleaned_text %in% c("--","", "NA")] <- NA
+      dataname[, i] <- as.numeric(cleaned_text)
+      }
+  }
+  return(dataname)
+}
+population_v3 <- replace_missing1(population_v2)
+
+# function to change the non numeric data type of gdp to numeric data type
+replace_missing2 <- function(dataname) {
+  numerical_variables <- setdiff(names(dataname), c("Country.Name", "Country.Code", "Indicator.Name", "Indicator.Code"))
+  for (i in names(dataname)) {
+    if (i %in% numerical_variables){
+      cleaned_text <- gsub(",", "", dataname[, i])
+      cleaned_text[cleaned_text %in% c("--","", "NA")] <- NA
+      dataname[, i] <- as.numeric(cleaned_text)
+      }
+  }
+  return(dataname)
+}
+gdp_v2 <- replace_missing2(gdp)
+
+# function to change the non numeric data type of box_office to numeric data type
+replace_missing3 <- function(dataname) {
+  numerical_variables <- setdiff(names(dataname), c("Release.Group", "Genres", "Original_Language", "Production_Countries"))
+  for (i in names(dataname)) {
+    if (i %in% numerical_variables){
+      cleaned_text <- gsub(",", "", dataname[, i])
+      cleaned_text[cleaned_text %in% c("--","", "NA")] <- NA
+      dataname[, i] <- as.numeric(cleaned_text)
+      }
+  }
+  return(dataname)
+}
+box_office_v2 <- replace_missing3(box_office)
+
+box_office_missing <- count_missing(box_office_v2)
+gdp_missing <- count_missing(gdp_v2)
+population_missing <- count_missing(population_v3)
+
+bo_hasNA = which(box_office_missing > 0)
+gdp_hasNA = which(gdp_missing > 0)
+pop_hasNA = which(population_missing > 0)
+
+box_office_missing[bo_hasNA]
+gdp_missing[gdp_hasNA]
+population_missing[pop_hasNA]
+```
+We have created a function to changes all numeric data into it's proper numeric data types, as well as transform any invalid inputs into NA's. We can see that the population data set's invalid inputs are now transformed to NA. We will now clean and impute the continuous variables with the mean.
+
+### Imputing missing Continuous Data
+First we will impute the missing continuous variables in the Voting and Rating, we will be imputing data based on year, this is so we smooth out certain fluctuations, while still preserving variation across time. After we will change the NA's in the categorical variables to show "others" instead.
+```{r}
+box_office_v2$Vote_Count <- ifelse(
+  is.na(box_office_v2$Vote_Count),
+  ave(box_office_v2$Vote_Count, box_office_v2$Year, FUN = function(x) mean(x, na.rm = TRUE)),
+  box_office_v2$Vote_Count
+)
+
+box_office_v2$Rating <- ifelse(
+  is.na(box_office_v2$Rating),
+  ave(box_office_v2$Rating, box_office_v2$Rank, FUN = function(x) mean(x, na.rm = TRUE)),
+  box_office_v2$Rating
+)
+
+box_office_v2 <- box_office_v2 %>% mutate(Genres = ifelse(Genres == "" | is.na(Genres), "Others", Genres))
+box_office_v2 <- box_office_v2 %>% mutate(Production_Countries = ifelse(Production_Countries == "" | is.na(Production_Countries), "Others", Production_Countries))
+
+box_office_v2 <- box_office_v2 %>% mutate(Original_Language = ifelse(Original_Language == "" | is.na(Original_Language) | is.na(Original_Language), "Others", Original_Language))
+
+str(box_office_v2)
+```
+
+We have imputed the gdp per country, this should smooth out certain fluctuations and emphasizes trends per country, while still preserving variation across time.
+```{r}
+gdp_v2[,5:29] <- t(apply(gdp_v2[,5:29], 1, function(x){
+  x[is.na(x)] <- mean(x, na.rm = TRUE)
+  return(x)
+}))
+summary(gdp_v2)
+gdp_var <- setdiff(names(gdp_v2), c("Country.Name", "Country.Code", "Indicator.Name", "Indicator.Code", "X2000"))
+summary(gdp_v2[is.na(gdp_v2$X2000), gdp_var])
+gdp_v2[which(is.na(gdp_v2$X2000)),]$Country.Name
+```
+GDP data still shows 4 more observations showing NA, upon checking all of these NAs are for the same observation across time.These include counoutries Gibraltar, Not Classified, North Korea and the British virgin Islands. Given that these observations points are small and are in the same data points, we can use lit wise deletion and omit these missing observations and we'll remove all the X in the beginning of the year.
+
+```{r}
+gdp_v3 <- na.omit(gdp_v2)
+
+rename_var <- function(dataset){
+  var_names <- setdiff(names(dataset), c("Country.Name", "Country.Code", "Indicator.Name", "Indicator.Code"))
+  names(dataset)[names(dataset) %in% var_names] <- sub("^X","", var_names)
+  return(dataset)
+}
+gdp_v3 <- rename_var(gdp_v3)
+```
+
+Next, We will impute the missing variables in the population data set. Since, the data set contains country and years, we will impute the data by country and year again, for the same reason as the gdp data set.
+```{r}
+imputing <- function(dataname) {
+  population_non_numeric_columns <- names(dataname)[!sapply(dataname, is.numeric)]
+  population_numeric_columns <- names(dataname)[sapply(dataname, is.numeric)]
+  population_numeric_columns <- setdiff(population_numeric_columns, c("Year"))
+# average missing values based on countries per column with missing values
+  for (column in population_numeric_columns) {
+    dataname[[column]] <- ifelse(is.na(dataname[[column]]), ave(dataname[[column]], dataname$Name, FUN = function(x) mean(x, na.rm = TRUE)), dataname[[column]])
+  }
+  return(dataname)
+}
+population_v4 <- imputing(population_v3)
+```
+
+The format of GDP is in wide format, we transform it to long format. This will make it do that each country will display their gdp per year, this will help make analysis and merging easier.
+```{r}
+gdp_v4 <- gdp_v3 %>% pivot_longer(
+  cols = -c(Country.Name, Country.Code, Indicator.Name, Indicator.Code),
+  names_to = "Year",
+  values_to = "GDP_Revenue") %>%
+  mutate(Year = as.numeric(sub("^X","",Year)))
+head(gdp_v4)
+```
+
+We will then combine the 2 data sets, population and gdp. They both have same Country and Year Keys, will will use and Intersect join to create a gdp_population dataset.
+```{r}
+gdp_population <- merge(gdp_v4, population_v4, by.x = c("Country.Name", "Year"), by.y = c("Name", "Year"))
+```
+
+# Exploratory Data Analysis
+## Box Office EDA
+```{r}
+p1 <- ggplot(box_office_v2, aes(x = X.Worldwide)) + geom_histogram(fill = "#99ccff", color = "#3366cc") + scale_x_continuous(labels = function(y) y/1e6) + labs(x = "Revenue (in millions)", title = "Distribution of Movie Revenue")
+p2 <- ggplot(box_office_v2, aes(x = X.Worldwide)) + geom_histogram(aes(y = ..density..), fill = "#99ccff", color = "#3366cc") + geom_density(color = "#3366cc") + scale_x_log10() + labs(x = "Revenue (log transformed)", title = "Distribution of Movie Revenue")
+grid.arrange(p1, p2, ncol = 2)
+```
+
+The histogram shows that Worldwide revenue is more rightly skewed, most of the concentration are around a few millions, and only a few show to produce billion revenue. Suggesting that, most movies are not considered block busters or great hits. But this is hard to gauge the actual performance of the movies.
+
+The density plot we used a log transformation to check the structure of the data set, better than the histogram. The transformation of Worldwide Revenue shows the data to be close to normally distributed, which suggests movie revenue follow a log normal pattern. We can see that:
+
+- majority of the data set cluster around the middle suggests that the data contains mostly moderately successful movies
+- and only a few movies show to be block busters or huge flops in the box office.
+
+```{r}
+p3 <- ggplot(box_office_v2, aes(x = Rating, y = log(X.Worldwide))) + geom_point(color = "blue") + geom_smooth(method = "lm", se = FALSE, color = "red") + labs(x = "Ratings", y = "Revenue(log transformed)", title = "Box office revenue Worldwide")
+p4 <- ggplot(box_office_v2, aes(x = Vote_Count, y = log(X.Worldwide))) + geom_point(color = "blue") + geom_smooth(method = "lm", se = FALSE, color = "red") + labs(x = "Vote_Count", y = "Revenue(log transformed)", title = "Box office revenue Worldwide")
+grid.arrange(p3, p4, ncol = 2)
+```
+The 1st scatter plot displays the relationship between Ratings and worldwide movie revenue. The plot shows a positive correlation between the 2, this suggests higher rated movies earn more revenues. The second scatter plot displays the relationship between Vote Counts and worldwide movie revenue. The plot shows a positive correlation between the 2, this suggest movies with more votes earn more revenue in general.
+
+```{r}
+box_office_v2$Main_Production_Countries <- sub(",.*", "", box_office$Production_Countries)
+box_office_v2$Main_Genre <- sub(",.*", "", box_office$Genres)
+
+main_genre_count <- table(box_office_v2$Main_Genre) %>% sort(decreasing = TRUE) %>% head(10)
+top_10_genre <- names(main_genre_count[1:10])
+top_10_genre_revenue <- subset(box_office_v2, Main_Genre %in% top_10_genre)
+p5 <- ggplot(top_10_genre_revenue, aes(x = Main_Genre, y = X.Worldwide)) + geom_boxplot() + scale_y_log10() + labs(title = "Revenue Distribution of Top 10 Main Genre", y = "Worldwide Revenue", x = "Genre") + coord_flip()
+
+genre_count <- as.data.frame(main_genre_count)
+colnames(genre_count) <- c("Genre", "Count")
+genre_count <- transform(genre_count, Genre=reorder(Genre,Count))
+p6 <- ggplot(genre_count, aes(x = Genre, y = Count)) + geom_bar(stat = "identity", fill = "gray") + labs(title = "Count of Top 10 Main Genre", y = "Count", x = "Genre") + coord_flip()
+
+grid.arrange(p5, p6, ncol = 2)
+```
+We can see that a majority of the movies are Comedy Movies seem to be produced the most, but based on the revenue, is seems Adventure movies have the highest overall revenue distribution. This suggests that even though there are more Comedy movies being made, Adveture movies are the more profitable ones.
+
+```{r}
+main_country_count <- table(box_office_v2$Main_Production_Countries) %>% sort(decreasing = TRUE) %>% head(10)
+top_10_country <- names(main_country_count[1:10])
+top_10_country_revenue <- subset(box_office_v2, Main_Production_Countries %in% top_10_country)
+p7 <- ggplot(top_10_country_revenue, aes(x = Main_Production_Countries, y = X.Worldwide)) + geom_boxplot() + scale_y_log10() + labs(title = "Revenue Distribution of Top 10 Countries", y = "Worldwide Revenue", x = "Country") + coord_flip()
+
+country_count <- as.data.frame(main_country_count)
+colnames(country_count) <- c("Country", "Count")
+country_count <- transform(country_count, Country=reorder(Country,Count))
+p8 <- ggplot(country_count, aes(x = Country, y = Count)) + geom_bar(stat = "identity", fill = "gray") + labs(title = "Count of Top 10 Main Country", y = "Count", x = "Genre") + coord_flip()
+grid.arrange(p7, p8, ncol = 2)
+```
+
+We can see that a majority of the movies are produced in America and America has the most revenue range, indicating that US produces most revenue for films, but greater variability as shows by the outliers, suggesting US has more block busters than other countries.
+
+```{r}
+main_language_count <- table(box_office_v2$Original_Language) %>% sort(decreasing = TRUE) %>% head(10)
+top_10_country <- names(main_language_count[1:10])
+top_10_country_revenue <- subset(box_office_v2, Original_Language %in% top_10_country)
+p9 <- ggplot(top_10_country_revenue, aes(x = Original_Language, y = X.Worldwide)) + geom_boxplot() + scale_y_log10() + labs(title = "Revenue Distribution of Top 10 Movie Languages", y = "Worldwide Revenue", x = "Language") + coord_flip()
+
+language_count <- as.data.frame(main_language_count)
+colnames(language_count) <- c("Language", "Count")
+language_count <- transform(language_count, Language=reorder(Language,Count))
+p10 <- ggplot(language_count, aes(x = Language, y = Count)) + geom_bar(stat = "identity", fill = "gray") + labs(title = "Count of Top 10 Main Language", y = "Count", x = "Language") + coord_flip()
+grid.arrange(p9, p10, ncol = 2)
+```
+
+The plots show that, majority of the movies are in English, and that English movies has the most revenue range, indicating that English movies make more revenue, but greater variability as shows by the outliers, suggesting English movies have more block busters.
+
+## GDP EDA
+The Gdp data set is similarly right skewed, suggesting some countries have higher GDP then others. After applying a log transformation, the density plot shows the gdp data set follows a log normal pattern. We can also see that:
+
+- most gdp of countries are clustered in middle, suggesting majority of the countries are middle income countries, probably developing countries
+- and only a few are located at the 2 tails, suggesting some countries are very poor or very rich, which are the least developed countries and developed countries.
+
+```{r}
+p11 <- ggplot(gdp_population, aes(x = GDP_Revenue)) + geom_histogram(fill = "#99ccff", color = "#3366cc") + labs(x = "GDP Revenue", title = "Distribution of GDP Worldwide")
+p12 <- ggplot(gdp_population, aes(x = GDP_Revenue)) + geom_histogram(aes(y = ..density..), fill = "#99ccff", color = "#3366cc") + geom_density(color = "#3366cc") + scale_x_log10() + labs(x = "GDP Revenue", title = "Distribution of GDP Worldwide")
+grid.arrange(p11, p12, ncol = 2)
+```
+
+## Population EDA
+The Population data set is similarly right skewed, suggesting some countries have higher populations than others. After applying a log transformation, the density plot shows the population data set follows a log normal pattern as well. This suggests:
+
+- most countries' population are clustered in the middle, which are the typical population size of most countries.
+- the two end tails suggest that a few countries have very low population, probably some remote countries, while others have extremely populous countries, such as China and India.
+
+```{r}
+p13 <- ggplot(gdp_population, aes(x = Population)) + geom_histogram(fill = "#99ccff", color = "#3366cc") + labs(x = "Population", title = "Distribution of Population Worldwide")
+p14 <- ggplot(gdp_population, aes(x = Population)) + geom_histogram(aes(y = ..density..), fill = "#99ccff", color = "#3366cc") + geom_density(color = "#3366cc") + scale_x_log10() + labs(x = "Population (log transformed)", title = "Distribution of Population Worldwide")
+grid.arrange(p13, p14, ncol = 2)
+```
+
+Similarly, the deaths and births rate are all skewed to the right, making it seem that all variables in the population data set is skewed to the right.
+
+```{r}
+p15 <- ggplot(gdp_population, aes(x = Crude.Death.Rate)) + geom_histogram(fill = "#99ccff", color = "#3366cc") + labs(x = "Crude death rate", title = "Distribution of Crude death rate")
+p16 <- ggplot(gdp_population, aes(x = Crude.Birth.Rate)) + geom_histogram(fill = "#99ccff", color = "#3366cc") + labs(x = "Crude birth rate", title = "Distribution of Crude birth rate")
+grid.arrange(p15, p16, ncol = 2)
+```
+
+## Multiple EDA
+
+We checked the relationship between GDP and Population. The 2 variables have a positive correlation, suggests that Larger population equates to higher gdp income. note we applied log transformation to normalized the raw count data for better visualization.
+```{r}
+ggplot(gdp_population, aes(x = GDP_Revenue, y = Population)) + geom_point(color = "#3366cc") + scale_x_log10() + scale_y_log10() + geom_smooth(method = "lm", se = FALSE, color = "red") + labs(x = "GDP Revenue", y = "Population", title = "GDP and Revenue Plot")
+```
+
+We can see based on yearly trends that gdp and population grow steadily, but movie revenue seems to grow at a lower rate and it had a huge drop during the 2020's before a huge jump around 2022/2023. The reason for this was due to the pandemic restrictions during 2020. But, all in all, they seem to have all have an upward moving trend. 
+```{r}
+movie_per_year <- aggregate(X.Worldwide ~ Year, data = box_office_v2, FUN = mean, na.rm = TRUE)
+gdp_per_year <- aggregate(GDP_Revenue ~ Year, data = gdp_population, FUN = mean, na.rm = TRUE)
+pop_per_year <- aggregate(Population ~ Year, data = gdp_population, FUN = mean, na.rm = TRUE)
+time_data <- merge(movie_per_year, gdp_per_year, by = "Year") %>% merge(pop_per_year, by = "Year")
+
+ggplot(time_data, aes(x = Year)) + geom_line(aes(y = X.Worldwide), color = "red") + geom_line(aes(y = Population), color = "blue") + geom_line(aes(y = GDP_Revenue), color = "green") + scale_y_log10()
+```
+
+Next, I wanted to explore if gender factors can contribute more to a movies success. I first created a new variable to capture this. The box plot shows that males contribute more to a movies revenue compared to females as seen by the median. The shape of the box are fairly similar and small suggesting small variability. There are some large outliers in both of them, females have more extremes suggesting males contribute to movies revenue consistently than females.
+```{r}
+gdp_total <- aggregate(GDP_Revenue ~ Year, data = gdp_population, FUN = sum, na.rm = TRUE)
+pop_total <- aggregate(cbind(Population, Male.Population, Female.Population) ~ Year, data = gdp_population, FUN = sum, na.rm = TRUE)
+
+box_office_gdp_population <- merge(box_office_v2, gdp_total, by.x = "Year", by.y = "Year") %>% merge(pop_total, by.x = "Year", by.y = "Year")
+
+box_office_gdp_population$MV_per_capita <- box_office_gdp_population$X.Worldwide/box_office_gdp_population$Population
+box_office_gdp_population$MV_per_gdp <- box_office_gdp_population$X.Worldwide/box_office_gdp_population$GDP_Revenue
+
+# gender ratio as per total population
+box_office_gdp_population$male_percentage <- with(box_office_gdp_population, Male.Population/Population)
+box_office_gdp_population$female_percentage <- 1 - box_office_gdp_population$male_percentage
+
+# revenue by each gender ratio
+box_office_gdp_population$male_revenue <- with(box_office_gdp_population, male_percentage * X.Worldwide)
+box_office_gdp_population$female_revenue <- with(box_office_gdp_population, female_percentage * X.Worldwide)
+
+# per capita contribution
+box_office_gdp_population$male_rev_capita <- with(box_office_gdp_population, male_revenue/Male.Population)
+box_office_gdp_population$female_rev_capita <- with(box_office_gdp_population, female_revenue/Female.Population)
+
+# categorical variable to see which gender spends more on each specific movie
+box_office_gdp_population$gender_spending_power <- factor(with(box_office_gdp_population, ifelse(male_rev_capita > female_rev_capita, '1', '0')))
+
+ggplot(box_office_gdp_population, aes(x = gender_spending_power, y = MV_per_gdp, fill = gender_spending_power)) + geom_boxplot() + labs(x = "Spending Power(Male vs Females)", y = "Revenue/GDP by Spending Power") + scale_y_log10()
+```
+
+We then check the correlation between variables, since gdp only has 1 numerical column, we will only check the correlation plot for box office and population data set to see which variables are highly correlated and remove them, since highly correlated data just produces redundancy in the model.
+```{r}
+correlation_matrix_box_office <- cor(box_office_v2[,sapply(box_office_v2, is.numeric)])
+ggcorrplot(correlation_matrix_box_office, lab = TRUE)
+```
+
+It seems that X.worldwide, X.Domestic and X.Foreign are highly correlated, and both domestic and foreigh shares are 100% inversely correlated. aside from these variables everythong else has moderate correlation. We will be subsetting and only keep 1 or the variables to reduce redundancy
+
+```{r}
+correlation_matrix_population <- cor(population_v4[,sapply(population_v4, is.numeric)][5:14])
+ggcorrplot(correlation_matrix_population, lab = TRUE)
+```
+For the population data set we see the following correlations:
+
+- Population, Male and Female Population, and Natural Increase are highly correlated.
+- Rate of Natural increase, total fertility rate, death rate, life expectancy of infant and Infant Mortality Rate Both.Sexes have a high correlation with each other
+- Net migration rate and annual growth rate are also highly correlated with each other.
+- Semantically, Natural increase, annual growth rate and annual growth rate convey the same meaning.
+
+Population already captures the raw counts underlying these rates. Thus we will remove the remaining data aside from Population. This is to ensure we do not over fit the model and remove any redundant information
+
+# Modelling
+## Pre-processing
+From the EDA, we can see that many factors can influence the success of a movie. We can see that certain economic, demographic and movie-specific characteristics can shape the performance of a movie. Our goal is to examine what features can contribute to predict whether a movie will become a block buster(the top 10%).
+
+We will first categorize which movies are the top 10%. We will create a 'HitFlop' variable, which will identify the top 10% movies of each year. After that we will subset the data set to only include the necessary features. The variables being removed are based on the correlation plots we've made to ensure we do not over fit the model and remove any redundant information.
+
+We will keep Vote Count and Rating, since they show a positive correlation based on the scatter plot. We also see that English and Adventure movies seem to generate more hits than other types and we also see that movies produced in America have higher movie revenue. Thus we will create a dummy variable to capture these features.
+
+We also created some variables to capture the scale box office is relative to socio economic factors (MV_per_capita, gender spending power). These variables provide more meaningful comparison compared to raw gdp or population values alone. We will also create gdp per capita to capture overall spending power.Since, we are incorporating these new variables, we will remove the original gdp and population variable to avoid redundancy.
+
+```{r}
+box_office_gdp_population$GDP_per_capita <- box_office_gdp_population$GDP_Revenue/box_office_gdp_population$Population
+
+box_office_gdp_population$HitFlop <- factor(with(box_office_gdp_population, ifelse(X.Worldwide >= ave(X.Worldwide, Year, FUN = function(x) quantile(x, 0.9, na.rm = TRUE)), "1", "0")))
+
+box_office_gdp_population_v2 <- subset(box_office_gdp_population, select = c("Genres", "Rating", "Vote_Count", "Original_Language", "Production_Countries", "MV_per_capita", "MV_per_gdp", "GDP_per_capita", "gender_spending_power", "HitFlop"))
+
+box_office_gdp_population_v2$Adventure <- factor(with(box_office_gdp_population_v2, ifelse(grepl("Adventure", Genres), "1", "0")))
+
+box_office_gdp_population_v2$American_Movie <- factor(with(box_office_gdp_population_v2, ifelse(grepl("United States of America", Production_Countries), "1", "0")))
+
+box_office_gdp_population_v2$English_Movie <- factor(with(box_office_gdp_population_v2, ifelse(Original_Language == "en", "1", "0")))
+```
+
+We then check the numerical variables to check for any correlation. As we can see, movie per gdp and movie per capita are highly correlated. We will remove the movie per capita and use movie per gdp
+```{r}
+correlation_matrix <- cor(box_office_gdp_population_v2[,sapply(box_office_gdp_population_v2, is.numeric)])
+ggcorrplot(correlation_matrix, lab = TRUE)
+```
+we can see that all the variables are not too highly correlated, thus we will use this dataset for our modelling.
+```{r}
+box_office_gdp_population_v3 <- subset(box_office_gdp_population_v2, select = c("Rating", "Vote_Count", "MV_per_capita", "GDP_per_capita", "gender_spending_power", "HitFlop", "Adventure", "American_Movie", "English_Movie"))
+correlation_matrix <- cor(box_office_gdp_population_v3[,sapply(box_office_gdp_population_v3, is.numeric)])
+ggcorrplot(correlation_matrix, lab = TRUE)
+```
+
+
+## Splitting data
+The data will be split to training and test data sets.
+```{r}
+set.seed(729375)
+box_office_gdp_population_v3$rgroup <- runif(dim(box_office_gdp_population_v3)[1])
+dTrainAll <- subset(box_office_gdp_population_v3, rgroup<=0.8)
+dTest <- subset(box_office_gdp_population_v3, rgroup>0.8)
+pos = '1'
+# change this to the variable you want to predict
+outcome <- c('HitFlop')
+
+# names of columns that are categorical type and numerical type
+vars <- setdiff(colnames(dTrainAll), c(outcome, 'rgroup'))
+catVars <- vars[sapply(dTrainAll[, vars], class) %in% c('factor', 'character')]
+numericVars <- vars[sapply(dTrainAll[, vars], class) %in% c('numeric', 'integer')]
+
+# split dTrainAll into a training set and a validation (or calibration) set
+useForCal <- rbinom(n=dim(dTrainAll)[1], size=1, prob=0.1)>0
+dCal <- subset(dTrainAll, useForCal)
+dTrain <- subset(dTrainAll, !useForCal)
+
+# factoring the HitFlop variable
+dCal$HitFlop <- factor(dCal$HitFlop)
+dTrain$HitFlop <- factor(dTrain$HitFlop)
+```
+
+# Classification
+## Single Variable Classification
+
+Before we start, we need to show our null model first for comparison. This is used as our baseline to compare the performance of our more complex models.
+
+Our null model shows that 9.82% of the training data has an outcome of 1, while 90.23% has the outcome of 0. Making this model highly unbalanced. Also, there are 388 observations in the calibration data set, and it seems that False Negatives detected were 44, meaning the model missed 44 positives.
+```{r}
+Npos <- sum(dTrain[,outcome] == 1)
+pred.Null <- Npos / nrow(dTrain)
+cat("Proportion of outcome == 1 in dTrain:", pred.Null)
+
+TP <- 0; TN <- sum(dCal[,outcome] == -1); # using threshold 0.5
+FP <- 0; FN <- sum(dCal[,outcome] == 1); # using threshold 0.5
+cat("nrow(dCal):", nrow(dCal), "TP:", TP, "TN:", TN, "FP:", FP, "FN:", FN)
+```
+
+Next, we assess the predictive powers of the individual features, the AUC(Area Under the Curve) scores for each feature was calculated, using both the training and calibration datasets:
+
+- MV_per_capita shows that it has the highest predictive power, with AUC values of 0.981(train) and 0.989(calibration).
+- Vote_Count shows that it has the second highest predictive power, with AUC values of 0.900(train) and 0.915(calibration).
+- Adventure shows that it has the third highest predictive power, with AUC values of 0.685(train) and 0.732(calibration).
+- Rating has a moderately good predictive power, with AUC values of 0.674(train) and 0.670(calibration).
+- American_Movie has amoderately good predictive power, with AUC values of 0.666(train) and 0.695(calibration).
+- English_Movie has a moderately good predictive power, with AUC values of 0.651(train) and 0.704(calibration).
+
+The results suggest MV_per_capita being the best feature to predict Hit vs. Flop, suggesting that a movie will become a hit or a flop based on the amount of people or audiences it can attract relative to the population.
+
+```{r}
+mkPredC <- function(outCol, varCol, appCol) {
+pPos <- sum(outCol == pos) / length(outCol)
+naTab <- table(as.factor(outCol[is.na(varCol)]))
+pPosWna <- (naTab/sum(naTab))[pos]
+vTab <- table(as.factor(outCol), varCol)
+pPosWv <- (vTab[pos, ] + 1.0e-3*pPos) / (colSums(vTab) + 1.0e-3)
+pred <- pPosWv[appCol]
+pred[is.na(appCol)] <- pPosWna
+pred[is.na(pred)] <- pPos
+pred
+}
+
+calcAUC <- function(predcol,outcol) {
+perf <- performance(prediction(predcol,outcol==pos),'auc')
+as.numeric(perf@y.values)
+}
+
+mkPredN <- function(outCol, varCol, appCol) {
+# compute the cuts
+  cuts <- unique(
+    quantile(varCol, probs=seq(0, 1, 0.1), na.rm=T))
+# discretize the numerical columns
+  varC <- cut(varCol,cuts)
+  appC <- cut(appCol,cuts)
+  mkPredC(outCol,varC,appC)
+}
+
+for(v in catVars) {
+pi <- paste('pred', v, sep='')
+dTrain[,pi] <- mkPredC(dTrain[,outcome], dTrain[,v], dTrain[,v])
+dCal[,pi] <- mkPredC(dTrain[,outcome], dTrain[,v], dCal[,v])
+dTest[,pi] <- mkPredC(dTrain[,outcome], dTrain[,v], dTest[,v])
+}
+
+for(v in catVars) {
+pi <- paste('pred', v, sep='')
+aucTrain <- calcAUC(dTrain[,pi], dTrain[,outcome])
+if (aucTrain >= 0.55) {
+aucCal <- calcAUC(dCal[,pi], dCal[,outcome])
+print(sprintf(
+"%s: trainAUC: %4.3f; calibrationAUC: %4.3f",
+pi, aucTrain, aucCal))
+}
+}
+
+
+for(v in numericVars) {
+  pi <- paste('pred', v, sep='')
+  dTrain[,pi] <- mkPredN(dTrain[,outcome], dTrain[,v], dTrain[,v])
+  dCal[,pi] <- mkPredN(dTrain[,outcome], dTrain[,v], dCal[,v])
+  dTest[,pi] <- mkPredN(dTrain[,outcome], dTrain[,v], dTest[,v])
+  aucTrain <- calcAUC(dTrain[,pi], dTrain[,outcome])
+  if(aucTrain >= 0.55) {
+    aucCal <- calcAUC(dCal[,pi], dCal[,outcome])
+    print(sprintf(
+      "%s: trainAUC: %4.3f; calibrationAUC: %4.3f",
+      pi, aucTrain, aucCal))
+  }
+}
+```
+
+To ensure that the predictive performance for each feature is correct and optimal, we perform a 100 fold cross validation check. This provides a stable estimate of model performance and variability.
+The results show:
+
+- MV_per_capita has a mean AUC of 0.980(sd:0.010), confirming it is the most reliable predictor with a good predictive power and low variability.
+- Vote_Count has a mean AUC of 0.895(sd:0.024), suggesting it is a reliable predictor with a good predictive power and low variability.
+- Rating has a mean AUC of 0.667(sd:0.039), suggesting it is a reliable predictor with a good predictive power and low variability.
+- Adventure has a mean AUC of 0.690(sd:0.039), suggesting it is a reliable predictor with a good predictive power and low variability.
+- American_Movie has a mean AUC of 0.673(sd:0.021), suggesting it is a reliable predictor with a good predictive power and low variability.
+- English_Movie has a mean AUC of 0.654(sd:0.021), suggesting it is a reliable predictor with a good predictive power and low variability.
+
+Cross validation validates our findings that MV_per_capita is the strongest and best feature for our single variable model.
+
+```{r}
+vars <- c('Adventure', 'American_Movie', 'English_Movie')
+for (var in vars) {
+aucs <- rep(0,100)
+for (rep in 1:length(aucs)) {
+useForCalRep <- rbinom(n=nrow(dTrainAll), size=1, prob=0.1) > 0
+predRep <- mkPredC(dTrainAll[!useForCalRep, outcome],
+dTrainAll[!useForCalRep, var],
+dTrainAll[useForCalRep, var])
+aucs[rep] <- calcAUC(predRep, dTrainAll[useForCalRep, outcome])
+}
+print(sprintf("%s: mean: %4.3f; sd: %4.3f", var, mean(aucs), sd(aucs)))
+}
+```
+```{r}
+vars <- c('Rating', 'Vote_Count', 'MV_per_capita')
+for (var in vars) {
+  aucs <- rep(0,100)
+  for (rep in 1:length(aucs)) {
+    useForCalRep <- rbinom(n=nrow(dTrainAll), size=1, prob=0.1) > 0
+    predRep <- mkPredN(dTrainAll[!useForCalRep, outcome],
+                       dTrainAll[!useForCalRep, var],
+                       dTrainAll[useForCalRep, var])
+    aucs[rep] <- calcAUC(predRep, dTrainAll[useForCalRep, outcome])
+    }
+  print(sprintf("%s: mean: %4.3f; sd: %4.3f", var, mean(aucs), sd(aucs)))
+  }
+```
+```{r}
+plot_roc <- function(predcol, outcol, colour_id=2, overlaid=F) {
+ROCit_obj <- rocit(score=predcol, class=outcol==pos)
+par(new=overlaid)
+plot(ROCit_obj, col = c(colour_id, 1),
+legend = FALSE, YIndex = FALSE, values = FALSE)
+}
+plot_roc(dCal$predMV_per_capita, dCal[,outcome]) #red
+plot_roc(dCal$predVote_Count, dCal[,outcome], colour_id=3, overlaid=T) # green
+plot_roc(dCal$predRating, dCal[,outcome], colour_id=4, overlaid=T)
+plot_roc(dCal$predAdventure, dCal[,outcome], colour_id=5, overlaid=T)
+plot_roc(dCal$predAmerican_Movie, dCal[,outcome], colour_id=6, overlaid=T)
+plot_roc(dCal$predEnglish_Movie, dCal[,outcome], colour_id=7, overlaid=T)
+```
+The ROC Curve for the single variable model visually shows that MV_per_capita outperforms every other variable. As seen in the ROC curve, MV_per_capita has the largest area under the curve, showing that it is the best predictor.
+
+Next, we setup a base/null model for comparison with the single best variable model. The computed the log likelihood of the null, and we get -137.185 as our baseline for comparison against single variable models in our feature selection
+```{r}
+pos <- '1'
+# Define a function to compute log likelihood so that we can reuse it.
+logLikelihood <- function(ytrue, ypred, epsilon=1e-6) {
+sum(ifelse(ytrue==pos, log(ypred+epsilon), log(1-ypred-epsilon)), na.rm=T)
+}
+# Compute the likelihood of the Null model on the calibration
+# set (for the KDD dataset from previous lecture)
+outcome <- 'HitFlop'
+logNull <- logLikelihood(
+dCal[,outcome], sum(dCal[,outcome]==pos)/nrow(dCal)
+)
+cat(logNull)
+```
+
+We then compute the deviance score of the variables to determine which features provide the biggest improvement in fit.
+The result shows:
+
+- MV_per_capita provides the largest deviance reduction (193.878), provides strong contribution to the model.
+- movie_gdp provides the second largest deviance reduction (193.878), provides strong contribution to the model.
+- predVote_Count provides the smallest deviance reduction (108.792).
+- rating did not meat the minimum threshold, suggesting it contributes little in explaining the outcome compared to the other features
+
+These indicate that Vote_count is the strongest predictor in determining whether a movie is a a Hit vs Flop, followed by ratings. The results fall in line with our AUC values for the best single variable model. Also, all our variables were able to predict hits and flops better than the null model.
+```{r}
+selCatVars <- c()
+minDrop <- 10 # may need to adjust this number
+for (v in catVars) {
+pi <- paste('pred', v, sep='')
+devDrop <- 2*(logLikelihood(dCal[,outcome], dCal[,pi]) - logNull)
+if (devDrop >= minDrop) {
+print(sprintf("%s, deviance reduction: %g", pi, devDrop))
+selCatVars <- c(selCatVars, pi)
+}
+}
+
+selNumVars <- c()
+minDrop <- 10 # may need to adjust this number
+for (v in numericVars) {
+pi <- paste('pred', v, sep='')
+devDrop <- 2*(logLikelihood(dCal[,outcome], dCal[,pi]) - logNull)
+if (devDrop >= minDrop) {
+print(sprintf("%s, deviance reduction: %g", pi, devDrop))
+selNumVars <- c(selNumVars, pi)
+}
+}
+```
+Based on the over all performance and test, we can conclude that MV_per_capita is the strongest predictor. The results are consistent with the multiple evaluation approaches we performed:
+
+- Deviance Reduction: MV_per_capita achieved the highest deviance reduction compared to the other variables. It also outperforms the null model.
+- AUC Performance: AUC scores show that MV_per_capita had the highest. This indicates that it is a strong predictor in determining a hit or a flop.
+- Cross validation consistency: The cross validation tests also confirms that MV_per_capita consistently achieves a high AUC mean with very small variability. Thus, this feature is stable and generalizes well across different folds of the data.
+
+In conclusion, our best single variable model consists of MV_per_capita
+
+## Classification with All Features
+```{r}
+tree_model <- rpart(HitFlop ~ ., data = dTrain, method = 'class')
+rpart.plot(tree_model)
+```
+
+```{r}
+tVars <- paste('pred', c(catVars, numericVars), sep='')
+fV2 <- paste(outcome,' ~ ',
+paste(tVars, collapse=' + '), sep='')
+tmodel <- rpart(fV2, data=dTrain)
+
+print(calcAUC(predict(tmodel, newdata=dTrain)[,"1"], dTrain[,outcome]))
+print(calcAUC(predict(tmodel, newdata=dCal)[,"1"], dCal[,outcome]))
+print(calcAUC(predict(tmodel, newdata=dTest)[,"1"], dTest[,outcome]))
+```
+We test the decision tree for all features used in the model. The results show the following:
+
+Performance: The model performs consistently well across all sets. The AUC values shows that the model generalizes well.
+
+Over fitting: All AUC values across all sets are close to each other, suggesting not much over fitting.
+
+Impact: Using all features give very good predictive performance.
+
+```{r}
+# ytrue should be a vector containing TRUE and FALSE
+# ypred should be a vector of probabilities
+logLikelihood <- function(ytrue, ypred, epsilon=1e-6) {
+sum(ifelse(ytrue, log(ypred+epsilon), log(1-ypred+epsilon)), na.rm=T)
+}
+# ytrue should be a vector containing 1s (or TRUE) and 0s (or FALSE);
+# ypred should be a vector containing the predicted probability values for the target class.
+# Both ytrue and ypred should have the same length.
+performanceMeasures <- function(ytrue, ypred, model.name = "model", threshold=0.5) {
+# compute the normalised deviance
+dev.norm <- -2 * logLikelihood(ytrue, ypred)/length(ypred)
+# compute the confusion matrix
+cmat <- table(actual = ytrue, predicted = ypred >= threshold)
+accuracy <- sum(diag(cmat)) / sum(cmat)
+precision <- cmat[2, 2] / sum(cmat[, 2])
+recall <- cmat[2, 2] / sum(cmat[2, ])
+f1 <- 2 * precision * recall / (precision + recall)
+data.frame(model = model.name, precision = precision,
+recall = recall, f1 = f1, dev.norm = dev.norm)
+}
+```
+
+```{r}
+panderOpt <- function(){
+library(pander)
+# setting up Pander Options
+panderOptions("plain.ascii", TRUE)
+panderOptions("keep.trailing.zeros", TRUE)
+panderOptions("table.style", "simple")
+}
+```
+
+```{r}
+# A function to pretty print the performance table of a model
+# on the training and test sets.
+pretty_perf_table <- function(model, xtrain, ytrain,
+xtest, ytest, threshold=0.5) {
+# Option setting for Pander
+panderOpt()
+perf_justify <- "lrrrr"
+# call the predict() function to do the predictions
+pred_train <- predict(model, newdata=xtrain)[,"1"]
+pred_test <- predict(model, newdata=xtest)[,"1"]
+# comparing performance on training vs. test
+trainperf_df <- performanceMeasures(
+ytrain, pred_train, model.name="training", threshold=threshold)
+testperf_df <- performanceMeasures(
+ytest, pred_test, model.name="test", threshold=threshold)
+# combine the two performance data frames using rbind()
+perftable <- rbind(trainperf_df, testperf_df)
+pandoc.table(perftable, justify = perf_justify)
+}
+```
+
+```{r}
+pretty_perf_table(tmodel, dTrain[tVars], dTrain[,outcome]==pos, dTest[tVars], dTest[,outcome]==pos)
+```
+
+The performance table of the decision tree shows that:
+The model has achieved relatively high precision, recall and F1 on both the training and test sets, suggesting that the model can correctly identify hits vs flops, with a slightly higher performance in the training set, and the dev.norm indicates a reasonably good fit, with the lower values being better.
+
+```{r}
+plot_roc2 <- function(predcol1, outcol1, predcol2, outcol2){
+roc_1 <- rocit(score=predcol1, class=outcol1==pos)
+roc_2 <- rocit(score=predcol2, class=outcol2==pos)
+plot(roc_1, col = c("blue","green"), lwd = 3,
+legend = FALSE,YIndex = FALSE, values = TRUE, asp=1)
+lines(roc_2$TPR ~ roc_2$FPR, lwd = 3,
+col = c("red","green"), asp=1)
+legend("bottomright", col = c("blue","red", "green"),
+c("Test Data", "Training Data", "Null Model"), lwd = 2)
+}
+pred_test_roc <- predict(tmodel, newdata=dTest)[,"1"]
+pred_train_roc <- predict(tmodel, newdata=dTrain)[,"1"]
+
+plot_roc2(pred_test_roc, dTest[[outcome]], pred_train_roc, dTrain[[outcome]])
+```
+
+The ROC curve supports the performance table, it shows that the model generalizes well, it shows that training and test curve are near close to one another, it does not seem over fitted. The predictors used are very strong as they are above the null model.
+
+```{r}
+tree_pred_model <- predict(tree_model, newdata = dTest, type = 'class')
+conf_matrix_tree <- confusionMatrix(tree_pred_model, dTest$HitFlop)
+print(conf_matrix_tree)
+```
+
+The confusion matrix of the decision tree shows:
+
+- Accuracy (0.9814): The model correctly predicts 98.1% of cases.
+- Sensitivity (0.9943): Of actual 0(Flops), 99.4% are correctly predicted
+ - Specificity (0.8673): Of actual 1(Hits), 86.7% are correctly predicted
+ - Pos Pred Value (0.9852): When the model predicts 0(Flops), 98.5% of the time it's correct
+ - Neg Pred Value (0.9444): When the model predicts 1(Hits), 94.4% of the time it's correct
+ - Balanced Accuracy (0.9308): This indicates the model handles both classes fairly well.
+
+Overall, the model is very good, but it seems to predict 0(Flops) better than 1(Hits).
+
+```{r}
+nb_model <- naiveBayes(HitFlop ~ ., data = dTrain)
+```
+
+```{r}
+tVars <- paste('pred', c(catVars, numericVars), sep='')
+fV2 <- paste(outcome,' ~ ',
+paste(tVars, collapse=' + '), sep='')
+zmodel <- naiveBayes(as.formula(fV2), data=dTrain)
+
+print(calcAUC(predict(zmodel, newdata=dTrain, type = "raw")[,"1"], dTrain[,outcome]))
+print(calcAUC(predict(zmodel, newdata=dCal, type = "raw")[,"1"], dCal[,outcome]))
+print(calcAUC(predict(zmodel, newdata=dTest, type = "raw")[,"1"], dTest[,outcome]))
+```
+
+We test the naive bayes model for all features used in the model. The results show the following:
+
+Performance: The model performs consistently well across all sets. The AUC values shows that the model generalizes well.
+
+Over fitting: All AUC values across all sets are close to each other, suggesting not much over fitting.
+
+Impact: Using all features give very good predictive performance.
+
+Comparing it to the decision tree, it seems that naive bayes is the stronger model, with a better ability to distinguish Hits from Flops, compared to decision trees.
+
+```{r}
+# A function to pretty print the performance table of a model
+# on the training and test sets.
+pretty_perf_table <- function(model, xtrain, ytrain,
+xtest, ytest, threshold=0.5) {
+# Option setting for Pander
+panderOpt()
+perf_justify <- "lrrrr"
+# call the predict() function to do the predictions
+pred_train <- predict(model, newdata=xtrain, type = "raw")[,"1"]
+pred_test <- predict(model, newdata=xtest, type = "raw")[,"1"]
+# comparing performance on training vs. test
+trainperf_df <- performanceMeasures(
+ytrain, pred_train, model.name="training", threshold=threshold)
+testperf_df <- performanceMeasures(
+ytest, pred_test, model.name="test", threshold=threshold)
+# combine the two performance data frames using rbind()
+perftable <- rbind(trainperf_df, testperf_df)
+pandoc.table(perftable, justify = perf_justify)
+}
+
+pretty_perf_table(zmodel, dTrain[tVars], dTrain[,outcome]==pos, dTest[tVars], dTest[,outcome]==pos)
+```
+The performance table of the naive bayes model shows that:
+
+The Naive Bayes model has achieved relatively high precision, recall and F1 on both the training and test sets, suggesting that the model can correctly identify hits vs flops, with a slightly higher performance in the training set, and the dev.norm indicates a reasonably good fit, with the lower values being better. Although, compared to the decision tree, it does not perform as well as the decision tree. The Naive bayes model seems to be better at catching hits compared to the decision tree, but comes at a cost of having higher deviance and lower calibration, making its prediction less reliable than the decision tree model.
+
+```{r}
+pred_nb_test_roc <- predict(zmodel, newdata=dTest, type = "raw")[,"1"]
+pred_nb_train_roc <- predict(zmodel, newdata=dTrain, type = "raw")[,"1"]
+
+plot_roc2(pred_nb_test_roc, dTest[[outcome]], pred_nb_train_roc, dTrain[[outcome]])
+```
+The ROC curve shows that the model generalizes well, it shows that training and test curve are near close to one another, it does not seem overfitted. The predictors are also above the null model, indicating the predictors used are strong.
+
+```{r}
+nb_pred_model <- predict(nb_model, newdata = dTest)
+conf_matrix_nb <- confusionMatrix(nb_pred_model,dTest$HitFlop)
+print(conf_matrix_nb)
+```
+
+The confusion matrix of the naive bayes shows:
+
+ - Accuracy (0.9411): The model correctly predicts 94.1% of cases.
+ - Sensitivity (0.9437): Of actual 0(Flops), 94.4% are correctly predicted
+ - Specificity (0.9184): Of actual 1(Hits), 91.8% are correctly predicted
+ - Pos Pred Value (0.9903): When the model predicts 0(Flops), 99.0% of the time it's correct
+ - Neg Pred Value (0.6475): When the model predicts 1(Hits), 64.8% of the time it's correct
+ - Balanced Accuracy (0.9310): This indicates the model handles both classes fairly well.
+
+Overall, the model is very good, and is better at predicting Flops than Hits. But it is less precise than the decision tree, its predictions seem to predict more false positives despite being very accurate at predicting flops.
+
+
+```{r}
+tree_prob <- predict(tree_model, newdata=dTest)
+nb_prob <- predict(nb_model, newdata=dTest, type = "raw")
+roc_tree <- roc(dTest$HitFlop, tree_prob[,2])
+roc_nb <- roc(dTest$HitFlop, nb_prob[,2])
+auc(roc_tree)
+auc(roc_nb)
+```
+```{r}
+plot(roc_tree, col = "blue", lwd = 2, main = "ROC Curve for Decision Tree and Naive Bayes")
+plot(roc_nb, col = "red", lwd = 2, add = TRUE)
+legend("bottomright", legend = c("Decision Tree", "Naives Bayes"), col=c("blue","red"), lwd = 2)
+```
+Both Decision tree and Naives Bayes model perform very well, but it seems Naive Bayes has a slight advantage given it's larger AUC compared to the decision tree.
+
+Given the models with all features used, we can see that the AUC values of the 2 models distinguish Hits and Flops very well. The decision tree achieved an AUC of 0.9777 (strong disciminative ability), while the Naives Bayes Model achieved an AUC value of 0.9615, which suggests the decision tree has a better ability to predict the response/target variable. Overall, both models performs very well, but the decision tree Model seems to be slightly better in predicting Hits and Flops, compared to the Naive Bayes model.
+
+## Classification with Selected Features
+### Feature Selection
+
+We see that the Decision tree and the Naive Bayes model are fairly strong at predicting hits or flops. However, we want to try and use selected features to see if the model does any better than the model with all features selected. We can see that in the best single variable model, almost every single variable was very strong in predicting Hit or flops, but we will need to make sure we only select the features with the most impact. Thus we will need to apply some feature selection techniques.
+
+First we check the information gain measures, this helps us asses how much a feature helps in predicting the outcome by telling us which feature provides the most information about the response/target variable. We can see that MV_per_capita, Vote_Count, Adventure, American_Movie , English_Movie and rating are the top 6 values. Based on this, these features have the most impact towards the response/target variable.
+```{r}
+Infogain <- information_gain(HitFlop ~ ., box_office_gdp_population_v3[-10]) %>% arrange(desc(importance))
+Infogain
+```
+
+We continue to test which features are the best by conducting a forward selection and backward elimination method. We used the top 6 variables from the Information Gain and applied it into a forward selection and backward elimination using logistic regression. This process is to account for feature interactions and redundancy. Based on the 2 methods, MV_per_capita, Rating, Vote_count and American Movie are the most significant variables, indicating they collectively contribute to predicting hits or flops.
+```{r, warning=FALSE}
+data_subset <- box_office_gdp_population_v3[,c("HitFlop", Infogain[1:6,"attributes"])]
+null <- glm(HitFlop ~ 1, data_subset, family = binomial)
+full <- glm(HitFlop ~ ., data_subset, family = binomial)
+forward_selection <- stepAIC(null, scope = formula(full), direction = 'forward', trace=0)
+summary(forward_selection)
+```
+```{r, warning=FALSE}
+backward_selection <- stepAIC(full, direction = 'backward', trace=0)
+summary(backward_selection)
+```
+Based on the Feature selection process, we can see that MV_per_capita, Rating, Vote_count and American Movie have the most impact. Thus, we will use these features for our selected feature models
+
+## Classification with Selected Features
+```{r}
+train_select <- dTrain[, c("Vote_Count" , "MV_per_capita", "Rating", "American_Movie", "HitFlop")]
+test_select <- dTest[, c("Vote_Count" , "MV_per_capita", "Rating", "American_Movie", "HitFlop")]
+cal_select <- dCal[, c("Vote_Count" , "MV_per_capita", "Rating", "American_Movie", "HitFlop")]
+```
+
+```{r}
+tree_select_model <- rpart(HitFlop ~ ., data = train_select)
+rpart.plot(tree_select_model)
+```
+
+```{r}
+print(calcAUC(predict(tree_select_model, newdata=train_select)[,"1"], train_select[,outcome]))
+print(calcAUC(predict(tree_select_model, newdata=cal_select)[,"1"], cal_select[,outcome]))
+print(calcAUC(predict(tree_select_model, newdata=test_select)[,"1"], test_select[,outcome]))
+```
+
+We test the decision tree for selected features used in the model. The results show the following:
+
+Performance: The model performs consistently well across all sets. The AUC values shows that the model generalizes well.
+
+Over fitting: All AUC values across all sets are close to each other, suggesting not much over fitting.
+
+Impact: Using all features give very good predictive performance.
+
+Compared to the model with all features used. Selected features have a lower AUC for the train and test set, but a higher AUC in the calibration data set, this suggests that excluding some variables slightly weaken its predictive capability, but over all the model still captures most signals.
+
+
+```{r}
+# A function to pretty print the performance table of a model
+# on the training and test sets.
+pretty_perf_table <- function(model, xtrain, ytrain,
+xtest, ytest, threshold=0.5) {
+# Option setting for Pander
+panderOpt()
+perf_justify <- "lrrrr"
+# call the predict() function to do the predictions
+pred_train <- predict(model, newdata=xtrain)[,"1"]
+pred_test <- predict(model, newdata=xtest)[,"1"]
+# comparing performance on training vs. test
+trainperf_df <- performanceMeasures(
+ytrain, pred_train, model.name="training", threshold=threshold)
+testperf_df <- performanceMeasures(
+ytest, pred_test, model.name="test", threshold=threshold)
+# combine the two performance data frames using rbind()
+perftable <- rbind(trainperf_df, testperf_df)
+pandoc.table(perftable, justify = perf_justify)
+}
+```
+
+```{r}
+pretty_perf_table(tree_select_model, train_select[ ,c("Vote_Count" , "MV_per_capita", "Rating", "American_Movie", "HitFlop")], train_select[ ,outcome]==pos, test_select[,c("Vote_Count" , "MV_per_capita", "Rating", "American_Movie", "HitFlop")], test_select[,outcome]==pos)
+```
+
+The performance table of the decision tree shows that:
+
+The model has achieved relatively high precision, recall and F1 on both the training and test sets, suggesting that the model can correctly identify hits vs flops, with a slightly higher performance in the training set, and the dev.norm indicates a reasonably good fit, with the lower values being better. Compared to the model with all features, the decision tree model for selected features shows overall improvement in predictive performance and is more streamlined than the model with all features selected, suggesting that these selected features capture most of the predictive signals.
+
+```{r}
+pred_tree_select_test_roc <- predict(tree_select_model, newdata=dTest)[,"1"]
+pred_tree_select_train_roc <- predict(tree_select_model, newdata=dTrain)[,"1"]
+
+plot_roc2(pred_tree_select_test_roc, dTest[[outcome]], pred_tree_select_train_roc, dTrain[[outcome]])
+```
+
+The ROC curve shows that the model generalizes well, it shows that training and test curve are near close to one another, it does not seem overfitted. The predictors used are very strong.
+
+```{r}
+tree_select_pred  <- predict(tree_select_model, newdata = test_select, type = 'class')
+conf_matrix_tree_select <- confusionMatrix(tree_select_pred, test_select$HitFlop)
+print(conf_matrix_tree_select)
+```
+The confusion matrix of the naive bayes shows:
+
+ - Accuracy (0.97): The model correctly predicts 97.0% of cases.
+ - Sensitivity (0.9851): Of actual 0(Flops), 98.5% are correctly predicted
+ - Specificity (0.8367): Of actual 1(Hits), 83.7% are correctly predicted
+ - Pos Pred Value (0.9817): When the model predicts 0(Flops), 98.2% of the time it's correct
+ - Neg Pred Value (0.8632): When the model predicts 1(Hits), 86.3% of the time it's correct
+ - Balanced Accuracy (0.9109): This indicates the model handles both classes fairly well.
+
+Compared to the model with all features selected, the decision tree with selected model has lower accuracy and is slightly worse at predicting hits and flops compared to the decision tree with all features selected. Overall, feature selection seems to slightly reduced models descriminitive ability, but only slightly compared to the Decision tree all features selected.
+
+```{r}
+nb_select_model <- naiveBayes(HitFlop ~ ., data = train_select)
+```
+
+```{r}
+print(calcAUC(predict(nb_select_model, newdata=train_select, type = "raw")[,"1"], train_select[,outcome]))
+print(calcAUC(predict(nb_select_model, newdata=cal_select, type = "raw")[,"1"], cal_select[,outcome]))
+print(calcAUC(predict(nb_select_model, newdata=test_select, type = "raw")[,"1"], test_select[,outcome]))
+```
+We test the naive bayes model for selected features used in the model. The results show the following:
+
+Performance: The model performs consistently well across all sets. The AUC values shows that the model generalizes well.
+
+Over fitting: All AUC values across all sets are close to each other, suggesting not much over fitting.
+
+Impact: Using all features give very good predictive performance.
+
+Comparing it to the Naive Bayes with all features selected, it seems that naive bayes with selected features achieved a higher overall score. Overall, the predictive power is a lot better than the one with all features selected.
+
+```{r}
+# A function to pretty print the performance table of a model
+# on the training and test sets.
+pretty_perf_table <- function(model, xtrain, ytrain,
+xtest, ytest, threshold=0.5) {
+# Option setting for Pander
+panderOpt()
+perf_justify <- "lrrrr"
+# call the predict() function to do the predictions
+pred_train <- predict(model, newdata=xtrain, type = "raw")[,"1"]
+pred_test <- predict(model, newdata=xtest, type = "raw")[,"1"]
+# comparing performance on training vs. test
+trainperf_df <- performanceMeasures(
+ytrain, pred_train, model.name="training", threshold=threshold)
+testperf_df <- performanceMeasures(
+ytest, pred_test, model.name="test", threshold=threshold)
+# combine the two performance data frames using rbind()
+perftable <- rbind(trainperf_df, testperf_df)
+pandoc.table(perftable, justify = perf_justify)
+}
+
+pretty_perf_table(nb_select_model, train_select[ ,c("Vote_Count" , "MV_per_capita", "Rating", "American_Movie", "HitFlop")], train_select[ ,outcome]==pos, test_select[,c("Vote_Count" , "MV_per_capita", "Rating", "American_Movie", "HitFlop")], test_select[,outcome]==pos)
+```
+
+The performance table of the naive bayes model with selected features shows that:
+The model has achieved moderately high precision, recall and F1 on both the training and test sets, suggesting that the model can correctly identify hits but tends to over predict them. Overall, the performance test indicates that the Naive Bayes model with selected features has overall better predictions compared to the Naive Bayes with all features.
+
+```{r}
+pred_nb_select_test_roc <- predict(nb_select_model, newdata=dTest, type = "raw")[,"1"]
+pred_nb_select_train_roc <- predict(nb_select_model, newdata=dTrain, type = "raw")[,"1"]
+
+plot_roc2(pred_nb_select_test_roc, dTest[[outcome]], pred_nb_select_train_roc, dTrain[[outcome]])
+```
+
+The ROC curve shows that the model generalizes well, it shows that training and test curve are near close to one another, it does not seem overfitted. The predictors used are very strong.
+
+```{r}
+nb_select_pred <- predict(nb_select_model, newdata = test_select)
+conf_matrix_nb_select <- confusionMatrix(nb_select_pred, test_select$HitFlop)
+print(conf_matrix_nb_select)
+```
+The confusion matrix of the naive bayes shows:
+
+ - Accuracy (0.9504): The model correctly predicts 95.0% of cases.
+ - Sensitivity (0.9563): Of actual 0(Flops), 95.6% are correctly predicted
+ - Specificity (0.8980): Of actual 1(Hits), 89.8% are correctly predicted
+ - Pos Pred Value (0.9881): When the model predicts 0(Flops), 98.8% of the time it's correct
+ - Neg Pred Value (0.6984): When the model predicts 1(Hits), 69.8% of the time it's correct
+ - Balanced Accuracy (0.9271): This indicates the model handles both classes fairly well.
+
+Compared to the model with all features selected, the Naive Bayes model with selected features is stronger in predicting hits and flops.
+
+```{r}
+tree_select_prob <- predict(tree_select_model, newdata=test_select, type = "prob")
+nb_select_prob <- predict(nb_select_model, newdata=test_select, type = "raw")
+roc_select_tree <- roc(test_select$HitFlop, tree_select_prob[,2])
+roc_select_nb <- roc(test_select$HitFlop, nb_select_prob[,2])
+
+auc(roc_select_tree)
+auc(roc_select_nb)
+```
+```{r}
+plot(roc_select_tree, col = "blue", lwd = 2, main = "ROC Curve for Decision Tree and Naive Bayes")
+plot(roc_select_nb, col = "red", lwd = 2, add = TRUE)
+legend("bottomright", legend = c("Decision Tree", "Naives Bayes"), col=c("blue","red"), lwd = 2)
+```
+Both Decision tree and Naive Bayes model perform very well, However the Naive Bayes seems to performa overall better than the Decision tree, with a high AUC score compared to the decision tree.
+
+Given the models with selected features used, we can see that the AUC values of the 2 models distinguish Hits and Flops very well. The decision tree achieved an AUC of 0.9109 (strong discriminative ability), while the Naives Bayes Model achieves a higher AUC value of 0.9706, which suggests it has a better ability to distinguish the two levels. In contrast to the models with all features selected, it seems the decision tree has an overall lower AUC value for selected features compared to the all features selected, suggesting that the removed feature highly affect the models predictive power. Unlike the Naive Bayes model, it seems that the Naives Bayes model with selected features have higher predicting power compared to the one with all features selected, giving the model with selected features better predictive power.
+
+# Lime
+In order to check if the models are predicting the responses correctly and understand the reasoning behind its decision, we will use LIME(Local Interpretable Model-agnostic Explanations) ro interpret individual explanation.
+
+In order for LIME to interpret the model correctly, we need to explicitly inform it that the model we are using is a classification model. Additionally, LIME requires specific prediction output formats that the Naive Bayes model cannot provide, this will require us to create a wrapper function to standardize the model's output to assist LIME in interpretation. ChatGPT(2025) was used to help teach how to code the wrapper function below.
+```{r}
+assign("model_type.lime_model_rpart", function(object, ...){
+  return("classification")
+}, envir = .GlobalEnv)
+
+lime_model_rpart <- function(x){
+  class(x) <- c("lime_model_rpart", class(x))
+  x
+}
+
+predict_proba <- function(model, data){
+  predict(model, data, type = "raw")
+}
+```
+
+```{r}
+assign("model_type.nb", function(x, ...){
+  return(x$type)
+}, envir = .GlobalEnv)
+
+assign("predict_model.nb", function(x, data, ...){
+  predict_result <- predict(x$model, newdata = data, type = "raw")
+  return(data.frame(predict_result))
+}, envir = .GlobalEnv)
+
+nb_model_proba <- list(model = nb_model, predict = predict_proba, type = "classification")
+class(nb_model_proba) <- 'nb'
+```
+
+```{r, warning=FALSE}
+explainer_tree <- lime(train_select, lime_model_rpart(tree_select_model))
+explainer_nb <- lime(train_select, nb_model_proba)
+
+explanation_tree <- lime::explain(test_select[1:3,], explainer_tree, n_labels = 1, n_features = 4)
+explanation_nb <- lime::explain(test_select[1:3,], explainer_nb, n_labels = 1, n_features = 4)
+```
+
+```{r}
+print(explanation_tree)
+```
+
+```{r}
+print(explanation_nb)
+```
+
+```{r}
+plot_features(explanation_tree)
+```
+```{r}
+plot_features(explanation_nb)
+```
+
+LIME has broken down the contribution of each feature to specific predictions. For each instance, it shows which feature that may support the prediction(blue) or contradicts(red) the prediction.
+
+Decision Tree:
+
+ - Movie per capita is the most important features across all instances, This consistently show strong contributions to predicting both "Hits" and "Flops".
+ - Vote Count also contribute to the prediction, but their impact isn't as strong as Movie per capita.
+ - The Decision Tree model identifies direct relationships between key features and the predicted outcome, with LIME explanations revealed that specific thresholds consistently drive Hit or Flop classifications
+
+Naive Bayes Model:
+
+ - The Naive Bayes model relies heavily on movie per capita and Vote Count as primary predictors, with all two features contributing across all cases consistently.
+ - Naive Bayes handles the feature effects probabilistically, treating each feature independently and combining their contributions to produce a very confident prediction.
+ - Compared to the decision tree, LIME explanations for the Naive Bayes model show more balanced and distributed weights across all features. This reflects the model's assumption of feature independence approach to combining feature contributions.
+
+# Conclusion
+
+The project investigates factors influencing movie success, including socio economic factors and audience engagement metrics. Predictive models were used to understand how these features effect whether a movie may become a hit or a flop. A decision tree model and Naive Bayes model were used to predict the outcome. Both models with selected features demonstrate excellent discriminative ability, with the later model achieving a better overall scores compared to the Decision Tree Model.
+
+The LIME analysis provided interprebility insights, revealing that the decision tree captures direct feature to outcome relationships, whereas the Naive Bayes model handles features probabilistically and independently.
+
+In conclusion, this project demonstrates effective application of machine learning in entertainment analytics. While both models performs strongly, the Naive Bayes model offers a better discrimination with trade-offs in feature sensitivity. Combine with LIME, these findings provide a valuable guidance in movie production decision making.
+
+# Shiny App
+
+Please see other file for Shiny App code. ChatGPT(2025) was used to help understand how to use few functions not taught in the unit.
+
+# References
+OpenAI. (2025). ChatGPT (GPT-5) [Large language model]. https://chat.openai.com/ \newline
+
+Shah, R. (2020, May 3). How to use pivot_longer to reshape from wide-type data to long-type data with multiple variables [Answer]. Stack Overflow. https://stackoverflow.com/questions/61570710/how-to-use-pivot-longer-to-reshape-from-wide-type-data-to-long-type-data-with-mu

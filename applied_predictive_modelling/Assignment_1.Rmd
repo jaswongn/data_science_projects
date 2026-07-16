@@ -1,0 +1,286 @@
+---
+title: "Assignment 1"
+author: "Jason Wang - 24839132"
+date: "25/03/2026"
+output:
+  pdf_document:
+    fig_height: 6
+    fig_width: 8
+    number_sections: yes
+    toc: yes
+    toc_depth: 3
+  word_document:
+    toc: yes
+    toc_depth: '3'
+  html_document:
+    toc: yes
+    toc_depth: '3'
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+\textbf{Assignment 1 submitted by Jason Wang, 24839132}
+
+```{r, eval=FALSE, include=FALSE}
+##  There are a few options in every chunk, click the setting button (greyed) near the triangle:
+# 1. to use default as in the above (show code and output, ie echo=TRUE) or 
+# 2. to show output only (ie ) or
+# 3. show nothing (run code) ie include=FALSE
+# 4. show nothing (dont run the code), like this chunk, ie eval=FALSE, include=FALSE
+## ## ## # 
+##  You can create your own way for the submission. This template is just an example 
+##  if you are going to use Rmd.
+##  The main document must be submitted in a PDF. You should use this template as a tool only, 
+##  to produce towards a final file in pdf. You must submit this Rmd together with the final file. 
+##  My advice is to use this template to complete R code, and then use options 
+##  in chunks to include or to hide. 
+##  After that, knit it into Word. Do the second edit following hints in the question sheet before converting ##  it into a pdf.
+##  You must read the hints in the question sheet. 
+```
+
+```{r}
+library(ggplot2)
+```
+
+# Question 1
+```{r}
+# read in the dataset and check the categorical data
+StudendData <- read.csv('StudentData.csv')
+str(StudendData)
+```
+```{r}
+# convert categorical data into factors
+StudendData$Gender <- as.factor(StudendData$Gender)
+StudendData$Policy_Stu <- as.factor(StudendData$Policy_Stu)
+StudendData$Poor_Stu <- as.factor(StudendData$Poor_Stu)
+str(StudendData)
+```
+
+## (a) (1pt) Create a boxplot for GPA by gender. Comment on the plot.
+```{r  fig.align='center'}
+# Boxplot of GPA by gender
+ggplot(StudendData, aes(x = Gender, y = GPA, fill = Gender)) + geom_boxplot() +
+  labs(x = "Gender", y = "GPA", title = "Distributions of GPA by Gender")
+```
+
+The Box plot shows the distribution of GPA by gender.The plot shows both male and female have similar GPA distributions. The medians are almost the same and their interquartile ranges overlap. Suggesting, there seems to be no clear difference in GPA by gender.
+
+## (b) (1pt) Create scatterplots of GPA against TimeStudy, for students with and without policy government support. Comment on the plots and any difference between them.
+```{r  fig.align='center'}
+# scatterplot of GPA vs Study Time for students based on Policy_Stu
+ggplot(StudendData, aes(x = GPA, y = TimeStudy, colour = Policy_Stu)) + geom_point() +
+  labs(x = "GPA", y = "TimeStudy", title = "GPA vs Study Time for students With and Without Government Policies")
+```
+
+The scatter plot shows student study time and GPA have a positive upward correlation, regardless whether a student is receiving government support or not. The plot overall suggests whether a person is being affected by government policy or not does not have an affect on the positive correlation between study time and GPA.
+
+## (c) (2pt) Fit a multiple linear regression to predict GPA using all other variables as predictors. Show the summary of the model. Call this Model 1.
+```{r }
+Model_1 <- lm(GPA ~ ., data = StudendData)
+summary(Model_1)
+```
+
+Model 1 shows how other predictors explain the GPA. It can be seen that Quality Lecture, TimeSocial and TimeStudy are the only statistically significant positive predictors of GPA. While the rest of the predictors are not statistically significant at a 5% significance level, suggesting they do not contribute much in predicting GPA. The adjusted R-squared shows a value of 0.2692, meaning 26.92% of the variation is explained by the model. The model formula is writen as:
+
+$\hat{GPA} = 1.8440 - 0.1120 \times GenderMale + 0.0145 \times PolicyStuYes + 0.0364 \times PoorStuYes + 0.14454 \times QualityLecturer + 0.0177 \times TimeFriends + 0.0683 \times TimeSocial + 0.1281 \times TimeStudy$
+
+## (d) (3pt) Compute the 95% confidence intervals for the coefficients of lecturers quality and time spend hanging out with friends. What can you conclude about the effect of these variables on GPA?
+```{r }
+round(confint(Model_1, level = 0.95)[c(5,6),],4)
+```
+
+A confidence interval gives a range of the plausible values for the true unknown parameter value. If it does not contain 0, this suggests the predictor has a statistically significant effect on the target variable. Here we can see that Quality_Lecturer confidence interval is in between (0.09630, 0.1928), it does not contain 0, suggesting Quality_Lecturer is a significant predictor and that the true population mean lie within that range.On the other hand, TimeFriends confidence interval is in between (-0.0163, 0.0518), it contains 0, which suggests TimeFriends is not a significant predictor and that the true population mean does not lie within that range.
+
+## (e) (2pt) NOT using any R function (such as predict), predict the GPA for a Female student who is from a low income household and is receiving policy government support. On average, each day the student spends 1 hour with friends, 2 hours using social media and 8.5 hours for studying. The student rates the quality of the university’s lecturers 3 out of 5.
+
+Reference Level Male = 1, so for females gender = 0
+Reference Level PolicyStuYes = 1, so for Students receiving policy = 1
+Reference Level PoorStuYes = 1, so for poor students = 1
+
+Now, we plug in the values into the equation model:
+$\hat{GPA} = 1.8440 - 0.1120 \times 0 + 0.0145 \times 1 + 0.0364 \times 1 + 0.14454 \times 3 + 0.0177 \times 1 + 0.0683 \times 2 + 0.1281 \times 8.5$
+```{r}
+GPA_Predict <- 1.8440 - 0.1120 * 0 + 0.0145 * 1 + 
+  0.0364 * 1 + 0.14454 * 3 + 0.0177 * 1 + 0.0683 * 2 + 0.1281 * 8.5
+print(paste("Predicted GPA:", round(GPA_Predict,4)))
+```
+
+For a Female student who is from a low income household and is receiving policy government support. On average, each day the student spends 1 hour with friends, 2 hours using social media and 8.5 hours for studying. The student rates the quality of the university’s lecturers 3 out of 5. The predicted GPA is: $\hat{GPA} = 3.5717$
+
+
+## (f) (2pt) Test if at least one predictor in Model 1 is useful in predicting GPA.
+```{r }
+summary(Model_1)
+```
+
+Since we are checking if at least one of the predictors in Model 1 is useful in predicting GPA, we specify the null hypothesis as follows:
+$H_0: \beta_1=\beta_2=\beta_3=...=\beta_n=0$
+$H_a: \beta_1\ne\beta_2\ne\beta_3 \ne...\ne\beta_n\ne0$
+
+To answer the hypothesis, we will need to compute the F-test and p-value. Running a multiple linear regression model already produces the F-test and p-value(please see model in (c)). The F-tests shows, F-statistic: 24.16 on 7 and 433 DF,  p-value: < 2.2e-16. Given the p-value is close to 0, we can conclude that at least one of the predictors are useful in predicting GPA. Thus, we reject the null hypothesis in favor of the alternative hypothesis.
+
+## (g) (3pt) Fit a regression to predict GPA using all other variables, the interaction between Gender and TimeSocial and the interaction between Policy Stu and TimeStudy. Call this Model 2. Write the equation(s) of Model 2 for students from low income households.
+```{r }
+Model_2 <- lm(GPA ~ . + (Gender:TimeSocial) + (Policy_Stu:TimeStudy), data = StudendData)
+summary(Model_2)
+```
+The written equation for the model with interaction terms is: 
+$\hat{GPA} = 1.7533 - 0.4598 \times GenderMale + 0.2672 \times Policy_StuYes + 0.0050 \times Poor_StuYes + 0.1501 \times Quality_Lecturer + 0.0116 \times TimeFriends + 0.0470 \times TimeSocial  + 0.1426 \times TimeStudy + 0.1463 \times GenderMale \times TimeSocial - 0.0297 \times Policy_StuYes \times TimeStudy$
+
+Reference Level PoorStuYes = 1, so for poor students = 1
+The written equation for students from low income households is:
+$\hat{GPA} = 1.7583 - 0.4598 \times GenderMale + 0.2672 \times Policy_StuYes + 0.1501 \times Quality_Lecturer + 0.0116 \times TimeFriends + 0.0470 \times TimeSocial  + 0.1426 \times TimeStudy + 0.1463 \times GenderMale \times TimeSocial - 0.0297 \times Policy_StuYes \times TimeStudy$
+
+## (h) (3pt) Compare Model 1 and Model 2. Which model would you choose? Perform a hypothesis test to test whether the interaction terms are necessary.
+```{r }
+mse1 <- mean(resid(Model_1)^2)
+mse2 <- mean(resid(Model_2)^2)
+print(paste("MSE of Model1:", round(mse1,4)))
+print(paste("MSE of Model2:", round(mse2,4)))
+```
+```{r }
+print(paste("R-square of Model1:", round(summary(Model_1)$r.square,4)))
+print(paste("R-square of Model2:", round(summary(Model_2)$r.square,4)))
+```
+
+Comparing whether a Full model is better than the reduced model we first state the Hypothesis:
+$H_0:$ Interaction terms add no value
+$H_a:$ Interaction terms add value
+
+We check the mean square error of the two models and find that a model with interaction terms has a lower MSE score compared to a simple model (0.1785 vs 0.1845). We also check the R square for the 2 models and we find that Model with interaction terms have a higher score (0.3042 vs 0.2808). Thus, we reject the null over the alternative hypothesis and choose Model_2.
+
+# Question 2
+```{r}
+# read in the dataset and check the categorical data
+Pima <- read.csv('pima.csv')
+str(Pima)
+```
+```{r}
+# convert categorical data into factors
+Pima$test <- as.factor(Pima$test)
+str(Pima)
+```
+
+## (a) (2pt) Not considering other variables, do women who test positive have higher diastolic blood pressure? Provide evidence to support your answer (a plot or result of a relevant model)
+```{r fig.align='center'}
+ggplot(Pima, aes(x = test, y = diastolic, fill = test)) + geom_boxplot() +
+  labs(x = "test", y = "diastolic", title = "Distributions of diastolic by test")
+```
+
+We plot a boxplot to compare the distributions of diastolic blood pressure by test result. We can see that both positive and negative test results have similar blood pressure distribution. The boxplots show both the median and interquartile ranges of blood pressure are overlapping for both test results. Suggesting, that there is no clear difference in blood pressure by test result, when all other variables are not considered.
+
+## (b) (2pt) Fit a model with test as the response and all other variables as predictors. Write the equation of the fitted model.
+```{r }
+Model_Pima <- glm(test ~ ., data = Pima, family = binomial)
+summary(Model_Pima)
+```
+
+The model shows how other predictors predict test results. It can be seen that pregnant, glucose, bmi and diabetes are the only statistically significant positive predictors of test results. While the rest of the predictors are not statistically significant at a 5% significance level, suggesting they do not contribute much in predicting test results.The model formula is writen as:
+$\hat{p}(x) = \frac{e^{-9.6776 + 0.1212 \times pregnant + 0.0374 \times glucose - 0.0093 \times diastolic + 0.0063 \times triceps - 0.0011 \times insulin + 0.0860 \times bmi + 1.3358 \times diabetes + 0.0264 \times age}}{1 + e^{-9.6776 + 0.1212 \times pregnant + 0.0374 \times glucose - 0.0093 \times diastolic + 0.0063 \times triceps - 0.0011 \times insulin + 0.0860 \times bmi + 1.3358 \times diabetes + 0.0264 \times age}}$
+
+## (c) (2pt) Comment on the coefficient of diastolic. Compare with your answer in part (a).
+
+With regards to the model in part(b), the coefficient value for diastolic is -0.0093very close to 0 and the p-value of the diastolic is also greater than 5%, meaning the variable is insignificant, which also supports the idea that diastolic does not have a significant effect in predicting the probability of a positive test result. These results actually supports the plot in part(a), where there is no evidence that women who have higher diastolic blood pressure have a higher chance of receiving a positive or negative test result.
+
+## (d) (2pt) Predict the probability of positive test result for a woman with predictor values 3, 120, 60, 35, 76, 30, 0.4, 32 (same order as in the data set) in both ways: using the R function predict and use the formula in lecture notes. You should the model in part (b) for this question.
+```{r }
+# using the R formula:
+# creating a new observation
+new_obs <- data.frame(pregnant = 3, glucose = 120, diastolic = 60, 
+                      triceps = 35, insulin = 76, bmi = 30, diabetes = 0.4, 
+                      age = 32)
+# predict function
+Predictions <- predict(Model_Pima, new_obs, type = 'response')
+print(paste("Prediction using predict()):", round(Predictions,4)))
+```
+$\hat{p}(x) = \frac{e^{-9.6776 + 0.1212 \times 3 + 0.0374 \times 120 - 0.0093 \times 60 + 0.0063 \times 35 - 0.0011 \times 76 + 0.0860 \times 30 + 1.3358 \times 0.4 + 0.0264 \times 32}}{1 + e^{-9.6776 + 0.1212 \times 3 + 0.0374 \times 120 - 0.0093 \times 60 + 0.0063 \times 35 - 0.0011 \times 76 + 0.0860 \times 30 + 1.3358 \times 0.4 + 0.0264 \times 32}}$
+
+```{r }
+# manual calculation
+p <- exp(-9.677562 + 0.121235 * 3 + 0.037439 * 120 - 0.009316 * 60 +
+           0.006341 * 35 - 0.001053 * 76 + 0.085992 * 30 +
+           1.335764 * 0.4 + 0.026430 * 32)/(1 + exp(-9.677562 + 0.121235 * 3 +
+                                                      0.037439 * 120 - 0.009316 * 60 +
+                                                      0.006341 * 35 - 0.001053 * 76 +
+                                                      0.085992 * 30 + 1.335764 * 0.4 +
+                                                      0.026430 * 32))
+print(paste("Prediction using manual calculation:", round(p, 4)))
+```
+Based on both predict() and manual calculation, a woman with these predictor values, we get a value of 0.2178(21.78%). This suggests that a woman with those predictor values, they have a 21.78% chance of receiving a positive test result.
+
+## (e) (2pt) Using the threshold 0.3, predict the test outcome for the observations in the data set. Present your result in a confusion table.
+```{r }
+#confusion matrix
+Predictions_2 <- predict(Model_Pima, newdata = Pima)
+table(as.numeric(Predictions_2 > 0.3), Pima$test)
+
+print(paste("classification error:", (84+29)/(326+84+29+93)))
+```
+
+Using a threshold of 0.3, the model was able to correctly predict 270 negatives and 141 positives, while also predicting 36 false positives and 85 false negatives. We also calculated a classification error of 21.24%(0.2124), suggesting the model misclassifies 21.24% of the observation when threshold is 0.3. Lastly, Given that the test is to check if a woman has tested positive for a disease, we would preferably like a higher recall, meaning fewer false negatives, given a false negative of 85, the model could be improved by reducing the false negatives predicted or adjusting the threshold in this medical context.
+
+# Question 3
+```{r}
+# data split
+train <- Pima[1:300,]
+validation <- Pima[301:nrow(Pima),]
+```
+
+## (a) (3pt) From the previous question, it seems that some predictors are not significant. Fit a logistic regression model on the training data to predict test result using the variables pregnant, glucose, bmi, diabetes and age. Report the fitted model.
+```{r }
+Model_Pima_2 <- glm(test ~ pregnant + glucose + bmi + diabetes + age, 
+                    data = train, family = binomial)
+summary(Model_Pima_2)
+```
+After splitting the dataset, we fit a logistic model with predictors pregnant, glucose, bmi, diabetes and age on the training data. Fitting the train set into a logistic regression, we can see that age is the only insignificant variable at a 5% level in the model, meaning it does not significantly contribute to the probability of a positive test result. While the other variables are significant at a 5% level and seem to contribute to the probability of a positive test result. The fitted model is shown as:
+
+$\hat{p}(x) = \frac{e^{-9.0267 + 0.1316 \times pregnant + 0.0306 \times glucose + 0.0878 \times bmi + 1.3091 \times diabetes + 0.0161 \times age}}{1 + e^{-9.0267 + 0.1316 \times pregnant + 0.0306 \times glucose + 0.0878 \times bmi + 1.3091 \times diabetes + 0.0161 \times age}}$
+
+## (b) (2pt) Using the threshold 0.5, predict the outcome on the validation data. Compute the corresponding classification error. You should explain clearly how the error is computed.
+```{r}
+# confusion matrix
+predictions_3 <- predict(Model_Pima_2, validation, type="response")
+table(as.numeric(predictions_3 > 0.5), validation$test)
+```
+
+We can calculate the classification error from the confusion matrix, by using: (FP+FN/TotalPredictions). Using a 0.5 threshold, we get the confusion matrix above, FP = 18, FN = 17 and Total Prediction is 146+18+17+51. Using these we get a classification error of:
+```{r}
+# manual calculation of classification error
+print(paste("classification error:", (18+17)/(146+18+17+51)))
+```
+
+This means, the model misclassifies 0.1509(15.09%) of the validation data, suggesting the model incorrectly predicts 15.09% of classes.
+
+## (c) (2pt) Compare this reduced model with the model using all variables in Question 2. Based on prediction accuracy, which model would you choose?
+```{r }
+# full model
+Full_Model <- glm(test ~ ., data = train, family = binomial)
+# confusion matrix
+predictions_4 <- predict(Full_Model, validation, type="response")
+table(as.numeric(predictions_4 > 0.5), validation$test)
+#accuracy scores
+accuracy_full <- (146+49)/(146+20+17+49)
+accuracy_reduced <- (146+51)/(146+18+17+51)
+print(paste("Full Model prediction accuracy:", accuracy_full))
+print(paste("Reduced Model prediction accuracy:", accuracy_reduced))
+```
+Comparing the full model and the reduced model, it seems that the full model correctly classifies 0.8405(84.05%) of the validation set, which is lower compared to the reduced model(84.91%). Overall, this is suggesting that the reduce model achieves higher prediction accuracy compared to the full model. Thus, we choose the reduce model in Question 3 part(a).
+
+## (d) (2pt) Fit you selected model to the full data and report the model’s summary. According to this model, compare the chances of testing positive for diabetes between a woman with BMI 30 and a woman with BMI 40, assuming that other variables are the same. (Hint: Consider the odds)
+```{r }
+Selected_Model <- glm(test ~ pregnant + glucose + bmi + diabetes + age, 
+                      data = Pima, family = binomial)
+summary(Selected_Model)
+```
+Fitting the entire dataset into the logistic regression with the selected features in part(a), we can see that age again is the only insignificant variable in the model, while the other variables are significant at a 5 percent level. The fitted model using the entire dataset is:
+
+$\hat{p}(x) = \frac{e^{-9.8800 + 0.1239 \times pregnant + 0.0350 \times glucose + 0.0851 \times bmi + 1.3216 \times diabetes + 0.0238 \times age}}{1 + e^{-9.8800 + 0.1239 \times pregnant + 0.0350 \times glucose + 0.0851 \times bmi + 1.3216 \times diabetes + 0.0238 \times age}}$
+
+```{r }
+odds <- round(exp(0.0851*(40-30)),4)
+print(paste("Computed odds:", odds))
+```
+Now, comparing a woman with 30 bmi against a woman with 40 bmi using odds. We first find the difference between the 2, we get a value of 10 bmi, we then pull the parameters for bmi ($e^{0.0851 \times bmi}$), plugging it in $e^{0.0851 \times 10}$ we get an odds ratio of: 2.3420. This means holding all other variables constant, a woman with BMI of 40 has a 2.3420 higher odds of receiving a positive diabetes test result compared to a woman with BMI of 30.

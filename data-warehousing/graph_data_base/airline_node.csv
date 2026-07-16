@@ -1,0 +1,489 @@
+Airline_ID,Airline Name,Airline Country
+AL1,Tuna Aero,Sweden
+AL2,Cranwell Flying Training Unit,United Kingdom
+AL3,Renan,Moldova
+AL4,Voar Lda,Angola
+AL5,Southern Cargo Air Lines,Russia
+AL6,Regional Air,Mauritania
+AL7,Nurnberger Flugdienst,Germany
+AL8,Z-Avia,Armenia
+AL9,Southeast Airmotive,United States
+AL10,Trinity Air Bahamas,Bahamas
+AL11,Taxi de Veracruz,Mexico
+AL12,Universal Airlines,Guyana
+AL13,Quest Diagnostics,United States
+AL14,Walsten Air Services,Canada
+AL15,Northwood Headquarters,United Kingdom
+AL16,Quebec Government Air Service,Canada
+AL17,Servicio Tecnico Aero De Mexico,Mexico
+AL18,Sky Harbor Air Service,United States
+AL19,Tajikstan,Tajikistan
+AL20,Spirit of Africa Airlines,Sudan
+AL21,South Central Air,United States
+AL22,Royal Air Force,United Kingdom
+AL23,Professional Express Courier Service,United States
+AL24,Qatar Amiri Flight,Qatar
+AL25,Royal American Airways,United States
+AL26,SAM Colombia,Colombia
+AL27,Shooter Air Courier,Canada
+AL28,Styrian Airways,Austria
+AL29,Transportes Aereos Regionales,Mexico
+AL30,US Marshals Service,United States
+AL31,Vuelos Internos Privados VIP,Ecuador
+AL32,XP Internation,Netherlands
+AL33,Jupiter Airlines,United Arab Emirates
+AL34,Alghanim,United States
+AL35,Stephenville Aviation Services,Canada
+AL36,Skydrift,United Kingdom
+AL37,Sunbird Airlines,United States
+AL38,Sheremetyevo-Cargo,Russia
+AL39,Servicios Aereos Sunset,Mexico
+AL40,Spectrem Air,South Africa
+AL41,Tranporte Amazonair,Venezuela
+AL42,West African Airlines,Benin
+AL43,Western Arctic Air,Canada
+AL44,Western Aviators,United States
+AL45,Simrik Airlines,Nepal
+AL46,Westland Helicopters,United Kingdom
+AL47,Church Fenton Flying Training Unit,United Kingdom
+AL48,Richland Aviation,United States
+AL49,Royal Daisy Airlines,Uganda
+AL50,Roraima Airways,Guyana
+AL51,Transportes Aereos del Mundo Maya,Mexico
+AL52,Star Aviation,United Kingdom
+AL53,Sham Wing Airlines,Syrian Arab Republic
+AL54,Wind Rose Aviation,Ukraine
+AL55,Thai Flying Helicopter Service,Thailand
+AL56,Sky Bahamas,Bahamas
+AL57,Safe Air,Pakistan
+AL58,Sundorph Aeronautical Corporation,United States
+AL59,Trabajos Aereos Vascongados,Spain
+AL60,Top Sky International,Indonesia
+AL61,Hellenic Star Airways,Greece
+AL62,Air Bucharest,Romania
+AL63,Seco International,Japan
+AL64,Privilege Style L,Spain
+AL65,Viscount Air Service,United States
+AL66,Zantop International Airlines,United States
+AL67,Ues-Avia Aircompany,Ukraine
+AL68,Cathay Pacific,Hong Kong
+AL69,Rick Lucas Helicopters,New Zealand
+AL70,Sioux Falls Aviation,United States
+AL71,Sky Bus,United States
+AL72,Zhejiang Airlines,China
+AL73,Southern Air Charter,Bahamas
+AL74,S C Ion Tiriac,Romania
+AL75,Rossair,South Africa
+AL76,SADELCA - Sociedad Aerea Del Caqueta,Colombia
+AL77,Swiss Air Force,Switzerland
+AL78,The Lancair Company,United States
+AL79,The Army Aviation Heritage Foundation,United States
+AL80,TAG Aviation USA,United States
+AL81,Sark International Airways,United Kingdom
+AL82,Southern Airways,United States
+AL83,Southern Ohio Aviation Sales,United States
+AL84,Transportacion Aerea Del Mar De Cortes,Mexico
+AL85,Servicios Aereos Premier,Mexico
+AL86,VIP-Avia,Georgia
+AL87,Tomsk-Avia,Russia
+AL88,Taftan Airlines,Iran
+AL89,Vistajet,Canada
+AL90,Victor Tagle Larrain,Chile
+AL91,East Horizon,Afghanistan
+AL92,Servicios Aereos de Chihuahua Aerochisa,Mexico
+AL93,Servicios Aereos Avandaro,Mexico
+AL94,Inter European Airways,United Kingdom
+AL95,Servizi Aerei,Italy
+AL96,Raytheon Aircraft Company,United States
+AL97,Trans Air Charter,United States
+AL98,Walmart Aviation,United States
+AL99,Austrian Airlines,Austria
+AL100,Tamir Airways,Israel
+AL101,South African Non Scheduled Airways,South Africa
+AL102,United Arabian Airlines,Sudan
+AL103,Transporte Aereo Ernesto Saenz,Mexico
+AL104,Direct Aero Services,Romania
+AL105,River Ministries Air Charter,South Africa
+AL106,Rutland Aviation,United Kingdom
+AL107,Solent Flight,United Kingdom
+AL108,Trans Euro Air,United Kingdom
+AL109,Ukraine Transavia,Ukraine
+AL110,Wiggins Airways,United States
+AL111,Servicios Aereos Profesionales,Dominican Republic
+AL112,Sahel Aviation Service,Mali
+AL113,Servicio Aereo Saltillo,Mexico
+AL114,Whyalla Airlines,Australia
+AL115,Trans Atlantic Airlines,Sierra Leone
+AL116,SASCO Airlines,Sudan
+AL117,Rusline,Russia
+AL118,Sunshine Air Tours,United States
+AL119,Fly Africa Zimbabwe,Zimbabwe
+AL120,Williams Air,United States
+AL121,Viking Airlines,Sweden
+AL122,Socofer,Angola
+AL123,Servicios Aereos San Cristobal,Mexico
+AL124,TG Aviation,United Kingdom
+AL125,Volga Aviaexpress,Russia
+AL126,Zephyr Express,United States
+AL127,EgyptAir Express,Egypt
+AL128,Eastern Atlantic Charters,United States
+AL129,Tramson Limited,Sudan
+AL130,Twin Town Leasing Company,United States
+AL131,Trans Continental Airlines,United States
+AL132,Rivne Universal Avia,Ukraine
+AL133,Rutas Aereas,Venezuela
+AL134,Transcontinental Airlines,Kazakhstan
+AL135,White Eagle Aviation,Poland
+AL136,Norwegian Air International,Norway
+AL137,Secretaria de Marina,Mexico
+AL138,Vega Air Company,Ukraine
+AL139,Eagle Canyon Airlines,United States
+AL140,Survey Udara (Penas),Indonesia
+AL141,Skif-Air,Ukraine
+AL142,Swazi Express Airways,Swaziland
+AL143,FLYJET,Poland
+AL144,Servicios Aereos Nacionales,Ecuador
+AL145,Sky Exec Aviation Services,Nigeria
+AL146,Samarkand Airways,Uzbekistan
+AL147,Safari Express Cargo,Kenya
+AL148,Salair,United States
+AL149,Servicos De Alquiler,Mexico
+AL150,Taxirey,Mexico
+AL151,Taxis Aereos De Parral,Mexico
+AL152,Saint Barth Commuter,France
+AL153,Tecnicas Fotograficas,Spain
+AL154,Sunwest Home Aviation,Canada
+AL155,Westair Aviation,Namibia
+AL156,Skymaster Air Taxi,United States
+AL157,Slate Falls Airways,Canada
+AL158,Servicios Aereos Slainte,Mexico
+AL159,Taban Air Lines,Iran
+AL160,Samal Air,Kazakhstan
+AL161,Spanish Air Force,Spain
+AL162,Tradewind Aviation,United States
+AL163,United Kingdom Civil Aviation Authority,United Kingdom
+AL164,Universal Jet,Spain
+AL165,WRA Inc,United States
+AL166,Zhez Air,Kazakhstan
+AL167,Temsco Helicopters,United States
+AL168,Medallion Air,Romania
+AL169,Transaviabaltika,Lithuania
+AL170,Egyptair,Egypt
+AL171,Walter I Linkoping,Sweden
+AL172,Salpa Aviation,Sudan
+AL173,Coningsby Flying Training Unit,United Kingdom
+AL174,State Air Company Berkut,Kazakhstan
+AL175,Trans Jet Airways,Sweden
+AL176,Trans Am Compania,Ecuador
+AL177,VIM-Aviaservice,Russia
+AL178,Sky Airlines,Turkey
+AL179,Sonair Servico Aereo,Angola
+AL180,Compania de Aviacion Faucett,Peru
+AL181,Sevenair,Tunisia
+AL182,Transportacion Aerea del Norte,Mexico
+AL183,Tar Heel Aviation,United States
+AL184,Quick Air Jet Charter,Germany
+AL185,RAF Leuchars,United Kingdom
+AL186,Race Cargo Airlines,Ghana
+AL187,Richards Aviation,United States
+AL188,Royal Aviation Express,Canada
+AL189,Shalom Air Services,Nigeria
+AL190,Sabang Merauke Raya Air Charter,Indonesia
+AL191,Savanah Airlines,Nigeria
+AL192,Vertair,United Kingdom
+AL193,Winlink,Saint Lucia
+AL194,Kan Air,Thailand
+AL195,Puma Linhas Aereas,Brazil
+AL196,Sirvair,Mexico
+AL197,FTI Fluggesellschaft,Germany
+AL198,Servicios Intergrales De Aviacion,Mexico
+AL199,Swift Air (Interstate Equipment Leasing),United States
+AL200,United Kingdom Royal VIP Flights,United Kingdom
+AL201,TAB Express International,United States
+AL202,Voronezh Aircraft Manufacturing Society,Russia
+AL203,University Air Squadron,United Kingdom
+AL204,Safarilink Aviation,Kenya
+AL205,OCEAN AIR CARGO,India
+AL206,Korea Express Air,South Korea
+AL207,Skyfreight,United States
+AL208,Triple Alpha,Germany
+AL209,Promotora Industria Totolapa,Mexico
+AL210,South West Air,Canada
+AL211,Shans Air,Russia
+AL212,Teledyne Continental Motors,United States
+AL213,Transnorthern,United States
+AL214,Texas Airlines,United States
+AL215,Tbilisi Aviation University,Georgia
+AL216,US Army Parachute Team,United States
+AL217,Vertical-T Air Company,Russia
+AL218,SUR Lineas Aereas,Argentina
+AL219,Tunisavia,Tunisia
+AL220,Qatar Air Cargo,Qatar
+AL221,Unijet,France
+AL222,Tajikair,Tajikistan
+AL223,Sedona Air Center,United States
+AL224,Universal Jet Aviation,United States
+AL225,Warbelow's Air Ventures,United States
+AL226,Rikspolisstyrelsen,Sweden
+AL227,SANSA,Costa Rica
+AL228,Waddington FTU,United Kingdom
+AL229,Royal Phnom Penh Airways,Cambodia
+AL230,Norlandair,Iceland
+AL231,Star Air,Indonesia
+AL232,Travelair,Germany
+AL233,Salem,Kazakhstan
+AL234,Taxis Turisticos Marakame,Mexico
+AL235,White,Portugal
+AL236,Yak-Service,Russia
+AL237,Surninam International Victory Airline,Suriname
+AL238,Volare Airlines,Ukraine
+AL239,STA-MALI,Mali
+AL240,S.P. Aviation,United States
+AL241,Servicios Aereos Universitarios,Mexico
+AL242,Golden Myanmar Airlines,Burma
+AL243,Princely Jets,Pakistan
+AL244,Searca,Colombia
+AL245,Servicios Aereos La Marquesa,Mexico
+AL246,Skyline,Nigeria
+AL247,Transcontinental Sur,Uruguay
+AL248,United Kingdom Royal VIP Flight,United Kingdom
+AL249,Professione VOlare,Italy
+AL250,Raven Air,United States
+AL251,Rubystar,Belarus
+AL252,Top-Fly,Spain
+AL253,Swedish Airlines,Sweden
+AL254,Real Aeroclub De Ternerife,Spain
+AL255,Shawnee Airline,United States
+AL256,West Coast Airlines,Ghana
+AL257,Xclusive Jet Charter Limited,United Kingdom
+AL258,Transaven,Venezuela
+AL259,Swiss Air-Ambulance,Switzerland
+AL260,Sky Gate International Aviation,Kyrgyzstan
+AL261,Rangemile Limited,United Kingdom
+AL262,Tenir Airlines,Kyrgyzstan
+AL263,Regional Air Express,Germany
+AL264,Severstal,Russia
+AL265,TRAM,Mauritania
+AL266,Transarabian Transportation Services,Uganda
+AL267,WSI Corporation,United States
+AL268,Tag Aviation UK,United Kingdom
+AL269,Sun Freight Logistics,Thailand
+AL270,Unsped Paket Servisi,Turkey
+AL271,Air Italy Egypt,Egypt
+AL272,Rwanda Airlines,Rwanda
+AL273,Vega Aviation,Sudan
+AL274,Zenith Air,South Africa
+AL275,Seacoast Airlines,United States
+AL276,South Pacific Island Airways,United States
+AL277,Tadair,Spain
+AL278,Air 26,Angola
+AL279,Trans Asian Airlines,Kazakhstan
+AL280,US Check Airlines,United States
+AL281,Raya Jet,Jordan
+AL282,Southern Cross Aviation,United States
+AL283,Ptarmigan Airways,Canada
+AL284,Leeming Flying Training Unit,United Kingdom
+AL285,Ram Aircraft Corporation,United States
+AL286,Reef Air,New Zealand
+AL287,Shaheen Air Cargo,Pakistan
+AL288,Starspeed,United Kingdom
+AL289,Silesia Air,Czech Republic
+AL290,Starair,Ireland
+AL291,Svenska Direktflyg,Sweden
+AL292,Servico Aereo Regional,Mozambique
+AL293,Spectrum Air Service,United States
+AL294,Transportes Aereos De Xalapa,Mexico
+AL295,Transportes Aereos Don Carlos,Chile
+AL296,Wings Air Transport,Sudan
+AL297,Wings of Lebanon Aviation,Lebanon
+AL298,Zanair,Tanzania
+AL299,CBM America,United States
+AL300,Holidays Czech Airlines,Czech Republic
+AL301,Malaysia Wings,Malaysia
+AL302,Streamline,South Africa
+AL303,Taunus Air Gmbh,Germany
+AL304,Reed Aviation,United Kingdom
+AL305,Sunwest Aviation (Lindquist Investment),United States
+AL306,Priority Aviation Company,United States
+AL307,Top Speed,Austria
+AL308,TAPC Aviatrans Aircompany,Uzbekistan
+AL309,Transport Canada,Canada
+AL310,Zapolyarie Airlines,Russia
+AL311,Servicios Ejecutivos Gosa,Mexico
+AL312,Wiking Helikopter Service,Germany
+AL313,Telford Aviation,United States
+AL314,Sella Aviation,Netherlands
+AL315,Tranporte Aereo Dominicano,Dominican Republic
+AL316,Rotana Jet,United Arab Emirates
+AL317,Lossiemouth Flying Training Unit,United Kingdom
+AL318,Timberline Air,Canada
+AL319,Slovak Government Flying Service,Slovakia
+AL320,Air Cudlua,United Kingdom
+AL321,Trans Air-Benin,Benin
+AL322,Saha Airlines Services,Iran
+AL323,Weasua Air Transport Company,Liberia
+AL324,Toumai Air Tchad,Chad
+AL325,Travel International Air Charters,Zambia
+AL326,VZ Flights,Mexico
+AL327,Zaire Aero Service,Democratic Republic of Congo
+AL328,Transafrik International,Sao Tome and Principe
+AL329,Quisqueya Airlines,Haiti
+AL330,Transpac Express,Australia
+AL331,AtlasGlobal Ukraine,Ukraine
+AL332,Pro Air,United States
+AL333,RAF St Athan,United Kingdom
+AL334,Wapiti Aviation,Canada
+AL335,Tiphook PLC,United Kingdom
+AL336,Servicios Aereos Luce,Mexico
+AL337,Wind Spirit Air,United States
+AL338,Private Jet Management,United States
+AL339,Mann Yadanarpon Airlines,Burma
+AL340,Servicio De Viglancia Aerea Del Ministerio De Seguridad Publica,Costa Rica
+AL341,Transbrasil,Brazil
+AL342,South Coast Aviation,United Kingdom
+AL343,Air Engiadina-BRN,Switzerland
+AL344,Rotormotion,United Kingdom
+AL345,Trans American Airlines (Trans Am),Peru
+AL346,Vointeh,Bulgaria
+AL347,Thai Pacific Airlines Business,Thailand
+AL348,Soonair Lines,United States
+AL349,Tradewinds Airlines,United States
+AL350,Yuzhnaya Aircompany,Kazakhstan
+AL351,Transwede Airways,Sweden
+AL352,Tyrol Air Ambulance,Austria
+AL353,Twinjet Aircraft Sales,United Kingdom
+AL354,Royal Bahrain Airlines,Bahrain
+AL355,Vichi,Moldova
+AL356,United Arab Emirates Air Force,United Arab Emirates
+AL357,TAF Helicopters,Spain
+AL358,Servicios Aereos de Los Angeles,Mexico
+AL359,Vickers Limited,United Kingdom
+AL360,Tashkent Aircraft Production Corporation,Uzbekistan
+AL361,West Air Luxembourg,Luxembourg
+AL362,Skyplan Services,Canada
+AL363,Tas Aviation,United States
+AL364,Rover Airways International,United States
+AL365,Southern Right Air Charter,South Africa
+AL366,Riau Airlines,Indonesia
+AL367,Uganda Airlines,Uganda
+AL368,University of North Dakota,United States
+AL369,STAC Swiss Government Flights,Switzerland
+AL370,Skyjet,Kazakhstan
+AL371,Smalandsflyg,Sweden
+AL372,Worldwide Jet Charter,United States
+AL373,Sakaviaservice,Georgia
+AL374,Samar Air,Tajikistan
+AL375,Sector Airlines,Canada
+AL376,Transport Facilitators,United States
+AL377,Travel Express Aviation Services,Indonesia
+AL378,Woodgate Executive Air Charter,United Kingdom
+AL379,Flugfelag Vestmannaeyja,Iceland
+AL380,Grand China Air,China
+AL381,Flybe Finland Oy,Finland
+AL382,Go2Sky,Slovakia
+AL383,Boliviana de Aviacion,Bolivia
+AL384,Sun Pacific International,United States
+AL385,Wisman Aviation,United States
+AL386,Rog-Air,Canada
+AL387,Tramon Air,South Africa
+AL388,Trading Air Cargo,Mauritania
+AL389,Yuzhmashavia,Ukraine
+AL390,Tikal Jets Airlines,Guatemala
+AL391,Vacationair,Canada
+AL392,Ridder Avia,Kazakhstan
+AL393,Trans-Air-Link,United States
+AL394,Solinair,Slovenia
+AL395,Sentel Corporation,United States
+AL396,Saber Airlines,Egypt
+AL397,Suburban Air Freight,United States
+AL398,Sky Wings Airlines,Greece
+AL399,Second Sverdlovsk Air Enterprise,Russia
+AL400,TLC Air,United States
+AL401,Transportacion Aerea De Queretaro,Mexico
+AL402,Universal Airways,United States
+AL403,Executive AirShare,United States
+AL404,Pouya Air,Iran
+AL405,Pyramid Air Lines,Egypt
+AL406,Marham Flying Training Unit,United Kingdom
+AL407,Ray Aviation,Israel
+AL408,Red Arrows Display Squadron,United Kingdom
+AL409,Sud Airlines,France
+AL410,Stichting Vliegschool 16Hoven,Netherlands
+AL411,Transport Africa,Sierra Leone
+AL412,Trans-Pacific Orient Airways,Philippines
+AL413,Veritair Ltd,United Kingdom
+AL414,Welch Aviation,United States
+AL415,Wings Aviation,Guyana
+AL416,Comfort Express Virtual Charters Albany,United States
+AL417,Ukraine Air Alliance,Ukraine
+AL418,Uraiavia,Russia
+AL419,Servicios De Transporte Aereo,Mexico
+AL420,Skypower Express Airways,Nigeria
+AL421,Texas Air Charters,United States
+AL422,Air Asia X,Indonesia
+AL423,Servicios De Rampa Y Mostrador,Mexico
+AL424,Sun West Airlines,United States
+AL425,Tango Bravo,France
+AL426,United States Coast Guard Auxiliary,United States
+AL427,Xerox Corporation,United States
+AL428,Zorex,Spain
+AL429,LIO Flugmennt,Iceland
+AL430,Selkirk Remote Sensing,Canada
+AL431,Dan-Air London,United Kingdom
+AL432,Stadium City Limited,United Kingdom
+AL433,Sevastopol-Avia,Ukraine
+AL434,Star XL German Airlines,Germany
+AL435,Star Up,Peru
+AL436,Servicios Aeronauticos Aero Personal,Mexico
+AL437,Western Air,Bahamas
+AL438,Yellow Wings Air Services,Kenya
+AL439,Jet Suite,United States
+AL440,Qanot Sharq,Uzbekistan
+AL441,Quantex Environmental,Canada
+AL442,RAF Valley SAR Training Unit,United Kingdom
+AL443,Red Sea Aviation,Egypt
+AL444,Renown Aviation,United States
+AL445,Richardson's Airway,United States
+AL446,Royal Oman Police,Oman
+AL447,Seven Bar Flying Service,United States
+AL448,Selcon Airlines,Nigeria
+AL449,Slovak Air Force,Slovakia
+AL450,Special Scope Limited,United Kingdom
+AL451,Sundance Air,Venezuela
+AL452,Swedeways,Sweden
+AL453,Sky Jet,Switzerland
+AL454,Shuangyang General Aviation,China
+AL455,Servicios Aereos Ejecutivos De La Laguna,Mexico
+AL456,Sky Limo Corporation,United States
+AL457,Servicios Aereos Del Norte,Mexico
+AL458,Super Luza,Angola
+AL459,SENEAM,Mexico
+AL460,Transaustralian Air Express,Australia
+AL461,Tobago Express,Trinidad and Tobago
+AL462,Trabajos Aereos Murcianos,Spain
+AL463,Trabajos Aereos,Spain
+AL464,Taquan Air Services,United States
+AL465,Taxi Aereo Cozatl,Mexico
+AL466,United States Department Of Agriculture,United States
+AL467,UFS,United States
+AL468,UTAGE,Equatorial Guinea
+AL469,Vega,Kazakhstan
+AL470,Winair,United States
+AL471,Windrose Air,Germany
+AL472,Zagros Airlines,Iran
+AL473,Enerjet,Canada
+AL474,Air Century,Dominican Republic
+AL475,Finlandian,Finland
+AL476,AlbaStar,Spain
+AL477,YES Airways,Poland
+AL478,Bingo Airways,Poland
+AL479,Russkie Krylya,Russia
+AL480,Pro Air Service,United States
+AL481,Puntavia Air Services,Djibouti
+AL482,Skyways,Argentina
+AL483,Valan Limited,Moldova
+AL484,Wings Airways,United States
+AL485,Samson Aviation,United Kingdom
+AL486,Rynes Aviation,United States
+AL487,VIP Air,Slovakia
+AL488,BA101,United Kingdom

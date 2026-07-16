@@ -1,0 +1,2837 @@
+Airport_ID,Airport Name,Airport City,Airport Country/Region
+AP1,Bauerfield International Airport,Port-vila,Vanuatu
+AP2,Lonorore Airport,Lonorore,Vanuatu
+AP3,Norsup Airport,Norsup,Vanuatu
+AP4,Tanna Airport,Tanna,Vanuatu
+AP5,Santo Pekoa International Airport,Santo,Vanuatu
+AP6,Aneityum Airport,Anelghowhat,Vanuatu
+AP7,Aniwa Airport,Aniwa,Vanuatu
+AP8,Futuna Airport,Futuna Island,Wallis and Futuna
+AP9,Ipota Airport,Ipota,Vanuatu
+AP10,Dillon's Bay Airport,Dillon's Bay,Vanuatu
+AP11,Gaua Island Airport,Gaua Island,Vanuatu
+AP12,Mota Lava Airport,Ablow,Vanuatu
+AP13,Craig Cove Airport,Craig Cove,Vanuatu
+AP14,Sovetskiy Airport,Sovetskiy,Russia
+AP15,Nadym Airport,Nadym,Russia
+AP16,Koltsovo Airport,Yekaterinburg,Russia
+AP17,Saratov Central Airport,Saratov,Russia
+AP18,Port Sudan New International Airport,Port Sudan,Sudan
+AP19,Khartoum International Airport,Khartoum,Sudan
+AP20,Vnukovo International Airport,Moscow,Russia
+AP21,Beloyarskiy Airport,Beloyarsky,Russia
+AP22,Ukhta Airport,Ukhta,Russia
+AP23,Zvartnots International Airport,Yerevan,Armenia
+AP24,Mineralnyye Vody Airport,Mineralnye Vody,Russia
+AP25,Izhevsk Airport,Izhevsk,Russia
+AP26,Kurgan Airport,Kurgan,Russia
+AP27,Domodedovo International Airport,Moscow,Russia
+AP28,Pulkovo Airport,St. Petersburg,Russia
+AP29,Geneina Airport,Geneina,Sudan
+AP30,El Fasher Airport,El Fasher,Sudan
+AP31,Tolmachevo Airport,Novosibirsk,Russia
+AP32,Mirny Airport,Mirnyj,Russia
+AP33,Roshchino International Airport,Tyumen,Russia
+AP34,Ufa International Airport,Ufa,Russia
+AP35,Novy Urengoy Airport,Novy Urengoy,Russia
+AP36,Polyarny Airport,Yakutia,Russia
+AP37,Mehrabad International Airport,Teheran,Iran
+AP38,Mahshahr Airport,Bandar Mahshahr,Iran
+AP39,Yakutsk Airport,Yakutsk,Russia
+AP40,Yemelyanovo Airport,Krasnoyarsk,Russia
+AP41,Esfahan Shahid Beheshti International Airport,Esfahan,Iran
+AP42,Ahwaz Airport,Ahwaz,Iran
+AP43,Tabriz International Airport,Tabriz,Iran
+AP44,Hurghada International Airport,Hurghada,Egypt
+AP45,Jose Marti International Airport,Havana,Cuba
+AP46,Simon Bolivar International Airport,Santa Marta,Colombia
+AP47,Kuala Lumpur International Airport,Kuala Lumpur,Malaysia
+AP48,Taoxian Airport,Shenyang,China
+AP49,Vladivostok International Airport,Vladivostok,Russia
+AP50,Pyongyang Sunan International Airport,Pyongyang,North Korea
+AP51,Bukhara Airport,Bukhara,Uzbekistan
+AP52,Gran Canaria Airport,Gran Canaria,Spain
+AP53,Fuerteventura Airport,Fuerteventura,Spain
+AP54,Nouadhibou International Airport,Nouadhibou,Mauritania
+AP55,Khabarovsk-Novy Airport,Khabarovsk,Russia
+AP56,Tivat Airport,Tivat,Montenegro
+AP57,Henri Coanda International Airport,Bucharest,Romania
+AP58,Donetsk International Airport,Donetsk,Ukraine
+AP59,Sheremetyevo International Airport,Moscow,Russia
+AP60,Nizhny Novgorod Strigino International Airport,Nizhniy Novgorod,Russia
+AP61,Bolshoye Savino Airport,Perm,Russia
+AP62,Kharkiv International Airport,Kharkov,Ukraine
+AP63,Astrakhan Airport,Astrakhan,Russia
+AP64,Belgorod International Airport,Belgorod,Russia
+AP65,Licenciado Benito Juarez International Airport,Mexico City,Mexico
+AP66,Jesus Teran Paredo International Airport,Aguascalientes,Mexico
+AP67,Ingeniero Alberto Acuna Ongay International Airport,Campeche,Mexico
+AP68,Manuel Marquez de Leon International Airport,La Paz,Mexico
+AP69,Coatzacoalcos National Airport,Minatitlan,Mexico
+AP70,General Rafael Buelna International Airport,Mazatlan,Mexico
+AP71,Palenque International Airport,Palenque,Mexico
+AP72,General Lucio Blanco International Airport,Reynosa,Mexico
+AP73,Francisco Sarabia International Airport,Torreon,Mexico
+AP74,General Leobardo C. Ruiz International Airport,Zacatecas,Mexico
+AP75,Playa De Oro International Airport,Manzanillo,Mexico
+AP76,Sokol Airport,Magadan,Russia
+AP77,Taiping Airport,Harbin,China
+AP78,Dnipropetrovsk International Airport,Dnepropetrovsk,Ukraine
+AP79,Dresden Airport,Dresden,Germany
+AP80,Krakow John Paul II International Airport,Krakow,Poland
+AP81,Magnitogorsk International Airport,Magnetiogorsk,Russia
+AP82,Josefa Camejo International Airport,Paraguana,Venezuela
+AP83,La Chinita International Airport,Maracaibo,Venezuela
+AP84,Hato International Airport,Willemstad,Netherlands Antilles
+AP85,Queen Beatrix International Airport,Oranjestad,Aruba
+AP86,Sumburgh Airport,Sumburgh,United Kingdom
+AP87,Aberdeen Dyce Airport,Aberdeen,United Kingdom
+AP88,Aitutaki Airport,Aitutaki,Cook Islands
+AP89,Henry E Rohlsen Airport,St. Croix Island,Virgin Islands
+AP90,Luis Munoz Marin International Airport,San Juan,Argentina
+AP91,Tiree Airport,Tiree,United Kingdom
+AP92,Glasgow International Airport,Glasgow,United Kingdom
+AP93,Unalakleet Airport,Unalakleet,United States
+AP94,Ted Stevens Anchorage International Airport,Anchorage,United States
+AP95,Stornoway Airport,Stornoway,United Kingdom
+AP96,Inverness Airport,Inverness,United Kingdom
+AP97,Comox Airport,Comox,Canada
+AP98,Vancouver International Airport,Vancouver,Canada
+AP99,Port Hardy Airport,Port Hardy,Canada
+AP100,Trail Airport,Trail,Canada
+AP101,Visby Airport,Visby,Sweden
+AP102,Stockholm-Arlanda Airport,Stockholm,Sweden
+AP103,Hartsfield Jackson Atlanta International Airport,Atlanta,United States
+AP104,Halmstad Airport,Halmstad,Sweden
+AP105,Karlstad Airport,Karlstad,Sweden
+AP106,Mariehamn Airport,Mariehamn,Finland
+AP107,Pori Airport,Pori,Finland
+AP108,Sandefjord Airport,Sandefjord,Norway
+AP109,Vilhelmina Airport,Vilhelmina,Sweden
+AP110,Vaxjo Kronoberg Airport,Vaxjo,Sweden
+AP111,Turku Airport,Turku,Finland
+AP112,Kokkola-Pietarsaari Airport,Kruunupyy,Finland
+AP113,Hemavan Airport,Hemavan,Sweden
+AP114,Oslo Lufthavn,Oslo,Norway
+AP115,Greenbrier Valley Airport,Lewisburg,United States
+AP116,Middle Georgia Regional Airport,Macon,United States
+AP117,Key Field,Meridian,United States
+AP118,Northwest Alabama Regional Airport,Muscle Shoals,United States
+AP119,Hattiesburg Laurel Regional Airport,Hattiesburg/Laurel,United States
+AP120,Tupelo Regional Airport,Tupelo,United States
+AP121,Fort Lauderdale Hollywood International Airport,Fort Lauderdale,United States
+AP122,Palm Beach International Airport,West Palm Beach,United States
+AP123,Southwest Florida International Airport,Fort Myers,United States
+AP124,Tampa International Airport,Tampa,United States
+AP125,South Bimini Airport,Alice Town,Bahamas
+AP126,North Eleuthera Airport,North Eleuthera,Bahamas
+AP127,Key West International Airport,Key West,United States
+AP128,Grand Bahama International Airport,Freeport,Bahamas
+AP129,Exuma International Airport,Great Exuma,Bahamas
+AP130,Governor's Harbour Airport,Governor's Harbor,Bahamas
+AP131,Orlando International Airport,Orlando,United States
+AP132,Leonard M Thompson International Airport,Marsh Harbor,Bahamas
+AP133,Treasure Cay Airport,Treasure Cay,Bahamas
+AP134,Gainesville Regional Airport,Gainesville,United States
+AP135,Pensacola Regional Airport,Pensacola,United States
+AP136,Tallahassee Regional Airport,Tallahassee,United States
+AP137,Jacksonville International Airport,Jacksonville,United States
+AP138,Mid Delta Regional Airport,Greenville,United States
+AP139,Masset Airport,Masset,Canada
+AP140,Piazzola International Airport,Mar Del Plata,Argentina
+AP141,General Urquiza Airport,Parana,Argentina
+AP142,Islas Malvinas Airport,Rosario,Argentina
+AP143,Sauce Viejo Airport,Santa Fe,Argentina
+AP144,Almirante Marco Andres Zar Airport,Trelew,Argentina
+AP145,General E. Mosconi Airport,Comodoro Rivadavia,Argentina
+AP146,Brigadier Antonio Parodi Airport,Esquel,Argentina
+AP147,El Plumerillo Airport,Mendoza,Argentina
+AP148,Presidente Peron Airport,Neuquen,Argentina
+AP149,Piloto Civil N. Fernandez Airport,Rio Gallegos,Argentina
+AP150,San Carlos De Bariloche Airport,San Carlos De Bariloche,Argentina
+AP151,Jorge Newbery Airpark,Buenos Aires,Argentina
+AP152,Comandante Espora Airport,Bahia Blanca,Argentina
+AP153,Ingeniero Ambrosio Taravella Airport,Cordoba,Argentina
+AP154,Hermes Quijada International Airport,Rio Grande,Argentina
+AP155,Malvinas Argentinas Airport,Ushuaia,Argentina
+AP156,Capitan Corbeta CA Curbelo International Airport,Punta del Este,Uruguay
+AP157,Douglas-Charles Airport,Dominica,Dominica
+AP158,Terrance B. Lettsome International Airport,Tortola,British Virgin Islands
+AP159,Martinique Aime Cesaire International Airport,Fort-de-france,Martinique
+AP160,Pointe-a-Pitre Le Raizet,Pointe-a-pitre,Guadeloupe
+AP161,King Salmon Airport,King Salmon,United States
+AP162,Aniak Airport,Aniak,United States
+AP163,Cold Bay Airport,Cold Bay,United States
+AP164,Dillingham Airport,Dillingham,United States
+AP165,McGrath Airport,Mcgrath,United States
+AP166,Sand Point Airport,Sand Point,United States
+AP167,St Paul Island Airport,St. Paul Island,United States
+AP168,St George Airport,Point Barrow,United States
+AP169,Long Island Mac Arthur Airport,Islip,United States
+AP170,Plattsburgh International Airport,Plattsburgh,United States
+AP171,Northern Maine Regional Airport at Presque Isle,Presque Isle,United States
+AP172,General Edward Lawrence Logan International Airport,Boston,United States
+AP173,Robert L. Bradshaw International Airport,Basse Terre,Saint Kitts and Nevis
+AP174,Casa De Campo International Airport,La Romana,Dominican Republic
+AP175,Punta Cana International Airport,Punta Cana,Dominican Republic
+AP176,Las Americas International Airport,Santo Domingo,Dominican Republic
+AP177,Cibao International Airport,Santiago,Spain
+AP178,Princess Juliana International Airport,Philipsburg,Netherlands Antilles
+AP179,Vance W. Amory International Airport,Charlestown,Saint Kitts and Nevis
+AP180,Dublin Airport,Dublin,Ireland
+AP181,Donegal Airport,Dongloe,Ireland
+AP182,Kirkwall Airport,Kirkwall,United Kingdom
+AP183,Benbecula Airport,Benbecula,United Kingdom
+AP184,Islay Airport,Islay,United Kingdom
+AP185,Leeds Bradford Airport,Leeds,United Kingdom
+AP186,Edinburgh Airport,Edinburgh,United Kingdom
+AP187,Toncontin International Airport,Tegucigalpa,Honduras
+AP188,Ramon Villeda Morales International Airport,San Pedro Sula,Honduras
+AP189,Juan Manuel Galvez International Airport,Roatan,Honduras
+AP190,Puerto Lempira Airport,Puerto Lempira,Honduras
+AP191,Billund Airport,Billund,Denmark
+AP192,Stavanger Airport Sola,Stavanger,Norway
+AP193,Aalborg Airport,Aalborg,Denmark
+AP194,Stord Airport,Stord,Norway
+AP195,Molde Airport,Molde,Norway
+AP196,Rarotonga International Airport,Avarua,Cook Islands
+AP197,Lynden Pindling International Airport,Nassau,Bahamas
+AP198,New Bight Airport,Cat Island,Bahamas
+AP199,Arthur's Town Airport,Arthur's Town,Bahamas
+AP200,Washington Dulles International Airport,Washington,United States
+AP201,John Murtha Johnstown Cambria County Airport,Johnstown,United States
+AP202,Shenandoah Valley Regional Airport,Weyers Cave,United States
+AP203,Morgantown Municipal Walter L. Bill Hart Field,Morgantown,United States
+AP204,Altoona Blair County Airport,Altoona,United States
+AP205,Raleigh County Memorial Airport,Beckley,United States
+AP206,North Central West Virginia Airport,Clarksburg,United States
+AP207,Helsinki Vantaa Airport,Helsinki,Finland
+AP208,Melbourne International Airport,Melbourne,Australia
+AP209,Sydney Kingsford Smith International Airport,Sydney,Canada
+AP210,Broken Hill Airport,Broken Hill,Australia
+AP211,Ceduna Airport,Ceduna,Australia
+AP212,Coober Pedy Airport,Coober Pedy,Australia
+AP213,Kingscote Airport,Kingscote,Australia
+AP214,Mount Gambier Airport,Mount Gambier,Australia
+AP215,Mildura Airport,Mildura,Australia
+AP216,Port Lincoln Airport,Port Lincoln,Australia
+AP217,Whyalla Airport,Whyalla,Australia
+AP218,Adelaide International Airport,Adelaide,Australia
+AP219,Dubbo City Regional Airport,Dubbo,Australia
+AP220,Parkes Airport,Parkes,Australia
+AP221,Newcastle Airport,Newcastle,United Kingdom
+AP222,Narrandera Airport,Narrandera,Australia
+AP223,Taree Airport,Taree,Australia
+AP224,Julia Creek Airport,Julia Creek,Australia
+AP225,Townsville Airport,Townsville,Australia
+AP226,Mount Isa Airport,Mount Isa,Australia
+AP227,Richmond Airport,Richmond,United States
+AP228,Winton Airport,Winton,Australia
+AP229,Albury Airport,Albury,Australia
+AP230,Wynyard Airport,Burnie,Australia
+AP231,King Island Airport,King Island,Australia
+AP232,Merimbula Airport,Merimbula,Australia
+AP233,Wagga Wagga City Airport,Wagga Wagga,Australia
+AP234,Moruya Airport,Moruya,Australia
+AP235,Griffith Airport,Griffith,Australia
+AP236,Ballina Byron Gateway Airport,Ballina Byron Bay,Australia
+AP237,Bathurst Airport,Bathurst,Canada
+AP238,Armidale Airport,Armidale,Australia
+AP239,Lismore Airport,Lismore,Australia
+AP240,Orange Airport,Orange,Australia
+AP241,Grafton Airport,Grafton,Australia
+AP242,Longreach Airport,Longreach,Australia
+AP243,Victoria Harbour Seaplane Base,Victoria,Canada
+AP244,Vancouver Harbour Water Aerodrome,Vancouver,Canada
+AP245,London City Airport,London,Canada
+AP246,Vaasa Airport,Vaasa,Finland
+AP247,Leonardo da Vinci Fiumicino Airport,Rome,Italy
+AP248,Bolzano Airport,Bolzano,Italy
+AP249,Geneva Cointrin International Airport,Geneva,Switzerland
+AP250,Peretola Airport,Florence,Italy
+AP251,Isle of Man Airport,Isle Of Man,Isle of Man
+AP252,Rotterdam The Hague Airport,Rotterdam,Netherlands
+AP253,Tampere-Pirkkala Airport,Tampere,Finland
+AP254,Kalmar Airport,Kalkmar,Sweden
+AP255,Ronneby Airport,Ronneby,Sweden
+AP256,Sundsvall-Harnosand Airport,Sundsvall,Sweden
+AP257,Trollhattan-Vanersborg Airport,Trollhattan,Sweden
+AP258,Stockholm-Bromma Airport,Stockholm,Sweden
+AP259,Leipzig/Halle Airport,Leipzig,Germany
+AP260,Zurich Airport,Zurich,Switzerland
+AP261,Belgrade Nikola Tesla Airport,Belgrade,Serbia
+AP262,Lugano Airport,Lugano,Switzerland
+AP263,Stuttgart Airport,Stuttgart,Germany
+AP264,Valencia Airport,Valencia,Spain
+AP265,Amsterdam Airport Schiphol,Amsterdam,Netherlands
+AP266,Charles de Gaulle International Airport,Paris,France
+AP267,Turin Airport,Torino,Italy
+AP268,Oulu Airport,Oulu,Finland
+AP269,Vilnius International Airport,Vilnius,Lithuania
+AP270,Norwich International Airport,Norwich,United Kingdom
+AP271,Humberside Airport,Humberside,United Kingdom
+AP272,Ostersund Airport,Ostersund,Sweden
+AP273,Voronezh International Airport,Voronezh,Russia
+AP274,Munich Airport,Munich,Germany
+AP275,Los Angeles International Airport,Los Angeles,United States
+AP276,McCarran International Airport,Las Vegas,United States
+AP277,Westchester County Airport,White Plains,United States
+AP278,Teterboro Airport,Teterboro,United States
+AP279,Nantucket Memorial Airport,Nantucket,United States
+AP280,Clayton J Lloyd International Airport,The Valley,Anguilla
+AP281,Gustaf III Airport,Gustavia,France
+AP282,Shishmaref Airport,Shishmaref,United States
+AP283,Nome Airport,Nome,United States
+AP284,Koyuk Alfred Adams Airport,Koyuk,United States
+AP285,White Mountain Airport,White Mountain,United States
+AP286,Elim Airport,Elim,United States
+AP287,Shaktoolik Airport,Shaktoolik,United States
+AP288,Teller Airport,Teller,United States
+AP289,Wales Airport,Wales,United States
+AP290,Golovin Airport,Golovin,United States
+AP291,Brevig Mission Airport,Brevig Mission,United States
+AP292,Fairbanks International Airport,Fairbanks,United States
+AP293,Anaktuvuk Pass Airport,Anaktuvuk Pass,United States
+AP294,Minchumina Airport,Lake Minchumina,United States
+AP295,Port Menier Airport,Port Menier,Canada
+AP296,Havre St Pierre Airport,Havre-Saint-Pierre,Canada
+AP297,Sept-Iles Airport,Sept-Iles,Canada
+AP298,Ralph Wien Memorial Airport,Kotzebue,United States
+AP299,Hagerstown Regional Richard A Henson Field,Hagerstown,United States
+AP300,Lancaster Airport,Lancaster,United States
+AP301,Victoria Regional Airport,Victoria,Canada
+AP302,George Bush Intercontinental Houston Airport,Houston,United States
+AP303,Ronald Reagan Washington National Airport,Washington,United States
+AP304,Raleigh Durham International Airport,Raleigh-durham,United States
+AP305,Louis Armstrong New Orleans International Airport,New Orleans,United States
+AP306,Minneapolis-St Paul International/Wold-Chamberlain Airport,Minneapolis,United States
+AP307,Chicago O'Hare International Airport,Chicago,United States
+AP308,Charlotte Douglas International Airport,Charlotte,United States
+AP309,Norfolk International Airport,Norfolk,United States
+AP310,Austin Bergstrom International Airport,Austin,United States
+AP311,Buffalo Niagara International Airport,Buffalo,United States
+AP312,General Mitchell International Airport,Milwaukee,United States
+AP313,Greater Rochester International Airport,Rochester,United States
+AP314,Daytona Beach International Airport,Daytona Beach,United States
+AP315,Philadelphia International Airport,Philadelphia,United States
+AP316,Denver International Airport,Denver,United States
+AP317,Baltimore/Washington International Thurgood Marshall Airport,Baltimore,United States
+AP318,Miami International Airport,Miami,United States
+AP319,Sarasota Bradenton International Airport,Sarasota,United States
+AP320,San Antonio International Airport,San Antonio,United States
+AP321,Kansas City International Airport,Kansas City,United States
+AP322,St Louis Lambert International Airport,St. Louis,United States
+AP323,Detroit Metropolitan Wayne County Airport,Detroit,United States
+AP324,Portland International Airport,Portland,United States
+AP325,Taiwan Taoyuan International Airport,Taipei,Taiwan
+AP326,Chongqing Jiangbei International Airport,Chongqing,China
+AP327,Macau International Airport,Macau,Macau
+AP328,Kaohsiung International Airport,Kaohsiung,Taiwan
+AP329,Noi Bai International Airport,Hanoi,Vietnam
+AP330,Indianapolis International Airport,Indianapolis,United States
+AP331,Phoenix Sky Harbor International Airport,Phoenix,United States
+AP332,Tucson International Airport,Tucson,United States
+AP333,Taichung Ching Chuang Kang Airport,Taichung,Taiwan
+AP334,Fuzhou Changle International Airport,Fuzhou,China
+AP335,Hangzhou Xiaoshan International Airport,Hangzhou,China
+AP336,Kunming Changshui International Airport,Kunming,China
+AP337,Tan Son Nhat International Airport,Ho Chi Minh City,Vietnam
+AP338,Liuting Airport,Qingdao,China
+AP339,Guangzhou Baiyun International Airport,Guangzhou,China
+AP340,Changsha Huanghua International Airport,Changcha,China
+AP341,Ningbo Lishe International Airport,Ninbo,China
+AP342,Nanjing Lukou Airport,Nanjing,China
+AP343,Shenzhen Bao'an International Airport,Shenzhen,China
+AP344,Xiamen Gaoqi International Airport,Xiamen,China
+AP345,Zhengzhou Xinzheng International Airport,Zhengzhou,China
+AP346,Incheon International Airport,Seoul,South Korea
+AP347,Yaoqiang Airport,Jinan,China
+AP348,Tianjin Binhai International Airport,Tianjin,China
+AP349,Guilin Liangjiang International Airport,Guilin,China
+AP350,Okayama Airport,Okayama,Japan
+AP351,Phnom Penh International Airport,Phnom-penh,Cambodia
+AP352,Tunxi International Airport,Huangshan,China
+AP353,Richmond International Airport,Richmond,United States
+AP354,Eppley Airfield,Omaha,United States
+AP355,Louisville International Standiford Field,Louisville,United States
+AP356,Columbia Metropolitan Airport,Columbia,United States
+AP357,Piedmont Triad International Airport,Greensboro,United States
+AP358,Pittsburgh International Airport,Pittsburgh,United States
+AP359,Gulfport Biloxi International Airport,Gulfport,United States
+AP360,Cancun International Airport,Cancun,Mexico
+AP361,Charleston Air Force Base-International Airport,Charleston,United States
+AP362,Bradley International Airport,Windsor Locks,United States
+AP363,John F Kennedy International Airport,New York,United States
+AP364,John Glenn Columbus International Airport,Columbus,United States
+AP365,Cincinnati Northern Kentucky International Airport,Cincinnati,United States
+AP366,Nashville International Airport,Nashville,United States
+AP367,La Guardia Airport,New York,United States
+AP368,Dallas Fort Worth International Airport,Dallas-Fort Worth,United States
+AP369,Huntsville International Carl T Jones Field,Huntsville,United States
+AP370,Savannah Hilton Head International Airport,Savannah,United States
+AP371,Blue Grass Airport,Lexington KY,United States
+AP372,Memphis International Airport,Memphis,United States
+AP373,Gerald R. Ford International Airport,Grand Rapids,United States
+AP374,Birmingham-Shuttlesworth International Airport,Birmingham,United Kingdom
+AP375,Greenville Spartanburg International Airport,Greenville,United States
+AP376,Destin-Ft Walton Beach Airport,Valparaiso,United States
+AP377,Dane County Regional Truax Field,Madison,United States
+AP378,Cozumel International Airport,Cozumel,Mexico
+AP379,Bill & Hillary Clinton National Airport/Adams Field,Little Rock,United States
+AP380,William P Hobby Airport,Houston,United States
+AP381,Will Rogers World Airport,Oklahoma City,United States
+AP382,Albany International Airport,Albany,United States
+AP383,Akron Canton Regional Airport,Akron,United States
+AP384,James M Cox Dayton International Airport,Dayton,United States
+AP385,Des Moines International Airport,Des Moines,United States
+AP386,El Paso International Airport,El Paso,United States
+AP387,Bishop International Airport,Flint,United States
+AP388,Theodore Francis Green State Airport,Providence,United States
+AP389,Portland International Jetport Airport,Portland,United States
+AP390,Asheville Regional Airport,Asheville,United States
+AP391,Lovell Field,Chattanooga,United States
+AP392,Owen Roberts International Airport,Georgetown,Cayman Islands
+AP393,Wichita Eisenhower National Airport,Wichita,United States
+AP394,Harrisburg International Airport,Harrisburg,United States
+AP395,Syracuse Hancock International Airport,Syracuse,United States
+AP396,Tulsa International Airport,Tulsa,United States
+AP397,Myrtle Beach International Airport,Myrtle Beach,United States
+AP398,Ouagadougou Airport,Ouagadougou,Burkina Faso
+AP399,Modibo Keita International Airport,Bamako,Mali
+AP400,Port Bouet Airport,Abidjan,Cote d'Ivoire
+AP401,Leopold Sedar Senghor International Airport,Dakar,Senegal
+AP402,Lome-Tokoin Airport,Lome,Togo
+AP403,Cadjehoun Airport,Cotonou,Benin
+AP404,Dushanbe Airport,Dushanbe,Tajikistan
+AP405,Newark Liberty International Airport,Newark,United States
+AP406,Ontario International Airport,Ontario,United States
+AP407,Salt Lake City International Airport,Salt Lake City,United States
+AP408,Barquisimeto International Airport,Barquisimeto,Venezuela
+AP409,Reno Tahoe International Airport,Reno,United States
+AP410,Los Cabos International Airport,San Jose Del Cabo,Mexico
+AP411,Arturo Michelena International Airport,Valencia,Spain
+AP412,Jose Maria Cordova International Airport,Rio Negro,Colombia
+AP413,Johan Adolf Pengel International Airport,Zandery,Suriname
+AP414,Toussaint Louverture International Airport,Port-au-prince,Haiti
+AP415,Norman Y. Mineta San Jose International Airport,San Jose,Costa Rica
+AP416,Sacramento International Airport,Sacramento,United States
+AP417,Palm Springs International Airport,Palm Springs,United States
+AP418,Licenciado Gustavo Diaz Ordaz International Airport,Puerto Vallarta,Mexico
+AP419,Chengdu Shuangliu International Airport,Chengdu,China
+AP420,Nanning Wuxu Airport,Nanning,China
+AP421,Taipei Songshan Airport,Taipei,Taiwan
+AP422,Hefei Luogang International Airport,Hefei,China
+AP423,Longdongbao Airport,Guiyang,China
+AP424,Shijiazhuang Daguocun International Airport,Shijiazhuang,China
+AP425,Taiyuan Wusu Airport,Taiyuan,China
+AP426,Tbilisi International Airport,Tbilisi,Georgia
+AP427,Baghdad International Airport,Baghdad,Iraq
+AP428,Erbil International Airport,Erbil,Iraq
+AP429,Maturin Airport,Maturin,Venezuela
+AP430,General Manuel Carlos Piar International Airport,Guayana,Venezuela
+AP431,Mashhad International Airport,Mashhad,Iran
+AP432,Hamid Karzai International Airport,Kabul,Afghanistan
+AP433,Indira Gandhi International Airport,Delhi,India
+AP434,Zahedan International Airport,Zahedan,Iran
+AP435,Konarak Airport,Chah Bahar,Iran
+AP436,Shiraz Shahid Dastghaib International Airport,Shiraz,Iran
+AP437,Shahid Sadooghi Airport,Yazd,Iran
+AP438,Sardar-e-Jangal Airport,Rasht,Iran
+AP439,Abadan Airport,Abadan,Iran
+AP440,Kish International Airport,Kish Island,Iran
+AP441,Dasht-e Naz Airport,Dasht-e-naz,Iran
+AP442,Bandar Abbas International Airport,Bandar Abbas,Iran
+AP443,Shahid Ashrafi Esfahani Airport,Bakhtaran,Iran
+AP444,Kotoka International Airport,Accra,Ghana
+AP445,Lungi International Airport,Freetown,Sierra Leone
+AP446,Roberts International Airport,Monrovia,Liberia
+AP447,Hong Kong International Airport,Hong Kong,Hong Kong
+AP448,Don Mueang International Airport,Bangkok,Thailand
+AP449,Phuket International Airport,Phuket,Thailand
+AP450,Suvarnabhumi Airport,Bangkok,Thailand
+AP451,El Tehuelche Airport,Puerto Madryn,Argentina
+AP452,Martin Miguel De Guemes International Airport,Salta,Argentina
+AP453,Calgary International Airport,Calgary,Canada
+AP454,Albuquerque International Sunport,Albuquerque,United States
+AP455,City of Colorado Springs Municipal Airport,Colorado Springs,United States
+AP456,Lubbock Preston Smith International Airport,Lubbock,United States
+AP457,General Mariano Escobedo International Airport,Monterrey,Mexico
+AP458,Dubai International Airport,Dubai,United Arab Emirates
+AP459,Northwest Arkansas Regional Airport,Bentonville,United States
+AP460,Catania-Fontanarossa Airport,Catania,Italy
+AP461,Naples International Airport,Naples,Italy
+AP462,Milano Linate Airport,Milan,Italy
+AP463,Olbia Costa Smeralda Airport,Olbia,Italy
+AP464,St Petersburg Clearwater International Airport,St. Petersburg,Russia
+AP465,Orlando Sanford International Airport,Sanford,United States
+AP466,Lehigh Valley International Airport,Allentown,United States
+AP467,Fort Wayne International Airport,Fort Wayne,United States
+AP468,General Wayne A. Downing Peoria International Airport,Peoria,United States
+AP469,McGhee Tyson Airport,Knoxville,United States
+AP470,The Eastern Iowa Airport,Cedar Rapids,United States
+AP471,Hector International Airport,Fargo,United States
+AP472,Joe Foss Field Airport,Sioux Falls,United States
+AP473,Phoenix-Mesa-Gateway Airport,Mesa,United States
+AP474,Lester B. Pearson International Airport,Toronto,Canada
+AP475,Montreal / Pierre Elliott Trudeau International Airport,Montreal,Canada
+AP476,Durham Tees Valley Airport,Teesside,United Kingdom
+AP477,Cardiff International Airport,Cardiff,United Kingdom
+AP478,Simon Mwansa Kapwepwe International Airport,Ndola,Zambia
+AP479,Kenneth Kaunda International Airport Lusaka,Lusaka,Zambia
+AP480,Livingstone Airport,Livingstone,Zambia
+AP481,Heraklion International Nikos Kazantzakis Airport,Heraklion,Greece
+AP482,Kastoria National Airport,Kastoria,Greece
+AP483,Filippos Airport,Kozani,Greece
+AP484,Sitia Airport,Sitia,Greece
+AP485,Aktion National Airport,Preveza,Greece
+AP486,Eleftherios Venizelos International Airport,Athens,Greece
+AP487,Ikaria Airport,Ikaria,Greece
+AP488,Kos Airport,Kos,Greece
+AP489,Mytilene International Airport,Mytilini,Greece
+AP490,Diagoras Airport,Rhodos,Greece
+AP491,Limnos Airport,Limnos,Greece
+AP492,Dimokritos Airport,Alexandroupolis,Greece
+AP493,Zakynthos International Airport 'Dionysios Solomos',Zakynthos,Greece
+AP494,Thessaloniki Macedonia International Airport,Thessaloniki,Greece
+AP495,Chios Island National Airport,Chios,Greece
+AP496,Ioannis Kapodistrias International Airport,Kerkyra/corfu,Greece
+AP497,Kefallinia Airport,Keffallinia,Greece
+AP498,Samos Airport,Samos,Greece
+AP499,Skiros Airport,Skiros,Greece
+AP500,Kithira Airport,Kithira,Greece
+AP501,Lilongwe International Airport,Lilongwe,Malawi
+AP502,Mfuwe Airport,Mfuwe,Zambia
+AP503,Maputo Airport,Maputo,Mozambique
+AP504,Port Elizabeth Airport,Port Elizabeth,South Africa
+AP505,Hendrik Van Eck Airport,Phalaborwa,South Africa
+AP506,King Shaka International Airport,Durban,South Africa
+AP507,OR Tambo International Airport,Johannesburg,South Africa
+AP508,Ben Schoeman Airport,East London,South Africa
+AP509,East Midlands Airport,East Midlands,United Kingdom
+AP510,Wick Airport,Wick,United Kingdom
+AP511,Toulouse-Blagnac Airport,Toulouse,France
+AP512,Southampton Airport,Southampton,United Kingdom
+AP513,Lyon Saint-Exupery Airport,Lyon,France
+AP514,Lorient South Brittany (Bretagne Sud) Airport,Lorient,France
+AP515,Dijon-Bourgogne Airport,Dijon,France
+AP516,Tribhuvan International Airport,Kathmandu,Nepal
+AP517,Bhadrapur Airport,Chandragarhi,Nepal
+AP518,Bharatpur Airport,Bharatpur,Nepal
+AP519,Biratnagar Airport,Biratnagar,Nepal
+AP520,Gautam Buddha Airport,Bhairawa,Nepal
+AP521,Dhangarhi Airport,Dhangarhi,Nepal
+AP522,Janakpur Airport,Janakpur,Nepal
+AP523,Nepalgunj Airport,Nepalgunj,Nepal
+AP524,Pokhara Airport,Pokhara,Nepal
+AP525,Tumling Tar Airport,Tumling Tar,Nepal
+AP526,La Isabela International Airport,La Isabela,Dominican Republic
+AP527,Providenciales Airport,Providenciales,Turks and Caicos Islands
+AP528,Cap Haitien International Airport,Cap Haitien,Haiti
+AP529,Jersey Airport,Jersey,Jersey
+AP530,Birmingham International Airport,Birmingham,United Kingdom
+AP531,Munster Osnabruck Airport,Munster,Germany
+AP532,Bremen Airport,Bremen,Germany
+AP533,Bergen Airport Flesland,Bergen,Norway
+AP534,Dusseldorf Airport,Duesseldorf,Germany
+AP535,Hay River / Merlyn Carter Airport,Hay River,Canada
+AP536,Fort McMurray Airport,Fort Mcmurray,Canada
+AP537,Fort Smith Airport,Fort Smith,Canada
+AP538,Edmonton International Airport,Edmonton,Canada
+AP539,Red Deer Regional Airport,Red Deer Industrial,Canada
+AP540,Fort Chipewyan Airport,Fort Chipewyan,Canada
+AP541,Kelowna International Airport,Kelowna,Canada
+AP542,Yellowknife Airport,Yellowknife,Canada
+AP543,Anglesey Airport,Angelsey,United Kingdom
+AP544,Sveg Airport,Sveg,Sweden
+AP545,Hagfors Airport,Hagfors,Sweden
+AP546,Mora Airport,Mora,Sweden
+AP547,Torsby Airport,Torsby,Sweden
+AP548,Pajala Airport,Pajala,Sweden
+AP549,Lulea Airport,Lulea,Sweden
+AP550,Lennart Meri Tallinn Airport,Tallinn-ulemiste International,Estonia
+AP551,Kuressaare Airport,Kuressaare,Estonia
+AP552,Termez Airport,Termez,Uzbekistan
+AP553,Tashkent International Airport,Tashkent,Uzbekistan
+AP554,Karshi Khanabad Airport,Khanabad,Uzbekistan
+AP555,Navoi Airport,Navoi,Uzbekistan
+AP556,Brussels Airport,Brussels,Belgium
+AP557,Rankin Inlet Airport,Rankin Inlet,Canada
+AP558,Winnipeg / James Armstrong Richardson International Airport,Winnipeg,Canada
+AP559,Flin Flon Airport,Flin Flon,Canada
+AP560,Churchill Airport,Churchill,Canada
+AP561,Aarhus Airport,Aarhus,Denmark
+AP562,Gothenburg-Landvetter Airport,Gothenborg,Sweden
+AP563,Manchester Airport,Manchester,United Kingdom
+AP564,Thompson Airport,Thompson,Canada
+AP565,The Pas Airport,The Pas,Canada
+AP566,Marseille Provence Airport,Marseille,France
+AP567,Augsburg Airport,Augsburg,Germany
+AP568,Vaclav Havel Airport Prague,Prague,Czech Republic
+AP569,EuroAirport Basel-Mulhouse-Freiburg Airport,Mulhouse,France
+AP570,Kristiansand Airport,Kristiansand,Norway
+AP571,Linkoeping City Airport,Linkoeping,Sweden
+AP572,Warsaw Chopin Airport,Warsaw,Poland
+AP573,Vienna International Airport,Vienna,Austria
+AP574,Bologna Guglielmo Marconi Airport,Bologna,Italy
+AP575,Boryspil International Airport,Kiev,Ukraine
+AP576,Platov International Airport,Rostov,Russia
+AP577,Cologne Bonn Airport,Cologne,Germany
+AP578,Minsk National Airport,Minsk 2,Belarus
+AP579,London Heathrow Airport,London,Canada
+AP580,Bordeaux-Merignac Airport,Bordeaux,France
+AP581,Santorini Airport,Thira,Greece
+AP582,Falcone Borsellino Airport,Palermo,Italy
+AP583,Flamingo International Airport,Kralendijk,Netherlands Antilles
+AP584,Reykjavik Airport,Reykjavik,Iceland
+AP585,Akureyri Airport,Akureyri,Iceland
+AP586,Egilsstadir Airport,Egilsstadir,Iceland
+AP587,Perth International Airport,Perth,Australia
+AP588,Geraldton Airport,Geraldton,Australia
+AP589,Norman Manley International Airport,Kingston,Canada
+AP590,Marcos A. Gelabert International Airport,Panama,Panama
+AP591,Bocas Del Toro International Airport,Bocas Del Toro,Panama
+AP592,Juan Santamaria International Airport,San Jose,Costa Rica
+AP593,Cap Manuel Nino International Airport,Changuinola,Panama
+AP594,Enrique Malek International Airport,David,Panama
+AP595,Alberto Carnevalli Airport,Merida,Mexico
+AP596,Dr. Antonio Nicolas Briceno Airport,Valera,Venezuela
+AP597,Paris-Orly Airport,Paris,France
+AP598,Antwerp International Airport (Deurne),Antwerp,Belgium
+AP599,Brest Bretagne Airport,Brest,France
+AP600,Deauville-Saint-Gatien Airport,Deauville,France
+AP601,Kongolo Airport,Kongolo,Democratic Republic of Congo
+AP602,Bunia Airport,Bunia,Democratic Republic of Congo
+AP603,Goma International Airport,Goma,Democratic Republic of Congo
+AP604,Beni Airport,Beni,Democratic Republic of Congo
+AP605,Matari Airport,Isiro,Democratic Republic of Congo
+AP606,Bukavu Kavumu Airport,Bukavu/kavumu,Democratic Republic of Congo
+AP607,Bangoka International Airport,Kisangani,Democratic Republic of Congo
+AP608,Kalemie Airport,Kalemie,Democratic Republic of Congo
+AP609,Altai Airport,Altai,Mongolia
+AP610,Chinggis Khaan International Airport,Ulan Bator,Mongolia
+AP611,Dongshan Airport,Hailar,China
+AP612,Manzhouli Xijiao Airport,Manzhouli,China
+AP613,Choibalsan Airport,Choibalsan,Mongolia
+AP614,Bayankhongor Airport,Bayankhongor,Mongolia
+AP615,Dalanzadgad Airport,Dalanzadgad,Mongolia
+AP616,Khovd Airport,Khovd,Mongolia
+AP617,Muren Airport,Muren,Mongolia
+AP618,Donoi Airport,Uliastai,Mongolia
+AP619,Albany Airport,Albany,United States
+AP620,Busselton Regional Airport,Brusselton,Australia
+AP621,Esperance Airport,Esperance,Australia
+AP622,Ravensthorpe Airport,Ravensthorpe,Australia
+AP623,Sirri Island Airport,Siri Island,Iran
+AP624,Olympic Dam Airport,Olympic Dam,Australia
+AP625,El Tari Airport,Kupang,Indonesia
+AP626,Abu Dhabi International Airport,Abu Dhabi,United Arab Emirates
+AP627,Roanoke Blacksburg Regional Airport,Roanoke VA,United States
+AP628,Cleveland Hopkins International Airport,Cleveland,United States
+AP629,Chifeng Airport,Chifeng,China
+AP630,Tongliao Airport,Tongliao,China
+AP631,Baita International Airport,Hohhot,China
+AP632,Yantai Laishan Airport,Yantai,China
+AP633,Ottawa Macdonald-Cartier International Airport,Ottawa,Canada
+AP634,Durango La Plata County Airport,Durango,United States
+AP635,Manchester-Boston Regional Airport,Manchester NH,United States
+AP636,Burlington International Airport,Burlington,United States
+AP637,Quad City International Airport,Moline,United States
+AP638,Queretaro Intercontinental Airport,Queretaro,Mexico
+AP639,General Juan N Alvarez International Airport,Acapulco,Mexico
+AP640,Southeast Texas Regional Airport,Beaumont,United States
+AP641,Baton Rouge Metropolitan Airport,Baton Rouge,United States
+AP642,Lafayette Regional Airport,Lafayette,United States
+AP643,Tyler Pounds Regional Airport,Tyler,United States
+AP644,General Roberto Fierro Villalobos International Airport,Chihuahua,Mexico
+AP645,Garden City Regional Airport,Garden City,United States
+AP646,Central Nebraska Regional Airport,Grand Island,United States
+AP647,Lawton Fort Sill Regional Airport,Lawton,United States
+AP648,Lake Charles Regional Airport,Lake Charles,United States
+AP649,Springfield Branson National Airport,Springfield,United States
+AP650,Abraham Lincoln Capital Airport,Springfield,United States
+AP651,Texarkana Regional Webb Field,Texarkana,United States
+AP652,Central Wisconsin Airport,Wassau,United States
+AP653,Dubuque Regional Airport,Dubuque IA,United States
+AP654,Manhattan Regional Airport,Manhattan,United States
+AP655,Rochester International Airport,Rochester,United States
+AP656,Toledo Express Airport,Toledo,United States
+AP657,Cherry Capital Airport,Traverse City,United States
+AP658,Abilene Regional Airport,Abilene,United States
+AP659,Corpus Christi International Airport,Corpus Christi,United States
+AP660,Midland International Airport,Midland,United States
+AP661,Montgomery Regional (Dannelly Field) Airport,MONTGOMERY,United States
+AP662,Laredo International Airport,Laredo,United States
+AP663,Evansville Regional Airport,Evansville,United States
+AP664,Hermanos Serdan International Airport,Puebla,Mexico
+AP665,Roswell International Air Center Airport,Roswell,United States
+AP666,Ponciano Arriaga International Airport,San Luis Potosi,Mexico
+AP667,Charlottesville Albemarle Airport,Charlottesville VA,United States
+AP668,Wilmington International Airport,Wilmington,United States
+AP669,Waterloo Regional Airport,Waterloo,Canada
+AP670,Watertown International Airport,Watertown,United States
+AP671,Don Miguel Hidalgo Y Costilla International Airport,Guadalajara,Mexico
+AP672,Easterwood Field,College Station,United States
+AP673,Waco Regional Airport,Waco,United States
+AP674,Columbia Regional Airport,Columbia,United States
+AP675,Fort Smith Regional Airport,Fort Smith,Canada
+AP676,East Texas Regional Airport,Longview,United States
+AP677,Jackson-Medgar Wiley Evers International Airport,Jackson,United States
+AP678,Santa Fe Municipal Airport,Santa Fe,Argentina
+AP679,Kalamazoo Battle Creek International Airport,Kalamazoo,United States
+AP680,Central Illinois Regional Airport at Bloomington-Normal,Bloomington,United States
+AP681,University of Illinois Willard Airport,Champaign,United States
+AP682,La Crosse Municipal Airport,La Crosse,United States
+AP683,Sioux Gateway Col. Bud Day Field,Sioux City,United States
+AP684,Waterloo Airport,Waterloo,Canada
+AP685,Pemba Airport,Pemba,Mozambique
+AP686,Nampula Airport,Nampula,Mozambique
+AP687,Luxembourg-Findel International Airport,Luxemburg,Luxembourg
+AP688,Copenhagen Kastrup Airport,Copenhagen,Denmark
+AP689,Frankfurt am Main Airport,Frankfurt,Germany
+AP690,Chingozi Airport,Tete,Mozambique
+AP691,Venice Marco Polo Airport,Venice,Italy
+AP692,Rick Husband Amarillo International Airport,Amarillo,United States
+AP693,Robert Gray  Army Air Field Airport,Killeen,United States
+AP694,San Angelo Regional Mathis Field,San Angelo,United States
+AP695,Sheppard Air Force Base-Wichita Falls Municipal Airport,Wichita Falls,United States
+AP696,Nice-Cote d'Azur Airport,Nice,France
+AP697,Metz-Nancy-Lorraine Airport,Metz,France
+AP698,Lille-Lesquin Airport,Lille,France
+AP699,Monroe Regional Airport,Monroe,United States
+AP700,Mobile Regional Airport,Mobile,United States
+AP701,Rapid City Regional Airport,Rapid City,United States
+AP702,Strasbourg Airport,Strasbourg,France
+AP703,Enrique Olaya Herrera Airport,Medellin,Colombia
+AP704,Humberto Delgado Airport (Lisbon Portela Airport),Lisbon,Portugal
+AP705,Adolfo Suarez Madrid Barajas Airport,Madrid,Spain
+AP706,Barcelona International Airport,Barcelona,Spain
+AP707,Francisco de Sa Carneiro Airport,Porto,Portugal
+AP708,Malpensa International Airport,Milano,Italy
+AP709,Bilbao Airport,Bilbao,Spain
+AP710,El Dorado International Airport,Bogota,Colombia
+AP711,Antonio Roldan Betancourt Airport,Carepa,Colombia
+AP712,Clermont-Ferrand Auvergne Airport,Clermont-Ferrand,France
+AP713,Nantes Atlantique Airport,Nantes,France
+AP714,Biarritz-Anglet-Bayonne Airport,Biarritz-bayonne,France
+AP715,Grand Junction Regional Airport,Grand Junction,United States
+AP716,Joplin Regional Airport,Joplin,United States
+AP717,General Francisco J. Mujica International Airport,Morelia,Mexico
+AP718,Austin Straubel International Airport,Green Bay,United States
+AP719,Sawyer International Airport,Gwinn,United States
+AP720,German Olano Airport,Puerto Carreno,Colombia
+AP721,Obando Airport,Puerto Inirida,Colombia
+AP722,Kumasi Airport,Kumasi,Ghana
+AP723,Murtala Muhammed International Airport,Lagos,Nigeria
+AP724,Tamale Airport,Tamale,Ghana
+AP725,Bristol Airport,Bristol,United Kingdom
+AP726,Esbjerg Airport,Esbjerg,Denmark
+AP727,Kristiansund Airport (Kvernberget),Kristiansund,Norway
+AP728,Harstad/Narvik Airport,Evenes,Norway
+AP729,General Ignacio P. Garcia International Airport,Hermosillo,Mexico
+AP730,Bachigualato Federal International Airport,Culiacan,Mexico
+AP731,Jomo Kenyatta International Airport,Nairobi,Kenya
+AP732,Malta International Airport,Malta,Malta
+AP733,Ivano-Frankivsk International Airport,Ivano-Frankivsk,Ukraine
+AP734,Hawarden Airport,Hawarden,United Kingdom
+AP735,Alexandria International Airport,Alexandria,Egypt
+AP736,Hazrat Shahjalal International Airport,Dhaka,Bangladesh
+AP737,Shah Amanat International Airport,Chittagong,Bangladesh
+AP738,Cox's Bazar Airport,Cox's Bazar,Bangladesh
+AP739,Jessore Airport,Jessore,Bangladesh
+AP740,Osmany International Airport,Sylhet Osmani,Bangladesh
+AP741,Kristianstad Airport,Kristianstad,Sweden
+AP742,Santa Genoveva Airport,Goiania,Brazil
+AP743,Ji-Parana Airport,Ji-Parana,Brazil
+AP744,Marechal Rondon Airport,Cuiaba,Brazil
+AP745,Leite Lopes Airport,Ribeirao Preto,Brazil
+AP746,Belbek Airport,Sevastopol,Ukraine
+AP747,Batumi International Airport,Batumi,Georgia
+AP748,Istanbul Airport,Istanbul,Turkey
+AP749,Bram Fischer International Airport,Bloemfontein,South Africa
+AP750,Kruger Mpumalanga International Airport,Mpumalanga,South Africa
+AP751,Polokwane International Airport,Potgietersrus,South Africa
+AP752,Vilankulo Airport,Vilankulu,Mozambique
+AP753,Pierre Van Ryneveld Airport,Upington,South Africa
+AP754,Hannover Airport,Hannover,Germany
+AP755,Nuremberg Airport,Nuernberg,Germany
+AP756,Djibouti-Ambouli Airport,Djibouti,Djibouti
+AP757,Addis Ababa Bole International Airport,Addis Ababa,Ethiopia
+AP758,Robert Gabriel Mugabe International Airport,Harare,Zimbabwe
+AP759,Lubumbashi International Airport,Lubumashi,Democratic Republic of Congo
+AP760,Kigali International Airport,Kigali,Rwanda
+AP761,Bujumbura International Airport,Bujumbura,Burundi
+AP762,Carlos Rovirosa Perez International Airport,Villahermosa,Mexico
+AP763,Enua Airport,Atiu Island,Cook Islands
+AP764,Mangaia Island Airport,Mangaia Island,Cook Islands
+AP765,Mitiaro Island Airport,Mitiaro Island,Cook Islands
+AP766,Mauke Airport,Mauke Island,Cook Islands
+AP767,Breves Airport,Breves,Brazil
+AP768,Shanghai Hongqiao International Airport,Shanghai,China
+AP769,Wuhan Tianhe International Airport,Wuhan,China
+AP770,Lianyungang Airport,Lianyungang,China
+AP771,Ganzhou Airport,Ganzhou,China
+AP772,Nanchang Changbei International Airport,Nanchang,China
+AP773,Zhoushuizi Airport,Dalian,China
+AP774,Sanya Phoenix International Airport,Sanya,China
+AP775,Anqing Tianzhushan Airport,Anqing,China
+AP776,Liuzhou Bailian Airport,Liuzhou,China
+AP777,Changzhi Airport,Changzhi,China
+AP778,Xiangyang Liuji Airport,Xiangfan,China
+AP779,Beira Airport,Beira,Mozambique
+AP780,Guarulhos - Governador Andre Franco Montoro International Airport,Sao Paulo,Brazil
+AP781,Pocatello Regional Airport,Pocatello,United States
+AP782,San Francisco International Airport,San Francisco,United States
+AP783,Rogue Valley International Medford Airport,Medford,United States
+AP784,Roberts Field,Redmond-Bend,United States
+AP785,Fresno Yosemite International Airport,Fresno,United States
+AP786,San Diego International Airport,San Diego,United States
+AP787,JAGS McCartney International Airport,Cockburn Town,Bahamas
+AP788,Uray Airport,Uraj,Russia
+AP789,Chisinau International Airport,Chisinau,Moldova
+AP790,Sochi International Airport,Sochi,Russia
+AP791,Southwest Wyoming Regional Airport,Rock Springs,United States
+AP792,Gillette Campbell County Airport,Gillette,United States
+AP793,Canyonlands Field,Moab,United States
+AP794,Elko Regional Airport,Elko,United States
+AP795,Joslin Field Magic Valley Regional Airport,Twin Falls,United States
+AP796,Vernal Regional Airport,Vernal,United States
+AP797,Gregorio Luperon International Airport,Puerto Plata,Dominican Republic
+AP798,Samana El Catey International Airport,Samana,Dominican Republic
+AP799,Val de Cans/Julio Cezar Ribeiro International Airport,Belem,Brazil
+AP800,Oriximina Airport,Oriximina,Brazil
+AP801,Altamira Airport,Altamira,Brazil
+AP802,Monte Dourado Airport,Almeirim,Brazil
+AP803,Maestro Wilson Fonseca Airport,Santarem,Brazil
+AP804,Itaituba Airport,Itaituba,Brazil
+AP805,Rijeka Airport,Rijeka,Croatia
+AP806,Zagreb Airport,Zagreb,Croatia
+AP807,Split Airport,Split,Croatia
+AP808,Osijek Airport,Osijek,Croatia
+AP809,Gove Airport,Gove,Australia
+AP810,Groote Eylandt Airport,Groote Eylandt,Australia
+AP811,Maningrida Airport,Maningrida,Australia
+AP812,Darwin International Airport,Darwin,Australia
+AP813,Elcho Island Airport,Elcho Island,Australia
+AP814,Milingimbi Airport,Milingimbi,Australia
+AP815,Quelimane Airport,Quelimane,Mozambique
+AP816,Inhambane Airport,Inhambane,Mozambique
+AP817,Lichinga Airport,Lichinga,Mozambique
+AP818,Jack Mc Namara Field Airport,Crescent City,United States
+AP819,California Redwood Coast-Humboldt County Airport,Arcata CA,United States
+AP820,Laramie Regional Airport,Laramie,United States
+AP821,Pueblo Memorial Airport,Pueblo,United States
+AP822,Meadows Field,Bakersfield,United States
+AP823,Mc Clellan-Palomar Airport,Carlsbad,United States
+AP824,Santa Barbara Municipal Airport,Santa Barbara,United States
+AP825,San Luis County Regional Airport,San Luis Obispo,United States
+AP826,Santa Maria Pub/Capt G Allan Hancock Field,Santa Maria,United States
+AP827,Yuma MCAS/Yuma International Airport,Yuma,United States
+AP828,Mahlon Sweet Field,Eugene,United States
+AP829,Crater Lake-Klamath Regional Airport,Klamath Falls,United States
+AP830,Seattle Tacoma International Airport,Seattle,United States
+AP831,Chico Municipal Airport,Chico,United States
+AP832,Modesto City Co-Harry Sham Field,Modesto,United States
+AP833,Monterey Peninsula Airport,Monterey,United States
+AP834,Redding Municipal Airport,Redding,United States
+AP835,Presidente Juscelino Kubistschek International Airport,Brasilia,Brazil
+AP836,Deputado Luiz Eduardo Magalhaes International Airport,Salvador,Brazil
+AP837,Barreiras Airport,Barreiras,Brazil
+AP838,Prof. Eribelto Manoel Reino State Airport,Sao Jose Do Rio Preto,Brazil
+AP839,Ten. Cel. Aviador Cesar Bombonato Airport,Uberlandia,Brazil
+AP840,Afonso Pena Airport,Curitiba,Brazil
+AP841,Pampulha - Carlos Drummond de Andrade Airport,Belo Horizonte,Brazil
+AP842,Santos Dumont Airport,Rio De Janeiro,Brazil
+AP843,Vitoria da Conquista Airport,Vitoria Da Conquista,Brazil
+AP844,Riverton Regional Airport,Riverton WY,United States
+AP845,Sheridan County Airport,Sheridan,United States
+AP846,Viracopos International Airport,Campinas,Brazil
+AP847,Campo Grande Airport,Campo Grande,Brazil
+AP848,Santa Maria Airport,Santa Maria (island),Portugal
+AP849,Tancredo Neves International Airport,Belo Horizonte,Brazil
+AP850,Governador Jorge Teixeira de Oliveira Airport,Porto Velho,Brazil
+AP851,Eurico de Aguiar Salles Airport,Vitoria,Brazil
+AP852,Salgado Filho Airport,Porto Alegre,Brazil
+AP853,Brigadeiro Lysias Rodrigues Airport,Palmas,Brazil
+AP854,Ministro Victor Konder International Airport,Navegantes,Brazil
+AP855,Hercilio Luz International Airport,Florianopolis,Brazil
+AP856,Cataratas International Airport,Foz Do Iguacu,Brazil
+AP857,Zumbi dos Palmares Airport,Maceio,Brazil
+AP858,Copernicus Wroclaw Airport,Wroclaw,Poland
+AP859,Cairo International Airport,Cairo,Egypt
+AP860,Larnaca International Airport,Larnaca,Cyprus
+AP861,Queen Alia International Airport,Amman,Jordan
+AP862,Basrah International Airport,Basrah,Iraq
+AP863,Lviv International Airport,Lvov,Ukraine
+AP864,Governador Jose Richa Airport,Londrina,Brazil
+AP865,Eduardo Gomes International Airport,Manaus,Brazil
+AP866,Bahia - Jorge Amado Airport,Ilheus,Brazil
+AP867,London Gatwick Airport,London,Canada
+AP868,Guernsey Airport,Guernsey,Guernsey
+AP869,Ben Gurion International Airport,Tel-aviv,Israel
+AP870,Eilat Airport,Elat,Israel
+AP871,Tripoli International Airport,Tripoli,Libya
+AP872,King Fahd International Airport,Dammam,Saudi Arabia
+AP873,Kuwait International Airport,Kuwait,Kuwait
+AP874,Benina International Airport,Benghazi,Libya
+AP875,Sofia Airport,Sofia,Bulgaria
+AP876,Pinto Martins International Airport,Fortaleza,Brazil
+AP877,Prefeito Renato Moreira Airport,Imperatriz,Brazil
+AP878,Joao Correa da Rocha Airport,Maraba,Brazil
+AP879,Presidente Joao Batista Figueiredo Airport,Sinop,Turkey
+AP880,Porto Seguro Airport,Porto Seguro,Brazil
+AP881,Carajos Airport,Parauapebas,Brazil
+AP882,Marechal Cunha Machado International Airport,Sao Luis,Brazil
+AP883,Guararapes - Gilberto Freyre International Airport,Recife,Brazil
+AP884,Greater Natal International Airport,Natal,Brazil
+AP885,Senador Petronio Portela Airport,Teresina,Brazil
+AP886,Tabatinga Airport,Tabatinga,Brazil
+AP887,Fernando de Noronha Airport,Fernando Do Noronha,Brazil
+AP888,Hugo Cantergiani Regional Airport,Caxias Do Sul,Brazil
+AP889,Presidente Castro Pinto International Airport,Joao Pessoa,Brazil
+AP890,Exeter International Airport,Exeter,United Kingdom
+AP891,Malaga Airport,Malaga,Spain
+AP892,Alicante International Airport,Alicante,Spain
+AP893,Faro Airport,Faro,Portugal
+AP894,Palma De Mallorca Airport,Palma de Mallorca,Spain
+AP895,Verona Villafranca Airport,Villafranca,Italy
+AP896,Bari Karol Wojtyla Airport,Bari,Italy
+AP897,Cagliari Elmas Airport,Cagliari,Italy
+AP898,Cluj-Napoca International Airport,Cluj-napoca,Romania
+AP899,Gdansk Lech Walesa Airport,Gdansk,Poland
+AP900,Westerland Sylt Airport,Westerland,Germany
+AP901,Tirana International Airport Mother Teresa,Tirana,Albania
+AP902,Podgorica Airport,Podgorica,Montenegro
+AP903,Xi'an Xianyang International Airport,Xi'an,China
+AP904,Bayannur Tianjitai Airport,Bayannur,China
+AP905,Ordos Ejin Horo Airport,Dongsheng,China
+AP906,Mario Ribeiro Airport,Montes Claros,Brazil
+AP907,Placido de Castro Airport,Rio Branco,Brazil
+AP908,Nelson Ribeiro Guimaraes Airport,Caldas Novas,Brazil
+AP909,Rio Galeo Tom Jobim International Airport,Rio De Janeiro,Brazil
+AP910,Mariscal Sucre International Airport,Quito,Ecuador
+AP911,Heydar Aliyev International Airport,Baku,Azerbaijan
+AP912,Entebbe International Airport,Entebbe,Uganda
+AP913,Juba International Airport,Juba,South Sudan
+AP914,Monsenor Oscar Arnulfo Romero International Airport,San Salvador,El Salvador
+AP915,Cacoal Airport,Cacoal,Brazil
+AP916,Brisbane International Airport,Brisbane,Australia
+AP917,Canberra International Airport,Canberra,Australia
+AP918,Proserpine Whitsunday Coast Airport,Prosserpine,Australia
+AP919,Karratha Airport,Karratha,Australia
+AP920,Port Hedland International Airport,Port Hedland,Australia
+AP921,Launceston Airport,Launceston,Australia
+AP922,Christmas Island Airport,Christmas Island,Christmas Island
+AP923,Coffs Harbour Airport,Coff's Harbour,Australia
+AP924,Hervey Bay Airport,Hervey Bay,Australia
+AP925,Tocumen International Airport,Panama City,Panama
+AP926,Rafael Nunez International Airport,Cartagena,Colombia
+AP927,La Aurora Airport,Guatemala City,Guatemala
+AP928,Kashgar Airport,Kashi,China
+AP929,Alfonso Bonilla Aragon International Airport,Cali,Colombia
+AP930,Augusto C. Sandino (Managua) International Airport,Managua,Nicaragua
+AP931,Urumqi Diwopu International Airport,Urumqi,China
+AP932,Hotan Airport,Hotan,China
+AP933,Yaounde Nsimalen International Airport,Yaounde,Cameroon
+AP934,Ivato Airport,Antananarivo,Madagascar
+AP935,Ibiza Airport,Ibiza,Spain
+AP936,Graz Airport,Graz,Austria
+AP937,Astana International Airport,Tselinograd,Kazakhstan
+AP938,Kzyl-Orda Southwest Airport,Kzyl-Orda,Kazakhstan
+AP939,Sunan Shuofang International Airport,Wuxi,China
+AP940,Hamburg Airport,Hamburg,Germany
+AP941,London Stansted Airport,London,Canada
+AP942,Burgas Airport,Bourgas,Bulgaria
+AP943,Haikou Meilan International Airport,Haikou,China
+AP944,Yining Airport,Yining,China
+AP945,Almaty Airport,Alma-ata,Kazakhstan
+AP946,Aktobe Airport,Aktyubinsk,Kazakhstan
+AP947,Ust-Kamennogorsk Airport,Ust Kamenogorsk,Kazakhstan
+AP948,Sary-Arka Airport,Karaganda,Kazakhstan
+AP949,Kalgoorlie Boulder Airport,Kalgoorlie,Australia
+AP950,Paris Beauvais Tille Airport,Beauvais,France
+AP951,Surgut Airport,Surgut,Russia
+AP952,St. John's International Airport,St. John's,Canada
+AP953,Halifax / Stanfield International Airport,Halifax,Canada
+AP954,Whitehorse / Erik Nielsen International Airport,Whitehorse,Canada
+AP955,Deer Lake Airport,Deer Lake,Canada
+AP956,Regina International Airport,Regina,Canada
+AP957,Saskatoon John G. Diefenbaker International Airport,Saskatoon,Canada
+AP958,Piloto Osvaldo Marques Dias Airport,Alta Floresta,Brazil
+AP959,Regional de Maringa Airport,Maringa,Brazil
+AP960,Presidente Joao Suassuna Airport,Campina Grande,Brazil
+AP961,Senador Nilo Coelho Airport,Petrolina,Brazil
+AP962,Congonhas Airport,Sao Paulo,Brazil
+AP963,Orlando Bezerra de Menezes Airport,Juazeiro Do Norte,Brazil
+AP964,Hualien Airport,Hualien,Taiwan
+AP965,Kinmen Airport,Kinmen,Taiwan
+AP966,Meixian Airport,Meixian,China
+AP967,Makung Airport,Makung,Taiwan
+AP968,Naha Airport,Okinawa,Japan
+AP969,Taitung Airport,Fengnin,Taiwan
+AP970,Pau Pyrenees Airport,Pau,France
+AP971,Suboficial Ay Santiago Germano Airport,San Rafael,Argentina
+AP972,Aviador C. Campos Airport,San Martin Des Andes,Argentina
+AP973,Catamarca Airport,Catamarca,Argentina
+AP974,Formosa Airport,Formosa,Argentina
+AP975,Capitan V A Almonacid Airport,La Rioja,Argentina
+AP976,Brigadier Mayor D Cesar Raul Ojeda Airport,San Luis,Argentina
+AP977,Termas de Rio Hondo international Airport,Rio Hondo,Argentina
+AP978,Santa Rosa Airport,Santa Rosa,Argentina
+AP979,Gobernador Castello Airport,Viedma,Argentina
+AP980,Gobernador Horacio Guzman International Airport,Jujuy,Argentina
+AP981,Carrasco International /General C L Berisso Airport,Montevideo,Uruguay
+AP982,Comodoro Arturo Merino Benitez International Airport,Santiago,Spain
+AP983,Ministro Pistarini International Airport,Buenos Aires,Argentina
+AP984,Cataratas Del Iguazu International Airport,Iguazu Falls,Argentina
+AP985,Jorge Chavez International Airport,Lima,Peru
+AP986,Silvio Pettirossi International Airport,Asuncion,Paraguay
+AP987,Philip S. W. Goldson International Airport,Belize City,Belize
+AP988,Jose Joaquin de Olmedo International Airport,Guayaquil,Ecuador
+AP989,Alesund Airport,Alesund,Norway
+AP990,Trondheim Airport,Trondheim,Norway
+AP991,Brindisi Salento Airport,Brindisi,Italy
+AP992,Comiso Airport,Comiso,Italy
+AP993,A Coruna Airport,La Coruna,Spain
+AP994,Vigo Airport,Vigo,Spain
+AP995,Sangster International Airport,Montego Bay,Jamaica
+AP996,Worcester Regional Airport,Worcester,United States
+AP997,Stewart International Airport,Newburgh,United States
+AP998,Cyril E. King Airport,St. Thomas,Virgin Islands
+AP999,Federico Garcia Lorca Airport,Granada,Spain
+AP1000,Menorca Airport,Menorca,Spain
+AP1001,Tainan Airport,Tainan,Taiwan
+AP1002,Ninoy Aquino International Airport,Manila,Philippines
+AP1003,Ernesto Cortissoz International Airport,Barranquilla,Colombia
+AP1004,Matecana International Airport,Pereira,Colombia
+AP1005,Gustavo Rojas Pinilla International Airport,San Andres Island,Colombia
+AP1006,Alfredo Vasquez Cobo International Airport,Leticia,Colombia
+AP1007,Palonegro Airport,Bucaramanga,Colombia
+AP1008,Camilo Daza International Airport,Cucuta,Colombia
+AP1009,Coronel FAP Francisco Secada Vignetta International Airport,Iquitos,Peru
+AP1010,Daniel Oduber Quiros International Airport,Liberia,Costa Rica
+AP1011,Beihai Airport,Beihai,China
+AP1012,Changzhou Benniu Airport,Changzhou,China
+AP1013,Zhijiang Airport,Zhijiang,China
+AP1014,Liping Airport,Liping,China
+AP1015,Jiujiang Lushan Airport,Jiujiang,China
+AP1016,Luoyang Airport,Luoyang,China
+AP1017,Nanyang Jiangying Airport,Nanyang,China
+AP1018,Zhuhai Jinwan Airport,Zhuhai,China
+AP1019,Zhanjiang Airport,Zhanjiang,China
+AP1020,Dunhuang Airport,Dunhuang,China
+AP1021,Hami Airport,Hami,China
+AP1022,Kuqa Airport,Kuqa,China
+AP1023,Xinyuan Nalati Airport,Xinyuan,China
+AP1024,Tacheng Airport,Tacheng,China
+AP1025,Camilo Ponce Enriquez Airport,La Toma (Catamayo),Ecuador
+AP1026,Eloy Alfaro International Airport,Manta,Ecuador
+AP1027,Francisco De Orellana Airport,Coca,Ecuador
+AP1028,Coronel E Carvajal Airport,Macas,Ecuador
+AP1029,Jumandy Airport,Tena,Ecuador
+AP1030,Varna Airport,Varna,Bulgaria
+AP1031,Paphos International Airport,Paphos,Cyprus
+AP1032,Beijing Capital International Airport,Beijing,China
+AP1033,Jieyang Chaoshan International Airport,Shantou,China
+AP1034,Shubuling Airport,Linyi,China
+AP1035,Zunyi Xinzhou Airport,Zunyi,China
+AP1036,Wenzhou Longwan International Airport,Wenzhou,China
+AP1037,Changde Airport,Changde,China
+AP1038,Luzhou Airport,Luzhou,China
+AP1039,Jiagedaqi Airport,Jiagedaqi District,China
+AP1040,Lanzhou Zhongchuan Airport,Lanzhou,China
+AP1041,Yiwu Airport,Yiwu,China
+AP1042,Mianyang Airport,Mianyang,China
+AP1043,Tongren Fenghuang Airport,Tongren,China
+AP1044,Qingyang Airport,Qingyang,China
+AP1045,Quanzhou Jinjiang International Airport,Quanzhou,China
+AP1046,Datong Airport,Datong,China
+AP1047,Jiamusi Airport,Jiamusi,China
+AP1048,Mudanjiang Hailang International Airport,Mudanjiang,China
+AP1049,Longjia Airport,Changchun,China
+AP1050,Fuyang Xiguan Airport,Fuyang,China
+AP1051,Altay Air Base,Altay,China
+AP1052,Alashankou Bole (Bortala) airport,Bole,China
+AP1053,Korla Airport,Korla,China
+AP1054,Karamay Airport,Karamay,China
+AP1055,Lianshui Airport,Huai An,China
+AP1056,Nanchong Airport,Nanchong,China
+AP1057,Yulin Yuyang Airport,Yulin,China
+AP1058,Ganja Airport,Ganja,Azerbaijan
+AP1059,Kurumoch International Airport,Samara,Russia
+AP1060,Kazan International Airport,Kazan,Russia
+AP1061,Pavlodar Airport,Pavlodar,Kazakhstan
+AP1062,Shymkent Airport,Chimkent,Kazakhstan
+AP1063,Zhezkazgan Airport,Zhezkazgan,Kazakhstan
+AP1064,Manas International Airport,Bishkek,Kyrgyzstan
+AP1065,Kostanay West Airport,Kostanay,Kazakhstan
+AP1066,Omsk Central Airport,Omsk,Russia
+AP1067,Aktau Airport,Aktau,Kazakhstan
+AP1068,Chileka International Airport,Blantyre,Malawi
+AP1069,Julius Nyerere International Airport,Dar Es Salaam,Tanzania
+AP1070,Douala International Airport,Douala,Cameroon
+AP1071,Sir Seretse Khama International Airport,Gaberone,Botswana
+AP1072,Bastia-Poretta Airport,Bastia,France
+AP1073,Shanhaiguan Airport,Qinhuangdao,China
+AP1074,Zhangjiakou Ningyuan Airport,Zhangjiakou,China
+AP1075,Cloncurry Airport,Cloncurry,Australia
+AP1076,Odessa International Airport,Odessa,Ukraine
+AP1077,Quatro de Fevereiro Airport,Luanda,Angola
+AP1078,Zaragoza Air Base,Zaragoza,Spain
+AP1079,Del Caribe Santiago Marino International Airport,Porlamar,Venezuela
+AP1080,Antonio Jose de Sucre Airport,Cumana,Venezuela
+AP1081,Jose Leonardo Chirinos Airport,Coro,Venezuela
+AP1082,Cacique Aramare Airport,Puerto Ayacucho,Venezuela
+AP1083,Mayor Buenaventura Vivas International Airport,Santo Domingo,Dominican Republic
+AP1084,Juan Pablo Perez Alfonso Airport,El Vigia,Venezuela
+AP1085,Piarco International Airport,Port-of-spain,Trinidad and Tobago
+AP1086,General Bartolome Salom International Airport,Puerto Cabello,Venezuela
+AP1087,Point Salines International Airport,Point Salines,Grenada
+AP1088,Cheddi Jagan International Airport,Georgetown,Cayman Islands
+AP1089,Gold Coast Airport,Coolangatta,Australia
+AP1090,Ayers Rock Connellan Airport,Uluru,Australia
+AP1091,Cocos (Keeling) Islands Airport,Cocos Keeling Island,Cocos (Keeling) Islands
+AP1092,Xoxocotlan International Airport,Oaxaca,Mexico
+AP1093,Beirut Rafic Hariri International Airport,Beirut,Lebanon
+AP1094,Mosul International Airport,Mosul,Iraq
+AP1095,Montpellier-Mediterranee Airport,Montpellier,France
+AP1096,Chicago Midway International Airport,Chicago,United States
+AP1097,George Best Belfast City Airport,Belfast,United Kingdom
+AP1098,Bangor International Airport,Bangor,United States
+AP1099,Glacier Park International Airport,Kalispell,United States
+AP1100,General Heriberto Jara International Airport,Vera Cruz,Mexico
+AP1101,Muscat International Airport,Muscat,Oman
+AP1102,Bahrain International Airport,Bahrain,Bahrain
+AP1103,Hamad International Airport,Doha,Qatar
+AP1104,King Khaled International Airport,Riyadh,Saudi Arabia
+AP1105,Salalah Airport,Salalah,Oman
+AP1106,Trieste Friuli Venezia Giulia Airport,Ronchi De Legionari,Italy
+AP1107,Genoa Cristoforo Colombo Airport,Genoa,Italy
+AP1108,Ancona Falconara Airport,Ancona,Italy
+AP1109,Es Senia Airport,Oran,Algeria
+AP1110,Skopje Alexander the Great Airport,Skopje,Macedonia
+AP1111,Imam Khomeini International Airport,Tehran,Iran
+AP1112,Dubrovnik Airport,Dubrovnik,Croatia
+AP1113,Robin Hood Doncaster Sheffield Airport,Sheffield,United Kingdom
+AP1114,Great Falls International Airport,Great Falls,United States
+AP1115,Helena Regional Airport,Helena,United States
+AP1116,Sulaymaniyah International Airport,Sulaymaniyah,Iraq
+AP1117,King Abdulaziz International Airport,Jeddah,Saudi Arabia
+AP1118,General Francisco Javier Mina International Airport,Tampico,Mexico
+AP1119,Tapachula International Airport,Tapachula,Mexico
+AP1120,Del Bajio International Airport,Del Bajio,Mexico
+AP1121,Kilimanjaro International Airport,Kilimanjaro,Tanzania
+AP1122,Budapest Liszt Ferenc International Airport,Budapest,Hungary
+AP1123,Riga International Airport,Riga,Latvia
+AP1124,Katowice International Airport,Katowice,Poland
+AP1125,Hanamaki Airport,Hanamaki,Japan
+AP1126,Osaka International Airport,Osaka,Japan
+AP1127,New Chitose Airport,Sapporo,Japan
+AP1128,Yamagata Airport,Yamagata,Japan
+AP1129,Kumamoto Airport,Kumamoto,Japan
+AP1130,Prince Mohammad Bin Abdulaziz Airport,Madinah,Saudi Arabia
+AP1131,Prince Abdulmohsin Bin Abdulaziz Airport,Yenbo,Saudi Arabia
+AP1132,Gassim Airport,Gassim,Saudi Arabia
+AP1133,Abha Regional Airport,Abha,Saudi Arabia
+AP1134,Sharurah Airport,Sharurah,Saudi Arabia
+AP1135,Santiago Perez Airport,Arauca,Colombia
+AP1136,Fabio Alberto Leon Bentley Airport,Mitu,Colombia
+AP1137,Antonio Narino Airport,Pasto,Colombia
+AP1138,Vanguardia Airport,Villavicencio,Colombia
+AP1139,Borg El Arab International Airport,Alexandria,Egypt
+AP1140,Calvi-Sainte-Catherine Airport,Calvi,France
+AP1141,Ljubljana Joze Pucnik Airport,Ljubljana,Slovenia
+AP1142,Ciudad Obregon International Airport,Ciudad Obregon,Mexico
+AP1143,Valle del Fuerte International Airport,Los Mochis,Mexico
+AP1144,General Rivadeneira Airport,Esmeraldas,Ecuador
+AP1145,Cotopaxi International Airport,Latacunga,Ecuador
+AP1146,Santa Rosa International Airport,Santa Rosa,Argentina
+AP1147,Teniente Coronel Luis a Mantilla Airport,Tulcan,Ecuador
+AP1148,Conakry International Airport,Conakry,Guinea
+AP1149,Nagoya Airport,Nagoya,Japan
+AP1150,Matsumoto Airport,Matsumoto,Japan
+AP1151,Niigata Airport,Niigata,Japan
+AP1152,Fukuoka Airport,Fukuoka,Japan
+AP1153,Aomori Airport,Aomori,Japan
+AP1154,Kochi Airport,Kochi,Japan
+AP1155,Sendai Airport,Sendai,Japan
+AP1156,Tokyo Haneda International Airport,Tokyo,Japan
+AP1157,Nanki Shirahama Airport,Nanki-shirahama,Japan
+AP1158,Misawa Air Base,Misawa,Japan
+AP1159,Nagasaki Airport,Nagasaki,Japan
+AP1160,Malindi Airport,Malindi,Kenya
+AP1161,Szczecin-Goleni Airport,Szczecin,Poland
+AP1162,Aswan International Airport,Aswan,Egypt
+AP1163,Abu Simbel Airport,Abu Simbel,Egypt
+AP1164,Assiut International Airport,Asyut,Egypt
+AP1165,Sohag International Airport,Sohag,Egypt
+AP1166,Marsa Alam International Airport,Marsa Alam,Egypt
+AP1167,Sharm El Sheikh International Airport,Sharm El Sheikh,Egypt
+AP1168,St Gallen Altenrhein Airport,Altenrhein,Switzerland
+AP1169,Kununurra Airport,Kununurra,Australia
+AP1170,Broome International Airport,Broome,Australia
+AP1171,Presidente Nicolau Lobato International Airport,Dili,East Timor
+AP1172,Bisha Airport,Bisha,Saudi Arabia
+AP1173,Nejran Airport,Nejran,Saudi Arabia
+AP1174,Ha'il Airport,Hail,Saudi Arabia
+AP1175,Tabuk Airport,Tabuk,Saudi Arabia
+AP1176,Al-Jawf Domestic Airport,Al-Jawf,Saudi Arabia
+AP1177,Al Qaisumah/Hafr Al Batin Airport,Hafr Al-batin,Saudi Arabia
+AP1178,Al Wajh Domestic Airport,Wejh,Saudi Arabia
+AP1179,Arar Domestic Airport,Arar,Saudi Arabia
+AP1180,Wadi Al Dawasir Airport,Wadi-al-dawasir,Saudi Arabia
+AP1181,Majeed Bin Abdulaziz Airport,Al-Ula,Saudi Arabia
+AP1182,Al Ahsa Airport,Al-ahsa,Saudi Arabia
+AP1183,Rafha Domestic Airport,Rafha,Saudi Arabia
+AP1184,Turaif Domestic Airport,Turaif,Saudi Arabia
+AP1185,McArthur River Mine Airport,McArthur River Mine,Australia
+AP1186,Longana Airport,Longana,Vanuatu
+AP1187,Ulei Airport,Ambryn Island,Vanuatu
+AP1188,Sola Airport,Sola,Vanuatu
+AP1189,Walaha Airport,Walaha,Vanuatu
+AP1190,Mount Hagen Kagamuga Airport,Mount Hagen,Papua New Guinea
+AP1191,Nusatupe Airport,Gizo,Solomon Islands
+AP1192,Honiara International Airport,Honiara,Solomon Islands
+AP1193,St Augustin Airport,St-Augustin,Canada
+AP1194,La Romaine Airport,La Romaine,Canada
+AP1195,Chevery Airport,Chevery,Canada
+AP1196,Nuku Hiva Airport,Nuku Hiva,French Polynesia
+AP1197,Toamasina Airport,Toamasina,Madagascar
+AP1198,Morondava Airport,Morondava,Madagascar
+AP1199,Maroantsetra Airport,Maroantsetra,Madagascar
+AP1200,Antsirabato Airport,Antalaha,Madagascar
+AP1201,Gerrard Smith International Airport,Cayman Brac,Cayman Islands
+AP1202,Resolute Bay Airport,Resolute,Canada
+AP1203,Grise Fiord Airport,Grise Fiord,Canada
+AP1204,Quepos Managua Airport,Quepos,Costa Rica
+AP1205,Puerto Jimenez Airport,Puerto Jimenez,Costa Rica
+AP1206,Tobias Bolanos International Airport,San Jose,Costa Rica
+AP1207,Drake Bay Airport,Puntarenas,Costa Rica
+AP1208,Arenal Airport,La Fortuna/San Carlos,Costa Rica
+AP1209,Golfito Airport,Golfito,Costa Rica
+AP1210,Tambor Airport,Nicoya,Costa Rica
+AP1211,Kimmirut Airport,Kimmirut,Canada
+AP1212,Iqaluit Airport,Iqaluit,Canada
+AP1213,Puerto Obaldia Airport,Puerto Obaldia,Panama
+AP1214,Wekweeti Airport,Wekweeti,Canada
+AP1215,Fort Simpson Airport,Fort Simpson,Canada
+AP1216,Whati Airport,Whati,Canada
+AP1217,Rae Lakes Airport,Gameti,Canada
+AP1218,Lutselk'e Airport,Lutselk'e,Canada
+AP1219,Virgin Gorda Airport,Spanish Town,British Virgin Islands
+AP1220,Vieques Airport,Vieques Island,Puerto Rico
+AP1221,Barra Airport,Barra,United Kingdom
+AP1222,Campbeltown Airport,Campbeltown,United Kingdom
+AP1223,Moro Airport,Moro,Papua New Guinea
+AP1224,Nausori International Airport,Nausori,Fiji
+AP1225,Nadi International Airport,Nandi,Fiji
+AP1226,Vunisea Airport,Vunisea,Fiji
+AP1227,Rotuma Airport,Rotuma,Fiji
+AP1228,Savusavu Airport,Savusavu,Fiji
+AP1229,Matei Airport,Matei,Fiji
+AP1230,Cicia Airport,Cicia,Fiji
+AP1231,Lakeba Island Airport,Lakeba Island,Fiji
+AP1232,Vanua Balavu Airport,Vanua Balavu,Fiji
+AP1233,Seychelles International Airport,Mahe,Seychelles
+AP1234,Praslin Airport,Praslin,Seychelles
+AP1235,Fort Good Hope Airport,Fort Good Hope,Canada
+AP1236,Inuvik Mike Zubko Airport,Inuvik,Canada
+AP1237,Norman Wells Airport,Norman Wells,Canada
+AP1238,Tulita Airport,Tulita,Canada
+AP1239,Deline Airport,Deline,Canada
+AP1240,Ramata Airport,Ramata,Solomon Islands
+AP1241,Suavanao Airport,Suavanao,Solomon Islands
+AP1242,Choiseul Bay Airport,Choiseul Bay,Solomon Islands
+AP1243,Sege Airport,Sege,Solomon Islands
+AP1244,Fera/Maringe Airport,Fera Island,Solomon Islands
+AP1245,Kaghau Airport,Kagau Island,Solomon Islands
+AP1246,Santa Ana Airport,Santa Ana,United States
+AP1247,Ulawa Airport,Ulawa,Solomon Islands
+AP1248,Rennell/Tingoa Airport,Rennell Island,Solomon Islands
+AP1249,Munda Airport,Munda,Solomon Islands
+AP1250,Ngorangora Airport,Kirakira,Solomon Islands
+AP1251,Edward Bodden Airfield,Little Cayman,Cayman Islands
+AP1252,Mananara Nord Airport,Mananara,Madagascar
+AP1253,Lamen Bay Airport,Lamen Bay,Vanuatu
+AP1254,Torres Airstrip,Loh/Linua,Vanuatu
+AP1255,Lamap Airport,Lamap,Vanuatu
+AP1256,Southwest Bay Airport,Malekula Island,Vanuatu
+AP1257,Maewo-Naone Airport,Maewo Island,Vanuatu
+AP1258,Sara Airport,Pentecost Island,Vanuatu
+AP1259,Tavie Airport,Paama Island,Vanuatu
+AP1260,Hihifo Airport,Wallis,Wallis and Futuna
+AP1261,Pointe Vele Airport,Futuna Island,Wallis and Futuna
+AP1262,Noumea Magenta Airport,Noumea,New Caledonia
+AP1263,Koumac Airport,Koumac,New Caledonia
+AP1264,Tiga Airport,Tiga,New Caledonia
+AP1265,Touho Airport,Touho,New Caledonia
+AP1266,Ile Art - Waala Airport,Waala,New Caledonia
+AP1267,Ouvea Airport,Ouvea,New Caledonia
+AP1268,Lifou Airport,Lifou,New Caledonia
+AP1269,Ua Huka Airport,Ua Huka,French Polynesia
+AP1270,Ua Pou Airport,Ua Pou,French Polynesia
+AP1271,Hiva Oa-Atuona Airport,Hiva-oa,French Polynesia
+AP1272,Natuashish Airport,Natuashish,Canada
+AP1273,Goose Bay Airport,Goose Bay,Canada
+AP1274,Postville Airport,Postville,Canada
+AP1275,Tete-a-la-Baleine Airport,Tete-a-la-Baleine,Canada
+AP1276,La Tabatiare Airport,La Tabatiare,Canada
+AP1277,Rigolet Airport,Rigolet,Canada
+AP1278,Kegaska Airport,Kegaska,Canada
+AP1279,Nain Airport,Nain,Canada
+AP1280,Hopedale Airport,Hopedale,Canada
+AP1281,Makkovik Airport,Makkovik,Canada
+AP1282,Natashquan Airport,Natashquan,Canada
+AP1283,Juancho E. Yrausquin Airport,Saba,Netherlands Antilles
+AP1284,F. D. Roosevelt Airport,Oranjestad,Aruba
+AP1285,Metlakatla Seaplane Base,Metakatla,United States
+AP1286,Ketchikan International Airport,Ketchikan,United States
+AP1287,Juneau International Airport,Juneau,United States
+AP1288,Angoon Seaplane Base,Angoon,United States
+AP1289,Hydaburg Seaplane Base,Hydaburg,United States
+AP1290,Port Moresby Jacksons International Airport,Port Moresby,Papua New Guinea
+AP1291,Goroka Airport,Goroka,Papua New Guinea
+AP1292,Daru Airport,Daru,Papua New Guinea
+AP1293,Godthaab / Nuuk Airport,Godthaab,Greenland
+AP1294,Rockhampton Airport,Rockhampton,Australia
+AP1295,Tamworth Airport,Tamworth,Australia
+AP1296,Tri-State/Milton J. Ferguson Field,Huntington,United States
+AP1297,Tri-Cities Regional TN/VA Airport,BRISTOL,United Kingdom
+AP1298,Tari Airport,Tari,Papua New Guinea
+AP1299,Kiunga Airport,Kiunga,Papua New Guinea
+AP1300,Fukue Airport,Fukue,Japan
+AP1301,Coastal Carolina Regional Airport,New Bern,United States
+AP1302,Florence Regional Airport,Florence,Italy
+AP1303,Albert J Ellis Airport,Jacksonville NC,United States
+AP1304,Miyazaki Airport,Miyazaki,Japan
+AP1305,Sam Ratulangi Airport,Manado,Indonesia
+AP1306,Matsuyama Airport,Matsuyama,Japan
+AP1307,Chennai International Airport,Madras,India
+AP1308,Chandigarh Airport,Chandigarh,India
+AP1309,Rajiv Gandhi International Airport,Hyderabad,India
+AP1310,Kempegowda International Airport,Bangalore,India
+AP1311,Dabolim Airport,Goa,India
+AP1312,Coimbatore International Airport,Coimbatore,India
+AP1313,Cochin International Airport,Kochi,Japan
+AP1314,Trivandrum International Airport,Trivandrum,India
+AP1315,Male International Airport,Male,Maldives
+AP1316,Kangerlussuaq Airport,Sondrestrom,Greenland
+AP1317,Sisimiut Airport,Sisimiut,Greenland
+AP1318,Maniitsoq Airport,Maniitsoq,Greenland
+AP1319,Singapore Changi Airport,Singapore,Singapore
+AP1320,Sultan Abdul Aziz Shah International Airport,Kuala Lumpur,Malaysia
+AP1321,LTS Pulau Redang Airport,Redang,Malaysia
+AP1322,Richards Bay Airport,Richard's Bay,South Africa
+AP1323,Berlin-Tegel Airport,Berlin,Germany
+AP1324,Saarbrucken Airport,Saarbruecken,Germany
+AP1325,Chimoio Airport,Chimoio,Mozambique
+AP1326,Rzeszow-Jasionka Airport,Rzeszow,Poland
+AP1327,Ireland West Knock Airport,Connaught,Ireland
+AP1328,Emerald Airport,Emerald,Australia
+AP1329,Moranbah Airport,Moranbah,Australia
+AP1330,Roma Airport,Roma,Australia
+AP1331,Horn Island Airport,Horn Island,Australia
+AP1332,Cairns International Airport,Cairns,Australia
+AP1333,Devonport Airport,Devonport,Australia
+AP1334,Gladstone Airport,Gladstone,Australia
+AP1335,Mackay Airport,Mackay,Australia
+AP1336,Haugesund Airport,Haugesund,Norway
+AP1337,Tromso Airport,Tromso,Norway
+AP1338,Kirkenes Airport,Kirkenes,Norway
+AP1339,Fredericton Airport,Fredericton,Canada
+AP1340,Greater Moncton International Airport,Moncton,Canada
+AP1341,Thunder Bay Airport,Thunder Bay,Canada
+AP1342,Montrose Regional Airport,Montrose CO,United States
+AP1343,Mallam Aminu International Airport,Kano,Nigeria
+AP1344,Boise Air Terminal/Gowen Field,Boise,United States
+AP1345,Cape Town International Airport,Cape Town,South Africa
+AP1346,Kimberley Airport,Kimberley,South Africa
+AP1347,Tiksi Airport,Tiksi,Russia
+AP1348,Kosice Airport,Kosice,Slovakia
+AP1349,Salzburg Airport,Salzburg,Austria
+AP1350,Kavieng Airport,Kavieng,Papua New Guinea
+AP1351,Basco Airport,Basco,Philippines
+AP1352,Catarman National Airport,Catarman,Philippines
+AP1353,Surigao Airport,Sangley Point,Philippines
+AP1354,Tuguegarao Airport,Tuguegarao,Philippines
+AP1355,Karpathos Airport,Karpathos,Greece
+AP1356,Ioannina Airport,Ioannina,Greece
+AP1357,Skiathos Island National Airport,Skiathos,Greece
+AP1358,Alexander the Great International Airport,Kavala,Greece
+AP1359,Mammoth Yosemite Airport,Mammoth Lakes,United States
+AP1360,Charles M. Schulz Sonoma County Airport,Santa Rosa,Argentina
+AP1361,Metropolitan Oakland International Airport,Oakland,United States
+AP1362,Khrabrovo Airport,Kaliningrad,Russia
+AP1363,Billy Bishop Toronto City Centre Airport,Toronto,Canada
+AP1364,Charlottetown Airport,Charlottetown,Canada
+AP1365,Fort St John Airport,Fort Saint John,Canada
+AP1366,Prince George Airport,Prince George,Canada
+AP1367,Victoria International Airport,Victoria,Canada
+AP1368,Quebec Jean Lesage International Airport,Quebec,Canada
+AP1369,Saint John Airport,St. John,Canada
+AP1370,Bergerac-Roumaniere Airport,Bergerac,France
+AP1371,Rennes-Saint-Jacques Airport,Rennes,France
+AP1372,Limoges Airport,Limoges,France
+AP1373,La Rochelle-Ile de Re Airport,La Rochelle,France
+AP1374,Lewiston Nez Perce County Airport,Lewiston,United States
+AP1375,Loreto International Airport,Loreto,Mexico
+AP1376,Pullman Moscow Regional Airport,Pullman,United States
+AP1377,Billings Logan International Airport,Billings,United States
+AP1378,Bellingham International Airport,Bellingham,United States
+AP1379,Spokane International Airport,Spokane,United States
+AP1380,Missoula International Airport,Missoula,United States
+AP1381,Tri Cities Airport,Pasco,United States
+AP1382,Walla Walla Regional Airport,Walla Walla,United States
+AP1383,Gallatin Field,Bozeman,United States
+AP1384,Pangborn Memorial Airport,Wenatchee,United States
+AP1385,Yakima Air Terminal McAllister Field,Yakima,United States
+AP1386,Newquay Cornwall Airport,Newquai,United Kingdom
+AP1387,Waterford Airport,Waterford,Ireland
+AP1388,Liverpool John Lennon Airport,Liverpool,United Kingdom
+AP1389,Palanga International Airport,Palanga,Lithuania
+AP1390,Ulgii Mongolei Airport,Olgii,Mongolia
+AP1391,Ulaangom Airport,Ulaangom,Mongolia
+AP1392,Blackall Airport,Blackall,Australia
+AP1393,Lublin Airport,Lublin,Poland
+AP1394,Zadar Airport,Zadar,Croatia
+AP1395,Figari Sud-Corse Airport,Figari,France
+AP1396,Angouleme-Brie-Champniers Airport,Angouleme,France
+AP1397,Linz Horsching Airport,Linz,Austria
+AP1398,Innsbruck Airport,Innsbruck,Austria
+AP1399,Poznan-Lawica Airport,Poznan,Poland
+AP1400,Luxor International Airport,Luxor,Egypt
+AP1401,Joao Paulo II Airport,Ponta Delgada,Portugal
+AP1402,Madeira Airport,Funchal,Portugal
+AP1403,Iasi Airport,Iasi,Romania
+AP1404,Klagenfurt Airport,Klagenfurt,Austria
+AP1405,Sibiu International Airport,Sibiu,Romania
+AP1406,Pula Airport,Pula,Croatia
+AP1407,Bol Airport,Brac,Croatia
+AP1408,Pristina International Airport,Pristina,Serbia
+AP1409,Sarajevo International Airport,Sarajevo,Bosnia and Herzegovina
+AP1410,Sault Ste Marie Airport,Sault Sainte Marie,Canada
+AP1411,Windsor Airport,Windsor,Canada
+AP1412,Sudbury Airport,Sudbury,Canada
+AP1413,Timmins/Victor M. Power,Timmins,Canada
+AP1414,Zamboanga International Airport,Zamboanga,Philippines
+AP1415,Calbayog Airport,Calbayog City,Philippines
+AP1416,Francisco B. Reyes Airport,Busuanga,Philippines
+AP1417,Naga Airport,Naga,Philippines
+AP1418,Jolo Airport,Jolo,Philippines
+AP1419,Tokua Airport,Tokua,Papua New Guinea
+AP1420,Nadzab Airport,Nadzab,Papua New Guinea
+AP1421,Kimbe Airport,Hoskins,Papua New Guinea
+AP1422,Vanimo Airport,Vanimo,Papua New Guinea
+AP1423,Madang Airport,Madang,Papua New Guinea
+AP1424,Wewak International Airport,Wewak,Papua New Guinea
+AP1425,Port Macquarie Airport,Port Macquarie,Australia
+AP1426,Paraburdoo Airport,Paraburdoo,Australia
+AP1427,Krasnodar Pashkovsky International Airport,Krasnodar,Russia
+AP1428,Chulman Airport,Neryungri,Russia
+AP1429,Ignatyevo Airport,Blagoveschensk,Russia
+AP1430,Nogliki Airport,Nogliki,Russia
+AP1431,Uytash Airport,Makhachkala,Russia
+AP1432,Irkutsk Airport,Irkutsk,Russia
+AP1433,Ulan-Ude Airport (Mukhino),Ulan-ude,Russia
+AP1434,Hoedspruit Air Force Base Airport,Hoedspruit,South Africa
+AP1435,Eagle County Regional Airport,Vail,United States
+AP1436,Yampa Valley Airport,Hayden,United States
+AP1437,Ibadan Airport,Ibadan,Nigeria
+AP1438,Warri Airport,Osubi,Nigeria
+AP1439,Nnamdi Azikiwe International Airport,Abuja,Nigeria
+AP1440,Kamembe Airport,Kamembe,Rwanda
+AP1441,Bodo Airport,Bodo,Norway
+AP1442,Grande Prairie Airport,Grande Prairie,Canada
+AP1443,Northwest Regional Airport Terrace-Kitimat,Terrace,Canada
+AP1444,Brandon Municipal Airport,Brandon,Canada
+AP1445,Nanaimo Airport,Nanaimo,Canada
+AP1446,Kamloops Airport,Kamloops,Canada
+AP1447,Yeager Airport,Charleston,United States
+AP1448,Charleville Airport,Charlieville,Australia
+AP1449,Moree Airport,Moree,Australia
+AP1450,Gurney Airport,Gurney,Papua New Guinea
+AP1451,Girua Airport,Girua,Papua New Guinea
+AP1452,Barcaldine Airport,Barcaldine,Australia
+AP1453,Bundaberg Airport,Bundaberg,Australia
+AP1454,Weipa Airport,Weipa,Australia
+AP1455,Hanimaadhoo Airport,Haa Dhaalu Atoll,Maldives
+AP1456,Dharavandhoo Airport,DHARAVANDHOO,Maldives
+AP1457,Iles-de-la-Madeleine Airport,Iles De La Madeleine,Canada
+AP1458,Gaspe (Michel-Pouliot) Airport,Gaspe,Canada
+AP1459,Banak Airport,Lakselv,Norway
+AP1460,Bronnoysund Airport,Bronnoysund,Norway
+AP1461,Floro Airport,Floro,Norway
+AP1462,Skien Airport,Skien,Norway
+AP1463,Andoya Airport,Andoya,Norway
+AP1464,Tauranga Airport,Tauranga,New Zealand
+AP1465,Wellington International Airport,Wellington,New Zealand
+AP1466,Auckland International Airport,Auckland,New Zealand
+AP1467,Woodbourne Airport,Woodbourne,New Zealand
+AP1468,Gisborne Airport,Gisborne,New Zealand
+AP1469,Rotorua Regional Airport,Rotorua,New Zealand
+AP1470,Whangarei Airport,Whangarei,New Zealand
+AP1471,Nelson Airport,Nelson,New Zealand
+AP1472,Sir Grantley Adams International Airport,Bridgetown,Barbados
+AP1473,Hamilton International Airport,Hamilton,New Zealand
+AP1474,Palmerston North Airport,Palmerston North,New Zealand
+AP1475,Christchurch International Airport,Christchurch,New Zealand
+AP1476,Hawke's Bay Airport,NAPIER,New Zealand
+AP1477,V.C. Bird International Airport,Antigua,Antigua and Barbuda
+AP1478,Gan International Airport,Gan Island,Maldives
+AP1479,Godofredo P. Ramos Airport,Caticlan,Philippines
+AP1480,Marina Di Campo Airport,Marina Di Campo,Italy
+AP1481,Friedrichshafen Airport,Friedrichshafen,Germany
+AP1482,Hilton Head Airport,Hilton Head Island,United States
+AP1483,Fayetteville Regional Grannis Field,Fayetteville,United States
+AP1484,Wilkes Barre Scranton International Airport,Scranton,United States
+AP1485,Greater Binghamton/Edwin A Link field,Binghamton,United States
+AP1486,Elmira Corning Regional Airport,Elmira,United States
+AP1487,Erie International Tom Ridge Field,Erie,United States
+AP1488,Tweed New Haven Airport,New Haven,United States
+AP1489,Williamsport Regional Airport,Williamsport,United States
+AP1490,Ithaca Tompkins Regional Airport,Ithaca,United States
+AP1491,Newport News Williamsburg International Airport,Newport News,United States
+AP1492,Salisbury Ocean City Wicomico Regional Airport,Salisbury,United States
+AP1493,University Park Airport,State College Pennsylvania,United States
+AP1494,Castlegar/West Kootenay Regional Airport,Castlegar,Canada
+AP1495,Prince Rupert Airport,Prince Pupert,Canada
+AP1496,Cranbrook/Canadian Rockies International Airport,Cranbrook,Canada
+AP1497,Smithers Airport,Smithers,Canada
+AP1498,Penticton Airport,Penticton,Canada
+AP1499,Sandspit Airport,Sandspit,Canada
+AP1500,Eugene F. Correira International Airport,Georgetown,Cayman Islands
+AP1501,George F. L. Charles Airport,Castries,Saint Lucia
+AP1502,Argyle International Airport,Kingstown,Saint Vincent and the Grenadines
+AP1503,Paraparaumu Airport,Paraparaumu,New Zealand
+AP1504,New Plymouth Airport,New Plymouth,New Zealand
+AP1505,Invercargill Airport,Invercargill,New Zealand
+AP1506,Moises R. Espinosa Airport,Masbate,Philippines
+AP1507,Tabubil Airport,Tabubil,Papua New Guinea
+AP1508,Kaadedhdhoo Airport,Kaadedhdhoo,Maldives
+AP1509,Toowoomba Airport,Toowoomba,Australia
+AP1510,Hamilton Island Airport,Hamilton Island,Australia
+AP1511,Kadhdhoo Airport,Laamu Atoll,Maldives
+AP1512,Vadso Airport,Vadso,Norway
+AP1513,Vardo Airport,Vardo,Norway
+AP1514,Batsfjord Airport,Batsfjord,Norway
+AP1515,Berlevag Airport,Berlevag,Norway
+AP1516,Hasvik Airport,Hasvik,Norway
+AP1517,Hammerfest Airport,Hammerfest,Norway
+AP1518,Mehamn Airport,Mehamn,Norway
+AP1519,Valan Airport,Honningsvag,Norway
+AP1520,Mosjoen Airport,Mosjoen,Norway
+AP1521,Svolvar Helle Airport,Svolvar,Norway
+AP1522,Stokmarknes Skagen Airport,Stokmarknes,Norway
+AP1523,Perales Airport,Ibague,Colombia
+AP1524,Benito Salas Airport,Neiva,Colombia
+AP1525,Tres De Mayo Airport,Puerto Asis,Colombia
+AP1526,El Carano Airport,Quibdo,Colombia
+AP1527,Los Garzones Airport,Monteria,Colombia
+AP1528,Iki Airport,Iki,Japan
+AP1529,Tsushima Airport,Tsushima,Japan
+AP1530,Kooddoo Airport,Kooddoo,Maldives
+AP1531,Sorkjosen Airport,Sorkjosen,Norway
+AP1532,Alta Airport,Alta,Norway
+AP1533,London Airport,London,Canada
+AP1534,Leknes Airport,Leknes,Norway
+AP1535,Mo i Rana Airport,Rossvoll,Norway
+AP1536,Narvik Framnes Airport,Narvik,Norway
+AP1537,Sandnessjoen Airport,Sandnessjoen,Norway
+AP1538,Rost Airport,Rost,Norway
+AP1539,Roervik Airport,Roervik,Norway
+AP1540,Namsos Airport,Namsos,Norway
+AP1541,Mont Joli Airport,Mont Joli,Canada
+AP1542,Sydney / J.A. Douglas McCurdy Airport,Sydney,Canada
+AP1543,Baie Comeau Airport,Baie Comeau,Canada
+AP1544,CFB Bagotville,Bagotville,Canada
+AP1545,Rouyn Noranda Airport,Rouyn,Canada
+AP1546,Val-d'Or Airport,Val D'or,Canada
+AP1547,North Bay Jack Garland Airport,North Bay,Canada
+AP1548,Wabush Airport,Wabush,Canada
+AP1549,Coen Airport,Coen,Australia
+AP1550,Boulia Airport,Boulia,Australia
+AP1551,Birdsville Airport,Birdsville,Australia
+AP1552,Bedourie Airport,Bedourie,Australia
+AP1553,Doomadgee Airport,Doomadgee,Australia
+AP1554,Mornington Island Airport,Mornington Island,Australia
+AP1555,Windorah Airport,Windorah,Australia
+AP1556,Thargomindah Airport,Thargomindah,Australia
+AP1557,Northern Peninsula Airport,Amberley,Australia
+AP1558,Aurukun Airport,Aurukun,Australia
+AP1559,Pormpuraaw Airport,Pormpuraaw,Australia
+AP1560,Lockhart River Airport,Lockhart River,Australia
+AP1561,Kowanyama Airport,Kowanyama,Australia
+AP1562,Normanton Airport,Normanton,Australia
+AP1563,Quilpie Airport,Quilpie,Australia
+AP1564,Burketown Airport,Burketown,Australia
+AP1565,Cunnamulla Airport,Cunnamulla,Australia
+AP1566,Orsta-Volda Airport,Orsta-Volda,Norway
+AP1567,Sogndal Airport,Sogndal,Norway
+AP1568,Roros Airport,Roros,Norway
+AP1569,Sandane Airport (Anda),Sandane,Norway
+AP1570,General Jose Antonio Anzoategui International Airport,Barcelona,Spain
+AP1571,Dundee Airport,Dundee,United Kingdom
+AP1572,Bern Belp Airport,Bern,Switzerland
+AP1573,Mannheim-City Airport,Mannheim,Germany
+AP1574,Licenciado Manuel Crescencio Rejon Int Airport,Merida,Mexico
+AP1575,Jerez Airport,Jerez,Spain
+AP1576,Ibn Batouta Airport,Tanger,Morocco
+AP1577,Asturias Airport,Aviles,Spain
+AP1578,Perpignan-Rivesaltes Airport,Perpignan,France
+AP1579,Sevilla Airport,Sevilla,Spain
+AP1580,Almeria International Airport,Almeria,Spain
+AP1581,Juanda International Airport,Surabaya,Indonesia
+AP1582,Hasanuddin International Airport,Ujung Pandang,Indonesia
+AP1583,Ngurah Rai (Bali) International Airport,Denpasar,Indonesia
+AP1584,Soekarno-Hatta International Airport,Jakarta,Indonesia
+AP1585,Fatmawati Soekarno Airport,Bengkulu,Indonesia
+AP1586,Toulon-Hyeres Airport,Hyeres,France
+AP1587,Sultan Aji Muhamad Sulaiman Airport,Balikpapan,Indonesia
+AP1588,Kalimarau Airport,Tanjung Redep-Borneo Island,Indonesia
+AP1589,Adi Sutjipto International Airport,Yogyakarta,Indonesia
+AP1590,Juwata Airport,Taraken,Indonesia
+AP1591,Radin Inten II (Branti) Airport,Bandar Lampung-Sumatra Island,Indonesia
+AP1592,Raja Haji Fisabilillah International Airport,Tanjung Pinang,Indonesia
+AP1593,Rendani Airport,Manokwari,Indonesia
+AP1594,Sultan Mahmud Badaruddin II Airport,Palembang,Indonesia
+AP1595,Achmad Yani Airport,Semarang,Indonesia
+AP1596,Lombok International Airport,Praya,Indonesia
+AP1597,Sultan Khairun Babullah Airport,Ternate,Indonesia
+AP1598,Sentani International Airport,Jayapura,Indonesia
+AP1599,Dominique Edward Osok Airport,Sorong,Indonesia
+AP1600,Pattimura Airport,Ambon,Indonesia
+AP1601,Syamsudin Noor Airport,Banjarmasin,Indonesia
+AP1602,Hang Nadim International Airport,Batam,Indonesia
+AP1603,Augusta Regional At Bush Field,Bush Field,United States
+AP1604,Appleton International Airport,Appleton,United States
+AP1605,Shreveport Regional Airport,Shreveport,United States
+AP1606,Brownsville South Padre Island International Airport,Brownsville,United States
+AP1607,Bismarck Municipal Airport,Bismarck,United States
+AP1608,Memanbetsu Airport,Memanbetsu,Japan
+AP1609,MBS International Airport,Saginaw,United States
+AP1610,Duluth International Airport,Duluth,United States
+AP1611,Barinas Airport,Barinas,Venezuela
+AP1612,Amado Nervo National Airport,Tepic,Mexico
+AP1613,Piedras Negras International Airport,Piedras Negras,Mexico
+AP1614,Pisa International Airport,Pisa,Italy
+AP1615,Rostock-Laage Airport,Laage,Germany
+AP1616,Timisoara Traian Vuia Airport,Timisoara,Romania
+AP1617,Gombe Lawanti International Airport,Gombe,Nigeria
+AP1618,Menara Airport,Marrakech,Morocco
+AP1619,Minot International Airport,Minot,United States
+AP1620,Bob Hope Airport,Burbank,United States
+AP1621,Paderborn Lippstadt Airport,Paderborn,Germany
+AP1622,Pamplona Airport,Pamplona,Spain
+AP1623,Xingyi Airport,Xingyi,China
+AP1624,Lanzarote Airport,Arrecife,Spain
+AP1625,Benin Airport,Benin,Nigeria
+AP1626,Sadiq Abubakar III International Airport,Sokoto,Nigeria
+AP1627,Yola Airport,Yola,Nigeria
+AP1628,Sfax Thyna International Airport,Sfax,Tunisia
+AP1629,Tunis Carthage International Airport,Tunis,Tunisia
+AP1630,Baotou Airport,Baotou,China
+AP1631,Baise Youjiang Airport,Baise,China
+AP1632,Anshun Huangguoshu Airport,Anshun,China
+AP1633,Bijie Feixiong Airport,Bijie,China
+AP1634,Dongying Shengli Airport,Dongying,China
+AP1635,Handan Airport,Handan,China
+AP1636,Xichang Qingshan Airport,Xichang,China
+AP1637,Xining Caojiabu Airport,Xining,China
+AP1638,Jining Qufu Airport,Jining,China
+AP1639,Wuzhou Changzhoudao Airport,Wuzhou,China
+AP1640,Santiago de Compostela Airport,Santiago,Spain
+AP1641,Tarbes-Lourdes-Pyrenees Airport,Tarbes,France
+AP1642,Lleida-Alguaire Airport,Lleida,Spain
+AP1643,Tenerife Norte Airport,Tenerife,Spain
+AP1644,Kufra Airport,Kufra,Libya
+AP1645,Gamal Abdel Nasser Airport,Tobruk,Libya
+AP1646,Houari Boumediene Airport,Algier,Algeria
+AP1647,Ghat Airport,Ghat,Libya
+AP1648,Ghadames East Airport,Ghadames,Libya
+AP1649,Gardabya Airport,Sirt,Libya
+AP1650,Banjul International Airport,Banjul,Gambia
+AP1651,Praia International Airport,Praia,Cape Verde
+AP1652,Monastir Habib Bourguiba International Airport,Monastir,Tunisia
+AP1653,Ilorin International Airport,Ilorin,Nigeria
+AP1654,Kaduna Airport,Kaduna,Nigeria
+AP1655,Akwa Ibom International Airport,Uyo,Nigeria
+AP1656,South Bend Regional Airport,South Bend,United States
+AP1657,Oita Airport,Oita,Japan
+AP1658,Narita International Airport,Tokyo,Japan
+AP1659,Hiroshima Airport,Hiroshima,Japan
+AP1660,Komatsu Airport,Kanazawa,Japan
+AP1661,Long Beach /Daugherty Field/ Airport,Long Beach,United States
+AP1662,Dehradun Airport,Dehra Dun,India
+AP1663,Allahabad Airport,Allahabad,India
+AP1664,Biju Patnaik Airport,Bhubaneswar,India
+AP1665,Caen-Carpiquet Airport,Caen,France
+AP1666,Quimper-Cornouaille Airport,Quimper,France
+AP1667,Chhatrapati Shivaji International Airport,Mumbai,India
+AP1668,Vir Savarkar International Airport,Port Blair,India
+AP1669,Agra Airport,Agra,India
+AP1670,Gwalior Airport,Gwalior,India
+AP1671,Chaudhary Charan Singh International Airport,Lucknow,India
+AP1672,Jabalpur Airport,Jabalpur,India
+AP1673,Surat Airport,Surat,India
+AP1674,Jinzhou Airport,Jinzhou,China
+AP1675,Jackson Hole Airport,Jacksn Hole,United States
+AP1676,Sana'a International Airport,Sanaa,Yemen
+AP1677,Sayun International Airport,Sayun Intl,Yemen
+AP1678,Aden Adde International Airport,Mogadishu,Somalia
+AP1679,Mukalla International Airport,Mukalla,Yemen
+AP1680,Sharjah International Airport,Sharjah,United Arab Emirates
+AP1681,Aden International Airport,Aden,Yemen
+AP1682,Ta'izz International Airport,Taiz,Yemen
+AP1683,Socotra International Airport,Socotra,Yemen
+AP1684,Al Ghaidah International Airport,Al Ghaidah Intl,Yemen
+AP1685,Ataq Airport,Ataq,Yemen
+AP1686,Hodeidah International Airport,Hodeidah,Yemen
+AP1687,Chubu Centrair International Airport,Nagoya,Japan
+AP1688,Walvis Bay Airport,Walvis Bay,Namibia
+AP1689,Aspen-Pitkin Co/Sardy Field,Aspen,United States
+AP1690,Lynchburg Regional Preston Glenn Field,Lynchburg,United States
+AP1691,George Airport,George,South Africa
+AP1692,Begishevo Airport,Nizhnekamsk,Russia
+AP1693,Taganrog Yuzhny Airport,Taganrog,Russia
+AP1694,Bugulma Airport,Bugulma,Russia
+AP1695,Chelyabinsk Balandino Airport,Chelyabinsk,Russia
+AP1696,Nizhnevartovsk Airport,Nizhnevartovsk,Russia
+AP1697,Cheboksary Airport,Cheboksary,Russia
+AP1698,Elista Airport,Elista,Russia
+AP1699,Petrozavodsk Airport,Petrozavodsk,Russia
+AP1700,Penza Airport,Penza,Russia
+AP1701,Saransk Airport,Saransk,Russia
+AP1702,Ulyanovsk Baratayevka Airport,Ulyanovsk,Russia
+AP1703,Vorkuta Airport,Vorkuta,Russia
+AP1704,Volgograd International Airport,Volgograd,Russia
+AP1705,Tunoshna Airport,Yaroslavl,Russia
+AP1706,Pobedilovo Airport,Kirov,Russia
+AP1707,Sabiha Gokcen International Airport,Istanbul,Turkey
+AP1708,Syktyvkar Airport,Syktyvkar,Russia
+AP1709,Murmansk Airport,Murmansk,Russia
+AP1710,Velikiy Ustyug Airport,Veliky Ustyug,Russia
+AP1711,Cherepovets Airport,Cherepovets,Russia
+AP1712,Kirovsk-Apatity Airport,Apatity,Russia
+AP1713,Qianjiang Wulingshan Airport,Qianjiang,China
+AP1714,Herat Airport,Herat,Afghanistan
+AP1715,Kandahar Airport,Kandahar,Afghanistan
+AP1716,Mazar I Sharif Airport,Mazar-i-sharif,Afghanistan
+AP1717,Leon Airport,Leon,Spain
+AP1718,Burgos Airport,Burgos,Spain
+AP1719,Salamanca Airport,Salamanca,Spain
+AP1720,Valladolid Airport,Valladolid,Spain
+AP1721,San Javier Airport,Murcia,Spain
+AP1722,Logrono-Agoncillo Airport,Logrono-Agoncillo,Spain
+AP1723,Hosea Kutako International Airport,Windhoek,Namibia
+AP1724,Salekhard Airport,Salekhard,Russia
+AP1725,Noyabrsk Airport,Noyabrsk,Russia
+AP1726,Kogalym International Airport,Kogalym,Russia
+AP1727,Nyagan Airport,Nyagan,Russia
+AP1728,St Michael Airport,St. Michael,United States
+AP1729,Gustavus Airport,Gustavus,United States
+AP1730,Hoonah Airport,Hoonah,United States
+AP1731,Skagway Airport,Skagway,United States
+AP1732,Haines Airport,Haines,United States
+AP1733,Alderney Airport,Alderney,Guernsey
+AP1734,Dinard-Pleurtuit-Saint-Malo Airport,Dinard,France
+AP1735,L'Esperance Airport,St. Martin,Guadeloupe
+AP1736,Larsen Bay Airport,Larsen Bay,United States
+AP1737,Karluk Airport,Karluk,United States
+AP1738,Benjamin Rivera Noriega Airport,Culebra Island,Puerto Rico
+AP1739,Uru Harbour Airport,Atoifi,Solomon Islands
+AP1740,Marau Airport,Marau,Solomon Islands
+AP1741,Eday Airport,Eday,United Kingdom
+AP1742,Sanday Airport,Sanday,United Kingdom
+AP1743,North Ronaldsay Airport,North Ronaldsay,United Kingdom
+AP1744,Papa Westray Airport,Papa Westray,United Kingdom
+AP1745,Stronsay Airport,Stronsay,United Kingdom
+AP1746,Westray Airport,Westray,United Kingdom
+AP1747,Siwo Airport,Sangafa,Vanuatu
+AP1748,Tongoa Airport,Tongoa Island,Vanuatu
+AP1749,Valesdir Airport,Valesdir,Vanuatu
+AP1750,Nanortalik Heliport,Nanortalik,Greenland
+AP1751,Narsaq Heliport,Narsaq,Greenland
+AP1752,Alluitsup Paa Heliport,Alluitsup Paa,Greenland
+AP1753,Eqalugaarsuit Heliport,Eqalugaarsuit,Greenland
+AP1754,Narsarsuaq Airport,Narssarssuaq,Greenland
+AP1755,Qaqortoq Heliport,Qaqortoq,Greenland
+AP1756,Uummannaq Heliport,Uummannaq,Greenland
+AP1757,Thule Air Base,Thule,Greenland
+AP1758,Qaanaaq Airport,Qaanaaq,Greenland
+AP1759,Qaarsut Airport,Uummannaq,Greenland
+AP1760,Kerikeri Airport,Kerikeri,New Zealand
+AP1761,Hokitika Airfield,Hokitika,New Zealand
+AP1762,Worland Municipal Airport,Worland,United States
+AP1763,Cheyenne Regional Jerry Olson Field,Cheyenne,United States
+AP1764,Dodge City Regional Airport,Dodge City,United States
+AP1765,Plettenberg Bay Airport,Plettenberg Bay,South Africa
+AP1766,Margate Airport,Margate,South Africa
+AP1767,Williams Lake Airport,Williams Lake,Canada
+AP1768,Quesnel Airport,Quesnel,Canada
+AP1769,Lethbridge County Airport,Lethbridge,Canada
+AP1770,Medicine Hat Airport,Medicine Hat,Canada
+AP1771,Gander International Airport,Gander,Canada
+AP1772,Kingston Norman Rogers Airport,Kingston,Canada
+AP1773,Chris Hadfield Airport,Sarnia,Canada
+AP1774,Kaitaia Airport,Kaitaia,New Zealand
+AP1775,Taupo Airport,Taupo,New Zealand
+AP1776,Wanganui Airport,Wanganui,New Zealand
+AP1777,Whakatane Airport,Whakatane,New Zealand
+AP1778,Timaru Airport,Timaru,New Zealand
+AP1779,Westport Airport,Westport,New Zealand
+AP1780,Perigueux-Bassillac Airport,Perigueux,France
+AP1781,Le Havre Octeville Airport,Le Havre,France
+AP1782,Le Puy-Loudes Airport,Le Puy,France
+AP1783,Mc Cook Ben Nelson Regional Airport,McCook,United States
+AP1784,Campbell River Airport,Campbell River,Canada
+AP1785,Powell River Airport,Powell River,Canada
+AP1786,Lourdes de Blanc Sablon Airport,Lourdes-De-Blanc-Sablon,Canada
+AP1787,San Luis Valley Regional Bergman Field,Alamosa,United States
+AP1788,Liberal Mid-America Regional Airport,Liberal,United States
+AP1789,San Tome Airport,San Tome,Venezuela
+AP1790,Kone Airport,Kone,New Caledonia
+AP1791,Faa'a International Airport,Papeete,French Polynesia
+AP1792,Moorea Airport,Moorea,French Polynesia
+AP1793,General Servando Canales International Airport,Matamoros,Mexico
+AP1794,Whale Cove Airport,Whale Cove,Canada
+AP1795,Chesterfield Inlet Airport,Chesterfield Inlet,Canada
+AP1796,Coral Harbour Airport,Coral Harbour,Canada
+AP1797,Alama Iqbal International Airport,Lahore,Pakistan
+AP1798,Multan International Airport,Multan,Pakistan
+AP1799,Touat Cheikh Sidi Mohamed Belkebir Airport,Adrar,Algeria
+AP1800,Batna Airport,Batna,Algeria
+AP1801,Biskra Airport,Biskra,Algeria
+AP1802,Ain Arnat Airport,Setif,Algeria
+AP1803,Tobago-Crown Point Airport,Scarborough,Trinidad and Tobago
+AP1804,Jinnah International Airport,Karachi,Pakistan
+AP1805,Bahawalpur Airport,Bahawalpur,Pakistan
+AP1806,Shaikh Zaid Airport,Rahim Yar Khan,Pakistan
+AP1807,Sukkur Airport,Sukkur,Pakistan
+AP1808,Mohamed Boudiaf International Airport,Constantine,Algeria
+AP1809,Rabah Bitat Airport,Annaba,Algeria
+AP1810,Laguindingan Airport,Cagayan de Oro City,Philippines
+AP1811,Silchar Airport,Silchar,India
+AP1812,Netaji Subhash Chandra Bose International Airport,Kolkata,India
+AP1813,Daniel Z. Romualdez Airport,Tacloban,Philippines
+AP1814,Mactan Cebu International Airport,Cebu,Philippines
+AP1815,Paro Airport,Thimphu,Bhutan
+AP1816,New Islamabad International Airport,Islamabad,Pakistan
+AP1817,Ornskoldsvik Airport,Ornskoldsvik,Sweden
+AP1818,Camiguin Airport,Camiguin,Philippines
+AP1819,Sibulan Airport,Dumaguete,Philippines
+AP1820,Dipolog Airport,Dipolog,Philippines
+AP1821,Siargao Airport,Siargao,Philippines
+AP1822,Legazpi City International Airport,Legazpi,Philippines
+AP1823,Labo Airport,Ozamis,Philippines
+AP1824,Pagadian Airport,Pagadian,Philippines
+AP1825,Bacolod-Silay Airport,Bacolod,Philippines
+AP1826,Francisco Bangoy International Airport,Davao,Philippines
+AP1827,Arviat Airport,Eskimo Point,Canada
+AP1828,Yangon International Airport,Yangon,Burma
+AP1829,Thandwe Airport,Thandwe,Burma
+AP1830,Mandalay International Airport,Mandalay,Burma
+AP1831,Myeik Airport,Myeik,Burma
+AP1832,Heho Airport,Heho,Burma
+AP1833,Bagan Airport,Bagan,Burma
+AP1834,Tachileik Airport,Tachilek,Burma
+AP1835,Kawthoung Airport,Kawthoung,Burma
+AP1836,Dawei Airport,Dawei,Burma
+AP1837,Sittwe Airport,Sittwe,Burma
+AP1838,El Bayadh Airport,El Bayadh,Algeria
+AP1839,Guemar Airport,Guemar,Algeria
+AP1840,Noumerat - Moufdi Zakaria Airport,Ghardaia,Algeria
+AP1841,Hassi R'Mel Airport,Tilrempt,Algeria
+AP1842,In Salah Airport,In Salah,Algeria
+AP1843,Ghriss Airport,Ghriss,Algeria
+AP1844,Mecheria Airport,Mecheria,Algeria
+AP1845,Ain el Beida Airport,Ouargla,Algeria
+AP1846,Cheikh Larbi Tebessi Airport,Tebessa,Algeria
+AP1847,Touggourt Sidi Madhi Airport,Touggourt,Algeria
+AP1848,Bou Chekif Airport,Tiaret,Algeria
+AP1849,Bordj Badji Mokhtar Airport,Bordj Badji Mokhtar,Algeria
+AP1850,Oued Irara Airport,Hassi Messaoud,Algeria
+AP1851,Aguenar Hadj Bey Akhamok Airport,Tamanrasset,Algeria
+AP1852,El Golea Airport,El Golea,Algeria
+AP1853,In Amenas Airport,Zarzaitine,Algeria
+AP1854,Bechar Boudghene Ben Ali Lotfi Airport,Bechar,Algeria
+AP1855,Mangalore International Airport,Mangalore,India
+AP1856,Shillong Airport,Shillong,India
+AP1857,Agatti Airport,Agatti Island,India
+AP1858,Kangra Airport,Kangra,India
+AP1859,Kanpur Airport,Kanpur,India
+AP1860,Kullu Manali Airport,Kulu,India
+AP1861,Ludhiana Airport,Ludhiaha,India
+AP1862,Lokpriya Gopinath Bordoloi International Airport,Guwahati,India
+AP1863,Imphal Airport,Imphal,India
+AP1864,Licenciado Miguel de la Madrid Airport,Colima,Mexico
+AP1865,General Pedro Jose Mendez International Airport,Ciudad Victoria,Mexico
+AP1866,El Lencero Airport,Jalapa,Mexico
+AP1867,Lazard Cardenas Airport,Lazard Cardenas,Mexico
+AP1868,Puerto Escondido International Airport,Puerto Escondido,Mexico
+AP1869,El Tajin National Airport,Poza Rico,Mexico
+AP1870,Jyvaskyla Airport,Jyvaskyla,Finland
+AP1871,Kemi-Tornio Airport,Kemi,Finland
+AP1872,Avignon-Caumont Airport,Avignon,France
+AP1873,Ajaccio-Napoleon Bonaparte Airport,Ajaccio,France
+AP1874,Buri Ram Airport,Buri Ram,Thailand
+AP1875,Chumphon Airport,Chumphon,Thailand
+AP1876,Loei Airport,Loei,Thailand
+AP1877,Mae Sot Airport,Tak,Thailand
+AP1878,Nan Airport,Nan,Thailand
+AP1879,Phrae Airport,Phrae,Thailand
+AP1880,Ranong Airport,Ranong,Thailand
+AP1881,Fakfak Airport,Fak Fak,Indonesia
+AP1882,Dumatumbun Airport,Langgur-Kei Islands,Indonesia
+AP1883,Nabire Airport,Nabire,Indonesia
+AP1884,Ranai Airport,Ranai-Natuna Besar Island,Indonesia
+AP1885,Pangkal Pinang (Depati Amir) Airport,Pangkal Pinang,Indonesia
+AP1886,Muhammad Salahuddin Airport,Bima,Indonesia
+AP1887,Komodo Airport,Labuhan Bajo,Indonesia
+AP1888,Abdul Rachman Saleh Airport,Malang,Indonesia
+AP1889,Maumere(Wai Oti) Airport,Maumere,Indonesia
+AP1890,Tambolaka Airport,Waikabubak-Sumba Island,Indonesia
+AP1891,Umbu Mehang Kunda Airport,Waingapu,Indonesia
+AP1892,Kaimana Airport,Kaimana,Indonesia
+AP1893,Husein Sastranegara International Airport,Bandung,Indonesia
+AP1894,Ende (H Hasan Aroeboesman) Airport,Ende,Indonesia
+AP1895,Kao Airport,Kao,Indonesia
+AP1896,Melangguane Airport,Melonguane,Indonesia
+AP1897,Buluh Tumbang (H A S Hanandjoeddin) Airport,Tanjung Pandan,Indonesia
+AP1898,Babo Airport,Babo,Indonesia
+AP1899,Betoambari Airport,Bau-Bau,Indonesia
+AP1900,Wolter Monginsidi Airport,Kendari,Indonesia
+AP1901,Syukuran Aminuddin Amir Airport,Luwuk,Indonesia
+AP1902,Kasiguncu Airport,Poso,Indonesia
+AP1903,La Tontouta International Airport,Noumea,New Caledonia
+AP1904,St Pierre Airport,St.-pierre,Reunion
+AP1905,Peshawar International Airport,Peshawar,Pakistan
+AP1906,Zhob Airport,Zhob,Pakistan
+AP1907,Turbat International Airport,Turbat,Pakistan
+AP1908,Chitral Airport,Chitral,Pakistan
+AP1909,Gilgit Airport,Gilgit,Pakistan
+AP1910,Skardu Airport,Skardu,Pakistan
+AP1911,Gwadar International Airport,Gwadar,Pakistan
+AP1912,Moenjodaro Airport,Moenjodaro,Pakistan
+AP1913,Panjgur Airport,Panjgur,Pakistan
+AP1914,Quetta International Airport,Quetta,Pakistan
+AP1915,Dera Ismael Khan Airport,Dera Ismael Khan,Pakistan
+AP1916,Dalbandin Airport,Dalbandin,Pakistan
+AP1917,Ile des Pins Airport,Ile des Pins,New Caledonia
+AP1918,Mare Airport,Mare,New Caledonia
+AP1919,Rota International Airport,Rota,Northern Mariana Islands
+AP1920,Saipan International Airport,Saipan,Northern Mariana Islands
+AP1921,Antonio B. Won Pat International Airport,Agana,Guam
+AP1922,Gabes Matmata International Airport,Gabes,Tunisia
+AP1923,Badajoz Airport,Badajoz,Spain
+AP1924,Manihi Airport,Manihi,French Polynesia
+AP1925,Kaukura Airport,Kaukura Atoll,French Polynesia
+AP1926,Huahine-Fare Airport,Huahine Island,French Polynesia
+AP1927,Maupiti Airport,Maupiti,French Polynesia
+AP1928,Raiatea Airport,Raiatea Island,French Polynesia
+AP1929,Rangiroa Airport,Rangiroa,French Polynesia
+AP1930,Tikehau Airport,Tikehau,French Polynesia
+AP1931,Totegegie Airport,Totegegie,French Polynesia
+AP1932,Makemo Airport,Makemo,French Polynesia
+AP1933,Bora Bora Airport,Bora Bora,French Polynesia
+AP1934,Ahe Airport,Ahe,French Polynesia
+AP1935,Arutua Airport,Arutua,French Polynesia
+AP1936,Fakarava Airport,Fakarava,French Polynesia
+AP1937,Hao Airport,Hao Island,French Polynesia
+AP1938,Mataiva Airport,Mataiva,French Polynesia
+AP1939,Rimatara Airport,Rimatara,French Polynesia
+AP1940,Rurutu Airport,Rurutu,French Polynesia
+AP1941,Raivavae Airport,Raivavae,French Polynesia
+AP1942,Takaroa Airport,Takaroa,French Polynesia
+AP1943,Tubuai Airport,Tubuai,French Polynesia
+AP1944,Takapoto Airport,Takapoto,French Polynesia
+AP1945,Ixtapa Zihuatanejo International Airport,Zihuatanejo,Mexico
+AP1946,Mc Allen Miller International Airport,Mcallen,United States
+AP1947,Khasab Air Base,Khasab,Oman
+AP1948,Joenkoeping Airport,Joenkoeping,Sweden
+AP1949,Lycksele Airport,Lycksele,Sweden
+AP1950,Gallivare Airport,Gallivare,Sweden
+AP1951,Kramfors Solleftea Airport,Kramfors,Sweden
+AP1952,Arvidsjaur Airport,Arvidsjaur,Sweden
+AP1953,Deadman's Cay Airport,Dead Man's Cay,Bahamas
+AP1954,Rum Cay Airport,Port Nelson,Bahamas
+AP1955,Rock Sound Airport,Rock Sound,Bahamas
+AP1956,Stella Maris Airport,Stella Maris,Bahamas
+AP1957,San Salvador Airport,Cockburn Town,Bahamas
+AP1958,Lauro Carneiro de Loyola Airport,Joinville,Brazil
+AP1959,Presidente Prudente Airport,President Prudente,Brazil
+AP1960,Serafin Enoss Bertaso Airport,Chapeco,Brazil
+AP1961,Sde Dov Airport,Tel-aviv,Israel
+AP1962,Professor Urbano Ernesto Stumpf Airport,Sao Jose Dos Campos,Brazil
+AP1963,Dunedin Airport,Dunedin,New Zealand
+AP1964,San Sebastian Airport,San Sebastian,Spain
+AP1965,Joensuu Airport,Joensuu,Finland
+AP1966,Gafsa Ksar International Airport,Gafsa,Tunisia
+AP1967,Francistown Airport,Francistown,Botswana
+AP1968,Sainte Marie Airport,Sainte Marie,Madagascar
+AP1969,Amborovy Airport,Mahajanga,Madagascar
+AP1970,Mwanza Airport,Mwanza,Tanzania
+AP1971,Gjoa Haven Airport,Gjoa Haven,Canada
+AP1972,Bornholm Airport,Ronne,Denmark
+AP1973,Shannon Airport,Shannon,Ireland
+AP1974,Ostrava Leos Janacek Airport,Ostrava,Czech Republic
+AP1975,Abeid Amani Karume International Airport,Zanzibar,Tanzania
+AP1976,Amilcar Cabral International Airport,Amilcar Cabral,Cape Verde
+AP1977,Sri Guru Ram Dass Jee International Airport,Amritsar,India
+AP1978,Bhuj Airport,Bhuj,India
+AP1979,Roland Garros Airport,St.-denis,Reunion
+AP1980,Sir Seewoosagur Ramgoolam International Airport,Plaisance,Mauritius
+AP1981,Mohammed V International Airport,Casablanca,Morocco
+AP1982,Saiss Airport,Fes,Morocco
+AP1983,Ouarzazate Airport,Ouarzazate,Morocco
+AP1984,Supadio Airport,Pontianak,Indonesia
+AP1985,Ketapang(Rahadi Usman) Airport,Ketapang,Indonesia
+AP1986,Dzaoudzi Pamandzi International Airport,Dzaoudzi,Mayotte
+AP1987,Wamena Airport,Wamena,Indonesia
+AP1988,Siem Reap International Airport,Siem-reap,Cambodia
+AP1989,Vinh Airport,Vinh,Vietnam
+AP1990,Buon Ma Thuot Airport,Buonmethuot,Vietnam
+AP1991,El Eden Airport,Armenia,Colombia
+AP1992,Wattay International Airport,Vientiane,Laos
+AP1993,Luang Phabang International Airport,Luang Prabang,Laos
+AP1994,Pakse International Airport,Pakse,Laos
+AP1995,Guillermo Leon Valencia Airport,Popayan,Colombia
+AP1996,Ardabil Airport,Ardabil,Iran
+AP1997,Dezful Airport,Dezful,Iran
+AP1998,Dourados Airport,Dourados,Brazil
+AP1999,Cascavel Airport,Cascavel,Brazil
+AP2000,Mario de Almeida Franco Airport,Uberaba,Brazil
+AP2001,Araguaina Airport,Araguaina,Brazil
+AP2002,Memmingen Allgau Airport,Memmingen,Germany
+AP2003,Soenderborg Airport,Soenderborg,Denmark
+AP2004,Kugluktuk Airport,Coppermine,Canada
+AP2005,Cambridge Bay Airport,Cambridge Bay,Canada
+AP2006,Ulukhaktok Holman Airport,Holman Island,Canada
+AP2007,Taloyoak Airport,Spence Bay,Canada
+AP2008,Las Brujas Airport,Corozal,Colombia
+AP2009,Diu Airport,Diu,India
+AP2010,Lengpui Airport,Aizwal,India
+AP2011,Agartala Airport,Agartala,India
+AP2012,Birsa Munda Airport,Ranchi,India
+AP2013,Lok Nayak Jayaprakash Airport,Patina,India
+AP2014,Lal Bahadur Shastri Airport,Varanasi,India
+AP2015,Raja Bhoj International Airport,Bhopal,India
+AP2016,Gorakhpur Airport,Gorakhpur,India
+AP2017,Jodhpur Airport,Jodhpur,India
+AP2018,Maharana Pratap Airport,Udaipur,India
+AP2019,Porbandar Airport,Porbandar,India
+AP2020,Pune Airport,Pune,India
+AP2021,Rajahmundry Airport,Rajahmundry,India
+AP2022,Madurai Airport,Madurai,India
+AP2023,Tiruchirapally Civil Airport Airport,Tiruchirappalli,India
+AP2024,Devi Ahilyabai Holkar Airport,Indore,India
+AP2025,Rodez-Marcillac Airport,Rodez,France
+AP2026,Alberto Alcolumbre Airport,Macapa,Brazil
+AP2027,Brigadeiro Camario Airport,Vilhena,Brazil
+AP2028,Maestro Marinho Franco Airport,Rondonopolis,Brazil
+AP2029,Corumba International Airport,Corumba,Brazil
+AP2030,Usiminas Airport,Ipatinga,Brazil
+AP2031,Zona da Mata Regional Airport,Juiz de Fora,Brazil
+AP2032,Prefeito Doutor Joao Silva Filho Airport,Parnaiba,Brazil
+AP2033,Aracatuba Airport,Aracatuba,Brazil
+AP2034,Frank Miloye Milenkowichi Marilia State Airport,Marilia,Brazil
+AP2035,Tucurui Airport,Tucurui,Brazil
+AP2036,Atlas Brasil Cantanhede Airport,Boa Vista,Cape Verde
+AP2037,Parintins Airport,Parintins,Brazil
+AP2038,Bauru - Arealva Airport,Bauru,Brazil
+AP2039,Cabo Frio Airport,Cabo Frio,Brazil
+AP2040,Coronel Altino Machado de Oliveira Airport,Governador Valadares,Brazil
+AP2041,Pelotas International Airport,Pelotas,Brazil
+AP2042,Lauro Kurtz Airport,Passo Fundo,Brazil
+AP2043,Bartolomeu Lisandro Airport,Campos,Brazil
+AP2044,Coronel Horacio de Mattos Airport,Lencois,Brazil
+AP2045,Paulo Afonso Airport,Paulo Alfonso,Brazil
+AP2046,Trombetas Airport,Oriximina,Brazil
+AP2047,Araraquara Airport,Araracuara,Brazil
+AP2048,Bonito Airport,Bointo,Brazil
+AP2049,Diomicio Freitas Airport,Criciuma,Brazil
+AP2050,Saint-Etienne-Boutheon Airport,St-Etienne,France
+AP2051,Pierrefonds Airport,St.-pierre,Reunion
+AP2052,Rabat-Sale Airport,Rabat,Morocco
+AP2053,Saniat R'mel Airport,Tetouan,Morocco
+AP2054,Cherif Al Idrissi Airport,Al Hociema,Morocco
+AP2055,El Yopal Airport,Yopal,Colombia
+AP2056,Gustavo Artunduaga Paredes Airport,Florencia,Colombia
+AP2057,La Nubia Airport,Manizales,Colombia
+AP2058,La Florida Airport,La Serena,Chile
+AP2059,Kajaani Airport,Kajaani,Finland
+AP2060,Kuusamo Airport,Kuusamo,Finland
+AP2061,Norrkoeping Airport,Norrkoeping,Sweden
+AP2062,Savonlinna Airport,Savonlinna,Finland
+AP2063,Tartu Airport,Tartu,Estonia
+AP2064,Mulu Airport,Mulu,Malaysia
+AP2065,Brunei International Airport,Bandar Seri Begawan,Brunei
+AP2066,Kuching International Airport,Kuching,Malaysia
+AP2067,Angelholm-Helsingborg Airport,Angelholm,Sweden
+AP2068,Gothenburg City Airport,Gothenborg,Sweden
+AP2069,Malmoe Sturup Airport,Malmoe,Sweden
+AP2070,Libreville Leon M'ba International Airport,Libreville,Gabon
+AP2071,Malabo Airport,Malabo,Equatorial Guinea
+AP2072,Karup Airport,Karup,Denmark
+AP2073,Cork Airport,Cork,Ireland
+AP2074,Bandar Lengeh Airport,Bandar Lengeh,Iran
+AP2075,Lamerd Airport,Lamerd,Iran
+AP2076,Gorgan Airport,Gorgan,Iran
+AP2077,Ramsar Airport,Ramsar,Iran
+AP2078,Kerman Airport,Kerman,Iran
+AP2079,Lar Airport,Lar,Iran
+AP2080,Gachsaran Airport,Gachsaran,Iran
+AP2081,Khoy Airport,Khoy,Iran
+AP2082,Noshahr Airport,Noshahr,Iran
+AP2083,Parsabade Moghan Airport,Parsabad,Iran
+AP2084,Yasouj Airport,Yasuj,Iran
+AP2085,Mbanza Congo Airport,M'banza-congo,Angola
+AP2086,Soyo Airport,Soyo,Angola
+AP2087,Lampedusa Airport,Lampedusa,Italy
+AP2088,Pantelleria Airport,Pantelleria,Italy
+AP2089,Vincenzo Florio Airport Trapani-Birgi,Trapani,Italy
+AP2090,Penang International Airport,Penang,Malaysia
+AP2091,Sultan Ismail Petra Airport,Kota Bahru,Malaysia
+AP2092,Senai International Airport,Johor Bahru,Malaysia
+AP2093,Sultan Iskandar Muda International Airport,Banda Aceh,Indonesia
+AP2094,Kuantan Airport,Kuantan,Malaysia
+AP2095,Langkawi International Airport,Langkawi,Malaysia
+AP2096,Samui Airport,Ko Samui,Thailand
+AP2097,Sultan Azlan Shah Airport,Ipoh,Malaysia
+AP2098,Sultan Abdul Halim Airport,Alor Setar,Malaysia
+AP2099,Kerteh Airport,Kerteh,Malaysia
+AP2100,Sultan Syarif Kasim Ii (Simpang Tiga) Airport,Pekanbaru,Indonesia
+AP2101,Sultan Mahmud Airport,Kuala Terengganu,Malaysia
+AP2102,Melilla Airport,Melilla,Spain
+AP2103,Iskandar Airport,Pangkalan Bun,Indonesia
+AP2104,Adi Sumarmo Wiryokusumo Airport,Solo City,Indonesia
+AP2105,Haifa International Airport,Haifa,Israel
+AP2106,Banja Luka International Airport,Banja Luka,Bosnia and Herzegovina
+AP2107,Sihanoukville International Airport,Sihanoukville,Cambodia
+AP2108,Toliara Airport,Toliara,Madagascar
+AP2109,Sambava Airport,Sambava,Madagascar
+AP2110,Sir Charles Gaetan Duval Airport,Rodriguez Island,Mauritius
+AP2111,Al Massira Airport,Agadir,Morocco
+AP2112,Hassan I Airport,El Aaiun,Western Sahara
+AP2113,La Palma Airport,Santa Cruz De La Palma,Spain
+AP2114,Tenerife South Airport,Tenerife,Spain
+AP2115,Hierro Airport,Hierro,Spain
+AP2116,La Gomera Airport,La Gomera,Spain
+AP2117,Queenstown International Airport,Queenstown International,New Zealand
+AP2118,Lampang Airport,Lampang,Thailand
+AP2119,Naypyidaw Airport,Naypyidaw,Burma
+AP2120,Trat Airport,Trat,Thailand
+AP2121,Sukhothai Airport,Sukhothai,Thailand
+AP2122,U-Tapao International Airport,Pattaya,Thailand
+AP2123,Krabi Airport,Krabi,Thailand
+AP2124,Prince Said Ibrahim International Airport,Moroni,Comoros
+AP2125,Songwe Airport,Mbeya,Tanzania
+AP2126,Savannakhet Airport,Savannakhet,Laos
+AP2127,Chiang Mai International Airport,Chiang Mai,Thailand
+AP2128,Xishuangbanna Gasa Airport,Jinghonggasa,China
+AP2129,Ban Huoeisay Airport,Huay Xai,Laos
+AP2130,Luang Namtha Airport,Luang Namtha,Laos
+AP2131,Oudomsay Airport,Muang Xay,Laos
+AP2132,Xieng Khouang Airport,Phon Savan,Laos
+AP2133,Lihue Airport,Lihue,United States
+AP2134,Kahului Airport,Kahului,United States
+AP2135,Daniel K Inouye International Airport,Honolulu,United States
+AP2136,Tozeur Nefta International Airport,Tozeur,Tunisia
+AP2137,Djerba Zarzis International Airport,Djerba,Tunisia
+AP2138,Khanty Mansiysk Airport,Khanty-Mansiysk,Russia
+AP2139,Donskoye Airport,Tambow,Russia
+AP2140,Kursk East Airport,Kursk,Russia
+AP2141,Da Nang International Airport,Danang,Vietnam
+AP2142,Lien Khuong Airport,Dalat,Vietnam
+AP2143,Cat Bi International Airport,Haiphong,Vietnam
+AP2144,Pleiku Airport,Pleiku,Vietnam
+AP2145,Dien Bien Phu Airport,Dienbienphu,Vietnam
+AP2146,Dong Tac Airport,Tuy Hoa,Vietnam
+AP2147,Chu Lai International Airport,Chu Lai,Vietnam
+AP2148,Dong Hoi Airport,Dong Hoi,Vietnam
+AP2149,Can Tho International Airport,Can Tho,Vietnam
+AP2150,Ca Mau Airport,Ca Mau,Vietnam
+AP2151,Co Ong Airport,Conson,Vietnam
+AP2152,Rach Gia Airport,Rach Gia,Vietnam
+AP2153,Phu Quoc International Airport,Phuquoc,Vietnam
+AP2154,Rabil Airport,Boa Vista,Cape Verde
+AP2155,Maio Airport,Maio,Cape Verde
+AP2156,Sao Filipe Airport,Sao Filipe,Cape Verde
+AP2157,Sao Pedro Airport,Sao Vicente Island,Cape Verde
+AP2158,Preguica Airport,Sao Nocolau Island,Cape Verde
+AP2159,Myitkyina Airport,Myitkyina,Burma
+AP2160,Putao Airport,Putao,Burma
+AP2161,Kyaukpyu Airport,Kyaukpyu,Burma
+AP2162,Kengtung Airport,Kengtung,Burma
+AP2163,Lanai Airport,Lanai,United States
+AP2164,Kasane Airport,Kasane,Botswana
+AP2165,Maun Airport,Maun,Botswana
+AP2166,Naryan Mar Airport,Naryan-Mar,Russia
+AP2167,Talagi Airport,Arkhangelsk,Russia
+AP2168,Gerardo Tobar Lopez Airport,Buenaventura,Colombia
+AP2169,Los Colonizadores Airport,Saravena,Colombia
+AP2170,Jorge E. Gonzalez Torres Airport,San Jose Del Guaviare,Colombia
+AP2171,Gustavo Vargas Airport,Tame,Colombia
+AP2172,Villa Garzon Airport,Villa Garzon,Colombia
+AP2173,Juan Casiano Airport,Guapi,Colombia
+AP2174,Jose Celestino Mutis Airport,Bahia Solano,Colombia
+AP2175,Caucaya Airport,Puerto Leguizamo,Colombia
+AP2176,Castres-Mazamet Airport,Castres,France
+AP2177,Brive Souillac Airport,Brive,France
+AP2178,Poitiers-Biard Airport,Poitiers,France
+AP2179,Agen-La Garenne Airport,Agen,France
+AP2180,Aurillac Airport,Aurillac,France
+AP2181,Lannion-Cote de Granit Airport,Lannion,France
+AP2182,Tautii Magheraus Airport,Baia Mare,Romania
+AP2183,Oradea International Airport,Oradea,Romania
+AP2184,Satu Mare Airport,Satu Mare,Romania
+AP2185,Labasa Airport,Lambasa,Fiji
+AP2186,Funafuti International Airport,Funafuti,Tuvalu
+AP2187,Fua'amotu International Airport,Tongatapu,Tonga
+AP2188,Molokai Airport,Molokai,United States
+AP2189,Bukoba Airport,Bukoba,Tanzania
+AP2190,Igarka Airport,Igarka,Russia
+AP2191,Podkamennaya Tunguska Airport,Bor,Russia
+AP2192,Turukhansk Airport,Turukhansk,Russia
+AP2193,Bogashevo Airport,Tomsk,Russia
+AP2194,Chita-Kadala Airport,Chita,Russia
+AP2195,Tefe Airport,Tefe,Brazil
+AP2196,Southend Airport,Southend,United Kingdom
+AP2197,Milan Rastislav Stefanik Airport,Bratislava,Slovakia
+AP2198,Arusha Airport,Arusha,Tanzania
+AP2199,Mtwara Airport,Mtwara,Tanzania
+AP2200,Baker Lake Airport,Baker Lake,Canada
+AP2201,Repulse Bay Airport,Repulse Bay,Canada
+AP2202,Pond Inlet Airport,Pond Inlet,Canada
+AP2203,Old Arctic Bay Airport,Arctic Bay,Canada
+AP2204,Clyde River Airport,Clyde River,Canada
+AP2205,Igloolik Airport,Igloolik,Canada
+AP2206,Cape Dorset Airport,Cape Dorset,Canada
+AP2207,Hall Beach Airport,Hall Beach,Canada
+AP2208,Pangnirtung Airport,Pangnirtung,Canada
+AP2209,Qikiqtarjuaq Airport,Broughton Island,Canada
+AP2210,Patos de Minas Airport,Patos de Minas,Brazil
+AP2211,Barcelos Airport,Barcelos,Brazil
+AP2212,Coari Airport,Coari,Brazil
+AP2213,Romeu Zema Airport,Araxa,Brazil
+AP2214,Macae Airport,Macae,Brazil
+AP2215,Eirunepe Airport,Eirunepe,Brazil
+AP2216,Tapuruquara Airport,Santa Isabel do Rio Negro,Brazil
+AP2217,Senadora Eunice Micheles Airport,Sao Paulo de Olivenca,Brazil
+AP2218,Sao Gabriel da Cachoeira Airport,Sao Gabriel,Brazil
+AP2219,General Leite de Castro Airport,Rio Verde,Brazil
+AP2220,Blackpool International Airport,Blackpool,United Kingdom
+AP2221,Bournemouth Airport,Bournemouth,United Kingdom
+AP2222,Kerry Airport,Kerry,Ireland
+AP2223,Saumlaki/Olilit Airport,Saumlaki,Indonesia
+AP2224,Oksibil Airport,Oksibil,Indonesia
+AP2225,Rar Gwamar Airport,Dobo,Indonesia
+AP2226,Gillam Airport,Gillam,Canada
+AP2227,Sanikiluaq Airport,Sanikiluaq,Canada
+AP2228,Dakhla Airport,Dakhla,Western Sahara
+AP2229,Pietermaritzburg Airport,Pietermaritzburg,South Africa
+AP2230,Joshua Mqabuko Nkomo International Airport,Bulawayo,Zimbabwe
+AP2231,Umea Airport,Umea,Sweden
+AP2232,Kirensk Airport,Kirensk,Russia
+AP2233,Bodaybo Airport,Bodaibo,Russia
+AP2234,Ust-Kut Airport,Ust-Kut,Russia
+AP2235,Lensk Airport,Lensk,Russia
+AP2236,Solovki Airport,Solovetsky Islands,Russia
+AP2237,Usinsk Airport,Usinsk,Russia
+AP2238,Petropavlosk South Airport,Petropavlosk,Kazakhstan
+AP2239,Uralsk Airport,Uralsk,Kazakhstan
+AP2240,Semipalatinsk Airport,Semiplatinsk,Kazakhstan
+AP2241,Bosaso Airport,Bosaso,Somalia
+AP2242,Berbera Airport,Berbera,Somalia
+AP2243,Galcaio Airport,Galcaio,Somalia
+AP2244,Zaporizhzhia International Airport,Zaporozhye,Ukraine
+AP2245,Kiev Zhuliany International Airport,Kiev,Ukraine
+AP2246,Chokurdakh Airport,Chokurdah,Russia
+AP2247,Cherskiy Airport,Cherskiy,Russia
+AP2248,Moma Airport,Honuu,Russia
+AP2249,Sakkyryr Airport,Batagay-Alyta,Russia
+AP2250,Ust-Tsylma Airport,Ust-Tsylma,Russia
+AP2251,Bandaranaike International Colombo Airport,Colombo,Sri Lanka
+AP2252,N'Djamena International Airport,N'djamena,Chad
+AP2253,Urmia Airport,Uromiyeh,Iran
+AP2254,Bratsk Airport,Bratsk,Russia
+AP2255,Mariana Grajales Airport,Guantanamo,Cuba
+AP2256,Frank Pais International Airport,Holguin,Cuba
+AP2257,Antonio Maceo International Airport,Santiago De Cuba,Cuba
+AP2258,Uzhhorod International Airport,Uzhgorod,Ukraine
+AP2259,Shanghai Pudong International Airport,Shanghai,China
+AP2260,Kansai International Airport,Osaka,Japan
+AP2261,Calicut International Airport,Calicut,India
+AP2262,Yelizovo Airport,Petropavlovsk,Russia
+AP2263,Gimpo International Airport,Seoul,South Korea
+AP2264,Izumo Airport,Izumo,Japan
+AP2265,Dalaman International Airport,Dalaman,Turkey
+AP2266,Dallas Love Field,Dallas,United States
+AP2267,Vadodara Airport,Baroda,India
+AP2268,Gaziantep International Airport,Gaziantep,Turkey
+AP2269,Hatay Airport,Hatay,Turkey
+AP2270,Sardar Vallabhbhai Patel International Airport,Ahmedabad,India
+AP2271,Esenboga International Airport,Ankara,Turkey
+AP2272,Sanliurfa GAP Airport,Sanliurfa,Turkey
+AP2273,Erzurum International Airport,Erzurum,Turkey
+AP2274,Abbotsford Airport,Abbotsford,Canada
+AP2275,Valley International Airport,Harlingen,United States
+AP2276,Branson Airport,Branson,United States
+AP2277,Bethel Airport,Bethel,United States
+AP2278,Hobart International Airport,Hobart,Australia
+AP2279,Kagoshima Airport,Kagoshima,Japan
+AP2280,Hakodate Airport,Hakodate,Japan
+AP2281,Kiruna Airport,Kiruna,Sweden
+AP2282,Gimhae International Airport,Busan,South Korea
+AP2283,Akita Airport,Akita,Japan
+AP2284,Jeju International Airport,Cheju,South Korea
+AP2285,Svalbard Airport,Svalbard,Norway
+AP2286,Jammu Airport,Jammu,India
+AP2287,Milas Bodrum International Airport,Bodrum,Turkey
+AP2288,Skelleftea Airport,Skelleftea,Sweden
+AP2289,Aksu Airport,Aksu,China
+AP2290,Sam Mbakwe International Airport,Imo,Nigeria
+AP2291,Angads Airport,Oujda,Morocco
+AP2292,John Wayne Airport-Orange County Airport,Santa Ana,United States
+AP2293,Jaipur International Airport,Jaipur,India
+AP2294,Yancheng Airport,Yancheng,China
+AP2295,Babelthuap Airport,Babelthuap,Palau
+AP2296,Yap International Airport,Yap,Micronesia
+AP2297,Chuuk International Airport,Chuuk,Micronesia
+AP2298,Port Harcourt International Airport,Port Hartcourt,Nigeria
+AP2299,Cabinda Airport,Cabinda,Angola
+AP2300,Saurimo Airport,Saurimo,Angola
+AP2301,Lijiang Airport,Lijiang,China
+AP2302,Karlsruhe Baden-Baden Airport,Karlsruhe/Baden-Baden,Germany
+AP2303,Nukus Airport,Nukus,Uzbekistan
+AP2304,Vishakhapatnam Airport,Vishakhapatnam,India
+AP2305,Bhavnagar Airport,Bhaunagar,India
+AP2306,Dr. Babasaheb Ambedkar International Airport,Nagpur,India
+AP2307,Rajkot Airport,Rajkot,India
+AP2308,Ashgabat International Airport,Ashkhabad,Turkmenistan
+AP2309,Khudzhand Airport,Khudzhand,Tajikistan
+AP2310,Osh Airport,Osh,Kyrgyzstan
+AP2311,Ngjiva Pereira Airport,Ondjiva,Angola
+AP2312,Maya-Maya Airport,Brazzaville,Republic of Congo
+AP2313,Catumbela Airport,Catumbela,Angola
+AP2314,Luena Airport,Luena,Angola
+AP2315,Malanje Airport,Malanje,Angola
+AP2316,Namibe Airport,Mocamedes,Angola
+AP2317,Nova Lisboa Airport,Huambo,Angola
+AP2318,Lubango Airport,Lubango,Angola
+AP2319,Menongue Airport,Menongue,Angola
+AP2320,Kuito Airport,Kuito,Angola
+AP2321,Sao Tome International Airport,Sao Tome,Sao Tome and Principe
+AP2322,Cruzeiro do Sul Airport,Cruzeiro do Sul,Brazil
+AP2323,Huangyan Luqiao Airport,Huangyan,China
+AP2324,Yangzhou Taizhou Airport,Yangzhou,China
+AP2325,Nouakchott Oumtounsy International Airport,Nouakschott,Mauritania
+AP2326,Tazadit Airport,Zouerat,Mauritania
+AP2327,Pointe Noire Airport,Pointe-noire,Republic of Congo
+AP2328,Erfurt Airport,Erfurt,Germany
+AP2329,Berlin-Schonefeld Airport,Berlin,Germany
+AP2330,Zonguldak Airport,Zonguldak,Turkey
+AP2331,Antalya International Airport,Antalya,Turkey
+AP2332,Dortmund Airport,Dortmund,Germany
+AP2333,Capital City Airport,Lansing,United States
+AP2334,Canakkale Airport,Canakkale,Turkey
+AP2335,Gazipaia Airport,Alanya,Turkey
+AP2336,Atyrau Airport,Atyrau,Kazakhstan
+AP2337,Asaba International Airport,Asaba,Nigeria
+AP2338,Margaret Ekpo International Airport,Calabar,Nigeria
+AP2339,Akanu Ibiam International Airport,Enugu,Nigeria
+AP2340,Yakubu Gowon Airport,Jos,Nigeria
+AP2341,Northwest Florida Beaches International Airport,Panama City,Panama
+AP2342,Gwangju Airport,Kwangju,South Korea
+AP2343,Daegu Airport,Taegu,South Korea
+AP2344,Mekele Airport,Makale,Ethiopia
+AP2345,Mombasa Moi International Airport,Mombasa,Kenya
+AP2346,Soummam Airport,Bejaja,Algeria
+AP2347,Zenata Messali El Hadj Airport,Tlemcen,Algeria
+AP2348,Nador International Airport,El Aroui,Morocco
+AP2349,Aurangabad Airport,Aurangabad,India
+AP2350,Norilsk-Alykel Airport,Norilsk,Russia
+AP2351,Cardak Airport,Denizli,Turkey
+AP2352,Suleyman Demirel International Airport,Isparta,Turkey
+AP2353,Keflavik International Airport,Keflavik,Iceland
+AP2354,Adana Airport,Adana,Turkey
+AP2355,Hewanorra International Airport,Hewandorra,Saint Lucia
+AP2356,Sheikh ul Alam Airport,Srinagar,India
+AP2357,Osvaldo Vieira International Airport,Bissau,Guinea-Bissau
+AP2358,Viru Viru International Airport,Santa Cruz,Bolivia
+AP2359,Adnan Menderes International Airport,Izmir,Turkey
+AP2360,Pohnpei International Airport,Pohnpei,Micronesia
+AP2361,Ciudad del Carmen International Airport,Ciudad Del Carmen,Mexico
+AP2362,Dera Ghazi Khan Airport,Dera Ghazi Khan,Pakistan
+AP2363,Beijing Nanyuan Airport,Beijing,China
+AP2364,Fukushima Airport,Fukushima,Japan
+AP2365,Adak Airport,Adak Island,United States
+AP2366,Kodiak Airport,Kodiak,United States
+AP2367,Kisumu Airport,Kisumu,Kenya
+AP2368,Arrachart Airport,Antsiranana,Madagascar
+AP2369,Tolanaro Airport,Tolagnaro,Madagascar
+AP2370,Fascene Airport,Nosy-be,Madagascar
+AP2371,Learmonth Airport,Learmonth,Australia
+AP2372,Lhasa Gonggar Airport,Lhasa,China
+AP2373,Khon Kaen Airport,Khon Kaen,Thailand
+AP2374,Lamezia Terme Airport,Lamezia,Italy
+AP2375,Hat Yai International Airport,Hat Yai,Thailand
+AP2376,Cayenne-Rochambeau Airport,Cayenne,French Guiana
+AP2377,Kayseri Erkilet Airport,Kayseri,Turkey
+AP2378,Gurayat Domestic Airport,Guriat,Saudi Arabia
+AP2379,Xuzhou Guanyin Airport,Xuzhou,China
+AP2380,Ndjili International Airport,Kinshasa,Democratic Republic of Congo
+AP2381,Urgench Airport,Urgench,Uzbekistan
+AP2382,Aqaba King Hussein International Airport,Aqaba,Jordan
+AP2383,Kalamata Airport,Kalamata,Greece
+AP2384,Mariscal Lamar Airport,Cuenca,Ecuador
+AP2385,Chania International Airport,Chania,Greece
+AP2386,Mikonos Airport,Mykonos,Greece
+AP2387,La Abraq Airport,Al Bayda',Libya
+AP2388,Kalibo International Airport,Kalibo,Philippines
+AP2389,Yariguies Airport,Barrancabermeja,Colombia
+AP2390,Faisalabad International Airport,Faisalabad,Pakistan
+AP2391,Trabzon International Airport,Trabzon,Turkey
+AP2392,Van Ferit Melen Airport,Van,Turkey
+AP2393,San Cristobal Airport,San Cristobal,Ecuador
+AP2394,Diyarbakir Airport,Diyabakir,Turkey
+AP2395,Pescara International Airport,Pescara,Italy
+AP2396,Cap FAP David Abenzur Rengifo International Airport,Pucallpa,Peru
+AP2397,Cadete FAP Guillermo Del Castillo Paredes Airport,Tarapoto,Peru
+AP2398,Alejandro Velasco Astete International Airport,Cuzco,Peru
+AP2399,Momote Airport,Momote,Papua New Guinea
+AP2400,Mbuji Mayi Airport,Mbuji-mayi,Democratic Republic of Congo
+AP2401,Porto Santo Airport,Porto Santo,Portugal
+AP2402,Bushehr Airport,Bushehr,Iran
+AP2403,Birjand Airport,Birjand,Iran
+AP2404,Bojnord Airport,Bojnourd,Iran
+AP2405,Miho Yonago Airport,Miho,Japan
+AP2406,General Abelardo L. Rodriguez International Airport,Tijuana,Mexico
+AP2407,Lajes Airport,Lajes (terceira Island),Portugal
+AP2408,Takamatsu Airport,Takamatsu,Japan
+AP2409,Kushiro Airport,Kushiro,Japan
+AP2410,Ellison Onizuka Kona International At Keahole Airport,Kona,United States
+AP2411,Tottori Airport,Tottori,Japan
+AP2412,Malatya Erhac Airport,Malatya,Turkey
+AP2413,Nevsehir Kapadokya Airport,Nevsehir,Turkey
+AP2414,Asahikawa Airport,Asahikawa,Japan
+AP2415,Cam Ranh Airport,Nha Trang,Vietnam
+AP2416,Mattala Rajapaksa International Airport,Mattala,Sri Lanka
+AP2417,Ercan International Airport,Nicosia,Cyprus
+AP2418,Shonai Airport,Shonai,Japan
+AP2419,Saga Airport,Saga,Japan
+AP2420,Al Maktoum International Airport,Dubai,United Arab Emirates
+AP2421,Almirante Padilla Airport,Rio Hacha,Colombia
+AP2422,Alfonso Lopez Pumarejo Airport,Valledupar,Colombia
+AP2423,Konya Airport,Konya,Turkey
+AP2424,Rovaniemi Airport,Rovaniemi,Finland
+AP2425,Toyama Airport,Toyama,Japan
+AP2426,Samarkand Airport,Samarkand,Uzbekistan
+AP2427,Jorge Wilsterman International Airport,Cochabamba,Bolivia
+AP2428,Namangan Airport,Namangan,Uzbekistan
+AP2429,Jalaluddin Airport,Gorontalo,Indonesia
+AP2430,Diori Hamani International Airport,Niamey,Niger
+AP2431,Mutiara Airport,Palu,Indonesia
+AP2432,Rafael Hernandez Airport,Aguadilla,Puerto Rico
+AP2433,Yuncheng Guangong Airport,Yuncheng,China
+AP2434,Odate Noshiro Airport,Odate Noshiro,Japan
+AP2435,Tokushima Airport/JMSDF Air Base,Tokushima,Japan
+AP2436,Hachijojima Airport,Hachijojima,Japan
+AP2437,Brussels South Charleroi Airport,Charleroi,Belgium
+AP2438,Balikesir Korfez Airport,Balikesir Korfez,Turkey
+AP2439,Erzincan Airport,Erzincan,Turkey
+AP2440,Kahramanmaras Airport,Kahramanmaras,Turkey
+AP2441,Adiyaman Airport,Adiyaman,Turkey
+AP2442,Mihail Kogalniceanu International Airport,Constanta,Romania
+AP2443,Juan Gualberto Gomez International Airport,Varadero,Cuba
+AP2444,New Ishigaki Airport,Ishigaki,Japan
+AP2445,Kobe Airport,Kobe,Japan
+AP2446,Dayong Airport,Dayong,China
+AP2447,Iwakuni Marine Corps Air Station,Iwakuni,Japan
+AP2448,Noto Airport,Wajima,Japan
+AP2449,Tokachi-Obihiro Airport,Obihiro,Japan
+AP2450,Lintsang Airfield,Lincang,China
+AP2451,Dali Airport,Dali,China
+AP2452,Tengchong Tuofeng Airport,Tengchong,China
+AP2453,Mangshi Airport,Luxi,China
+AP2454,Pu'er Simao Airport,Simao,China
+AP2455,Minangkabau International Airport,Padang,Indonesia
+AP2456,Diosdado Macapagal International Airport,Angeles City,Philippines
+AP2457,Yuzhno-Sakhalinsk Airport,Yuzhno-sakhalinsk,Russia
+AP2458,Kota Kinabalu International Airport,Kota Kinabalu,Malaysia
+AP2459,Al Najaf International Airport,Najaf,Iraq
+AP2460,Taif Regional Airport,Taif,Saudi Arabia
+AP2461,London Luton Airport,London,Canada
+AP2462,Faleolo International Airport,Faleolo,Samoa
+AP2463,Fergana International Airport,Fergana,Uzbekistan
+AP2464,Batman Airport,Batman,Turkey
+AP2465,Sivas Nuri Airport,Sivas,Turkey
+AP2466,Iwami Airport,Iwami,Japan
+AP2467,Yanji Chaoyangchuan Airport,Yanji,China
+AP2468,Cheongju International Airport/Cheongju Air Base (K-59/G-513),Chongju,South Korea
+AP2469,Yeosu Airport,Yeosu,South Korea
+AP2470,Barnaul Airport,Barnaul,Russia
+AP2471,Simferopol International Airport,Simferopol,Ukraine
+AP2472,Enfidha - Hammamet International Airport,Enfidha,Tunisia
+AP2473,Iloilo International Airport,Iloilo,Philippines
+AP2474,Puerto Princesa Airport,Puerto Princesa,Philippines
+AP2475,Reggio Calabria Airport,Reggio Calabria,Italy
+AP2476,El Loa Airport,Calama,Chile
+AP2477,Chacalluta Airport,Arica,Chile
+AP2478,Desierto de Atacama Airport,Copiapo,Chile
+AP2479,Diego Aracena Airport,Iquique,Chile
+AP2480,Capitan FAP Jose A Quinones Gonzales International Airport,Chiclayo,Peru
+AP2481,Capitan FAP Carlos Martinez De Pinillos International Airport,Trujillo,Peru
+AP2482,Andres Sabella International Airport,Antofagasta,Chile
+AP2483,Carriel Sur Airport,Concepcion,Chile
+AP2484,Atlantic City International Airport,Atlantic City,United States
+AP2485,Jiuzhai Huanglong Airport,Jiuzhaigou,China
+AP2486,Anapa Vityazevo Airport,Anapa,Russia
+AP2487,Gelendzhik Airport,Gelendzhik,Russia
+AP2488,Gibraltar Airport,Gibraltar,Gibraltar
+AP2489,Belfast International Airport,Belfast,United Kingdom
+AP2490,Licenciado y General Ignacio Lopez Rayon Airport,Uruapan,Mexico
+AP2491,Tagbilaran Airport,Tagbilaran,Philippines
+AP2492,RAAF Base Curtin,Derby,Australia
+AP2493,Kastamonu Airport,Kastamonu,Turkey
+AP2494,Kars Airport,Kars,Turkey
+AP2495,Zafer Airport,Kutahya,Turkey
+AP2496,Awang Airport,Cotabato,Philippines
+AP2497,Bagdogra Airport,Baghdogra,India
+AP2498,Ivalo Airport,Ivalo,Finland
+AP2499,Kittila Airport,Kittila,Finland
+AP2500,Saertu Airport,Daqing,China
+AP2501,El Tepual Airport,Puerto Montt,Chile
+AP2502,Balmaceda Airport,Balmaceda,Chile
+AP2503,Rodriguez Ballan International Airport,Arequipa,Peru
+AP2504,Coronel FAP Carlos Ciriani Santa Rosa International Airport,Tacna,Peru
+AP2505,Udon Thani Airport,Udon Thani,Thailand
+AP2506,Spichenkovo Airport,Novokuznetsk,Russia
+AP2507,Sinop Airport,Sinop,Turkey
+AP2508,Horta Airport,Horta,Portugal
+AP2509,Abraham Gonzalez International Airport,Ciudad Juarez,Mexico
+AP2510,L.F. Wade International International Airport,Bermuda,Bermuda
+AP2511,Sialkot Airport,Sialkot,Pakistan
+AP2512,Bangui M'Poko International Airport,Bangui,Central African Republic
+AP2513,Ugolny Airport,Anadyr,Russia
+AP2514,Vilo Acuna International Airport,Cayo Largo del Sur,Cuba
+AP2515,Yamaguchi Ube Airport,Yamaguchi,Japan
+AP2516,Pago Pago International Airport,Pago Pago,American Samoa
+AP2517,Mataveri Airport,Easter Island,Chile
+AP2518,Federico Fellini International Airport,Rimini,Italy
+AP2519,El Alto International Airport,La Paz,Mexico
+AP2520,Andizhan Airport,Andizhan,Uzbekistan
+AP2521,Pevek Airport,Pevek,Russia
+AP2522,Sultan Thaha Airport,Jambi,Indonesia
+AP2523,Tjilik Riwut Airport,Palangkaraya,Indonesia
+AP2524,Sacheon Air Base/Airport,Sacheon,South Korea
+AP2525,Kunsan Air Base,Kunsan,South Korea
+AP2526,Wonju/Hoengseong Air Base (K-38/K-46),Wonju,South Korea
+AP2527,Sibu Airport,Sibu,Malaysia
+AP2528,Yichun Mingyueshan Airport,Yichun,China
+AP2529,Yichang Sanxia Airport,Yichang,China
+AP2530,Raipur Airport,Raipur,India
+AP2531,Dibrugarh Airport,Mohanbari,India
+AP2532,Enshi Airport,Enshi,China
+AP2533,Djanet Inedbirene Airport,Djanet,Algeria
+AP2534,Mogador Airport,Essadouira,Morocco
+AP2535,Nanping Wuyishan Airport,Wuyishan,China
+AP2536,Jingdezhen Airport,Jingdezhen,China
+AP2537,Dandong Airport,Dandong,China
+AP2538,Jinggangshan Airport,Jian,China
+AP2539,Qiqihar Sanjiazi Airport,Qiqihar,China
+AP2540,Wuhai Airport,Wuhai,China
+AP2541,Xilinhot Airport,Xilinhot,China
+AP2542,Quzhou Airport,Quzhou,China
+AP2543,Chiang Rai International Airport,Chiang Rai,Thailand
+AP2544,Nakhon Phanom Airport,Nakhon Phanom,Thailand
+AP2545,Nakhon Si Thammarat Airport,Nakhon Si Thammarat,Thailand
+AP2546,Phitsanulok Airport,Phitsanulok,Thailand
+AP2547,Roi Et Airport,Roi Et,Thailand
+AP2548,Sakon Nakhon Airport,Sakon Nakhon,Thailand
+AP2549,Trang Airport,Trang,Thailand
+AP2550,Ubon Ratchathani Airport,Ubon Ratchathani,Thailand
+AP2551,Surat Thani Airport,Surat Thani,Thailand
+AP2552,Il Caravaggio International Airport,Bergamo,Italy
+AP2553,Eindhoven Airport,Eindhoven,Netherlands
+AP2554,Frankfurt-Hahn Airport,Hahn,Germany
+AP2555,Weeze Airport,Weeze,Germany
+AP2556,Glasgow Prestwick Airport,Prestwick,United Kingdom
+AP2557,Santander Airport,Santander,Spain
+AP2558,Ciampino G. B. Pastine International Airport,Rome,Italy
+AP2559,Stockholm Skavsta Airport,Stockholm,Sweden
+AP2560,Moss Airport,Rygge,Norway
+AP2561,Treviso-Sant'Angelo Airport,Treviso,Italy
+AP2562,Stockholm Vasteras Airport,Vasteras,Sweden
+AP2563,Cuneo International Airport,Cuneo,Italy
+AP2564,Girona Airport,Gerona,Spain
+AP2565,Parma Airport,Parma,Italy
+AP2566,Kaunas International Airport,Kaunas,Lithuania
+AP2567,Maastricht Aachen Airport,Maastricht,Netherlands
+AP2568,Modlin Airport,Warsaw,Poland
+AP2569,Alghero-Fertilia Airport,Alghero,Italy
+AP2570,Luebeck Blankensee Airport,Luebeck,Germany
+AP2571,Lappeenranta Airport,Lappeenranta,Finland
+AP2572,Bydgoszcz Ignacy Jan Paderewski Airport,Bydgoszcz,Poland
+AP2573,City of Derry Airport,Londonderry,United Kingdom
+AP2574,Reus Air Base,Reus,Spain
+AP2575,Carcassonne Airport,Carcassonne,France
+AP2576,Beziers-Vias Airport,Beziers,France
+AP2577,Perugia San Francesco d'Assisi Umbria International Airport,Perugia,Italy
+AP2578,Nimes-Arles-Camargue Airport,Nimes,France
+AP2579,Nea Anchialos Airport,Nea Anghialos,Greece
+AP2580,Tours-Val-de-Loire Airport,Tours,France
+AP2581,Eelde Airport,Groningen,Netherlands
+AP2582,Plovdiv International Airport,Plovdiv,Bulgaria
+AP2583,Dole-Tavaux Airport,Dole,France
+AP2584,Chalons-Vatry Airport,Chalons,France
+AP2585,Araxos Airport,Patras,Greece
+AP2586,Brno-Turany Airport,Brno,Czech Republic
+AP2587,Frans Kaisiepo Airport,Biak,Indonesia
+AP2588,Mopah Airport,Merauke,Indonesia
+AP2589,Moses Kilangin Airport,Timika,Indonesia
+AP2590,Weifang Airport,Weifang,China
+AP2591,Yan'an Ershilipu Airport,Yan'an,China
+AP2592,Al Ain International Airport,Al Ain,United Arab Emirates
+AP2593,Lanseria Airport,Johannesburg,South Africa
+AP2594,Miri Airport,Miri,Malaysia
+AP2595,Changbaishan Airport,Baishan,China
+AP2596,Monbetsu Airport,Monbetsu,Japan
+AP2597,Nakashibetsu Airport,Nakashibetsu,Japan
+AP2598,Elazig Airport,Elazig,Turkey
+AP2599,Mardin Airport,Mardin,Turkey
+AP2600,Mus Airport,Mus,Turkey
+AP2601,Amasya Merzifon Airport,Merzifon,Turkey
+AP2602,Orsk Airport,Orsk,Russia
+AP2603,Orenburg Central Airport,Orenburg,Russia
+AP2604,Anadolu Airport,Eskissehir,Turkey
+AP2605,Bingol Geltiksuyu Airport,Bingol,Turkey
+AP2606,Igdir Airport,Igdir,Turkey
+AP2607,Agri Airport,Agri,Turkey
+AP2608,Abel Santamaria Airport,Santa Clara,Cuba
+AP2609,Marshall Islands International Airport,Majuro,Marshall Islands
+AP2610,Bucholz Army Air Field,Kwajalein,Marshall Islands
+AP2611,Kosrae International Airport,Kosrae,Micronesia
+AP2612,Hilo International Airport,Hilo,United States
+AP2613,Abakan Airport,Abakan,Russia
+AP2614,Diqing Airport,Shangri-La,China
+AP2615,Alice Springs Airport,Alice Springs,Australia
+AP2616,General Rodolfo Sanchez Taboada International Airport,Mexicali,Mexico
+AP2617,El Calafate Airport,El Calafate,Argentina
+AP2618,Libertador Gral D Jose De San Martin Airport,Posadas,Argentina
+AP2619,Resistencia International Airport,Resistencia,Argentina
+AP2620,Vicecomodoro Angel D. La Paz Aragones Airport,Santiago Del Estero,Argentina
+AP2621,Teniente Benjamin Matienzo Airport,Tucuman,Argentina
+AP2622,Domingo Faustino Sarmiento Airport,San Juan,Argentina
+AP2623,Hyakuri Airport,Ibaraki,Japan
+AP2624,Miyako Airport,Miyako,Japan
+AP2625,Dachuan Airport,Dazhou,China
+AP2626,Guangyuan Airport,Guangyuan,China
+AP2627,Wanxian Airport,Wanxian,China
+AP2628,Yibin Caiba Airport,Yibin,China
+AP2629,Chaoyang Airport,Chaoyang,China
+AP2630,Ulanhot Airport,Ulanhot,China
+AP2631,Zhoushan Airport,Zhoushan,China
+AP2632,Jiuhuashan Airport,Chizhou,China
+AP2633,Anshan Air Base,Anshan,China
+AP2634,Jixi Xingkaihu Airport,Jixi,China
+AP2635,Nyala Airport,Nyala,Sudan
+AP2636,Egal International Airport,Hargeisa,Somalia
+AP2637,Sitka Rocky Gutierrez Airport,Sitka,United States
+AP2638,Jinchuan Airport,Jinchuan,China
+AP2639,Jiayuguan Airport,Jiayuguan,China
+AP2640,Foshan Shadi Airport,Foshan,China
+AP2641,Oyo Ollombo Airport,Oyo,Republic of Congo
+AP2642,Lingling Airport,Yongzhou,China
+AP2643,Oshima Airport,Oshima,Japan
+AP2644,Wakkanai Airport,Wakkanai,Japan
+AP2645,Capitan FAP Guillermo Concha Iberico International Airport,Piura,Peru
+AP2646,Garoua International Airport,Garoua,Cameroon
+AP2647,Salak Airport,Maroua,Cameroon
+AP2648,N'gaoundere Airport,N'gaoundere,Cameroon
+AP2649,Ech Cheliff Airport,Ech-cheliff,Algeria
+AP2650,Kemerovo Airport,Kemorovo,Russia
+AP2651,Kokshetau Airport,Kokshetau,Kazakhstan
+AP2652,Pardubice Airport,Pardubice,Czech Republic
+AP2653,Stavropol Shpakovskoye Airport,Stavropol,Russia
+AP2654,Victoria Falls International Airport,Victoria Falls,Zimbabwe
+AP2655,Kumejima Airport,Kumejima,Japan
+AP2656,Baoshan Yunduan Airport,Baoshan,China
+AP2657,Zhaotong Airport,Zhaotong,China
+AP2658,Bardufoss Airport,Bardufoss,Norway
+AP2659,Eldoret International Airport,Eldoret,Kenya
+AP2660,Goloson International Airport,La Ceiba,Honduras
+AP2661,Capitan Anibal Arab Airport,Cobija,Bolivia
+AP2662,Juana Azurduy De Padilla Airport,Sucre,Bolivia
+AP2663,Capitan Oriel Lea Plaza Airport,Tarija,Bolivia
+AP2664,Nauru International Airport,Nauru,Nauru
+AP2665,Bonriki International Airport,Tarawa,Kiribati
+AP2666,Asmara International Airport,Asmara,Eritrea
+AP2667,Angel Albino Corzo International Airport,Tuxtla Gutierrez,Mexico
+AP2668,General Santos International Airport,Romblon,Philippines
+AP2669,Tirupati Airport,Tirupeti,India
+AP2670,Muan International Airport,Muan,South Korea
+AP2671,Kulob Airport,Kulyab,Tajikistan
+AP2672,Kassel-Calden Airport,Kassel,Germany
+AP2673,Jizan Regional Airport,Gizan,Saudi Arabia
+AP2674,Phu Bai Airport,Hue,Vietnam
+AP2675,Phu Cat Airport,Phucat,Vietnam
+AP2676,Bancasi Airport,Butuan,Philippines
+AP2677,Roxas Airport,Roxas City,Philippines
+AP2678,Zhongwei Shapotou Airport,Zhongwei,China
+AP2679,Licenciado Adolfo Lopez Mateos International Airport,Toluca,Mexico
+AP2680,Chetumal International Airport,Chetumal,Mexico
+AP2681,Bahias de Huatulco International Airport,Huatulco,Mexico
+AP2682,Kitakyushu Airport,Kitakyushu,Japan
+AP2683,Pdte. Carlos Ibanez del Campo Airport,Punta Arenas,Chile
+AP2684,Liege Airport,Liege,Belgium
+AP2685,Khajuraho Airport,Khajuraho,India
+AP2686,Dimapur Airport,Dimapur,India
+AP2687,Sandakan Airport,Sandakan,Malaysia
+AP2688,Tawau Airport,Tawau,Malaysia
+AP2689,Bintulu Airport,Bintulu,Malaysia
+AP2690,Labuan Airport,Labuan,Malaysia
+AP2691,Mercedita Airport,Ponce,Puerto Rico
+AP2692,Kananga Airport,Kananga,Democratic Republic of Congo
+AP2693,Mbandaka Airport,Mbandaka,Democratic Republic of Congo
+AP2694,Gemena Airport,Gemena,Democratic Republic of Congo
+AP2695,Ignacio Agramonte International Airport,Camaguey,Cuba
+AP2696,Jardines Del Rey Airport,Cunagua,Cuba
+AP2697,Heihe Airport,Heihe,China
+AP2698,Lindu Airport,Yinchun,China
+AP2699,Qurghonteppa International Airport,Kurgan Tyube,Tajikistan
+AP2700,Taraz Airport,Dzhambul,Kazakhstan
+AP2701,Seymour Airport,Galapagos,Ecuador
+AP2702,New Castle Airport,Wilmington,United States
+AP2703,Narathiwat Airport,Narathiwat,Thailand
+AP2704,Rickenbacker International Airport,Columbus,United States
+AP2705,Chicago Rockford International Airport,Rockford,United States
+AP2706,Grand Forks International Airport,Grand Forks,United States
+AP2707,Niagara Falls International Airport,Niagara Falls,United States
+AP2708,Leh Kushok Bakula Rimpochee Airport,Leh,India
+AP2709,Yangyang International Airport,Sokcho / Gangneung,South Korea
+AP2710,Longyan Guanzhishan Airport,Longyan,China
+AP2711,Ostend-Bruges International Airport,Ostend,Belgium
+AP2712,Mostar International Airport,Mostar,Bosnia and Herzegovina
+AP2713,Guarani International Airport,Ciudad del Este,Paraguay
+AP2714,Sunshine Coast Airport,Maroochydore,Australia
+AP2715,Avalon Airport,Avalon,Australia
+AP2716,Capitan FAP Pedro Canga Rodriguez Airport,Tumbes,Peru
+AP2717,Mocopulli Airport,Castro,Chile
+AP2718,Mount Pleasant Airport,Mount Pleasant,Falkland Islands
+AP2719,Zhangye Ganzhou Airport,Zhangye,China
+AP2720,Arnold Palmer Regional Airport,Latrobe,United States
+AP2721,Norfolk Island International Airport,Norfolk Island,Norfolk Island
+AP2722,Karlovy Vary International Airport,Karlovy Vary,Czech Republic
+AP2723,Pohang Airport (G-815/K-3),Pohang,South Korea
+AP2724,Ulsan Airport,Ulsan,South Korea
+AP2725,Laoag International Airport,Laoag,Philippines
+AP2726,Pico Airport,Pico,Portugal
+AP2727,Al Baha Airport,El-baha,Saudi Arabia
+AP2728,Gabala International Airport,Qabala,Azerbaijan
+AP2729,Lankaran International Airport,Lankaran,Azerbaijan
+AP2730,Gyumri Shirak Airport,Gyumri,Armenia
+AP2731,Canaima Airport,Canaima,Venezuela
+AP2732,Newman Airport,Newman,Australia
+AP2733,Vinnytsia/Gavyryshivka Airport,Vinnitsa,Ukraine
+AP2734,Arad International Airport,Arad,Romania
+AP2735,Craiova Airport,Craiova,Romania
+AP2736,Transilvania Tirgu Mures International Airport,Tirgu Mures,Romania
+AP2737,Debrecen International Airport,Debrecen,Hungary
+AP2738,Tuzla International Airport,Null,Bosnia and Herzegovina
+AP2739,Kopitnari Airport,Kutaisi,Georgia
+AP2740,Bao'anying Airport,Panzhihua,China
+AP2741,Daocheng Yading Airport,Daocheng,China
+AP2742,Nyingchi Airport,Nyingchi,China
+AP2743,Gannan Xiahe Airport,Xiahe city,China
+AP2744,Heringsdorf Airport,Heringsdorf,Germany
+AP2745,Cauayan Airport,Cauayan,Philippines
+AP2746,San Jose Airport,San Jose,Costa Rica
+AP2747,Virac Airport,Virac,Philippines
+AP2748,Jamnagar Airport,Jamnagar,India
+AP2749,Vijayawada Airport,Vijayawada,India
+AP2750,Inca Manco Capac International Airport,Juliaca,Peru
+AP2751,Kuopio Airport,Kuopio,Finland
+AP2752,Qamdo Bangda Airport,Bangda,China
+AP2753,Libo Airport,Libo,China
+AP2754,Gu-Lian Airport,Mohe County,China
+AP2755,Trenton Mercer Airport,Trenton,United States
+AP2756,Northeast Florida Regional Airport,St. Augustine Airport,United States
+AP2757,Ogden Hinckley Airport,Ogden,United States
+AP2758,Provo Municipal Airport,Provo,United States
+AP2759,St Cloud Regional Airport,Saint Cloud,United States
+AP2760,Pichoy Airport,Valdivia,Chile
+AP2761,La Araucania Airport,Temuco,Chile
+AP2762,Arxan Yi'ershi Airport,Arxan,China
+AP2763,Erenhot Saiwusu International Airport,Erenhot,China
+AP2764,Padre Aldamiz International Airport,Puerto Maldonado,Peru
+AP2765,Mayor General FAP Armando Revoredo Iglesias Airport,Cajamarca,Peru
+AP2766,Canal Bajo Carlos - Hott Siebert Airport,Osorno,Chile
+AP2767,Kangding Airport,Kangding,China
+AP2768,Ngari Gunsa Airport,Shiquanhe,China
+AP2769,Golmud Airport,Golmud,China
+AP2770,Yushu Batang Airport,Yushu,China
+AP2771,Vagar Airport,Vagar,Faroe Islands
+AP2772,Beslan Airport,Beslan,Russia
+AP2773,Gorno-Altaysk Airport,Gorno-Altaysk,Russia
+AP2774,Hamburg-Finkenwerder Airport,Hamburg,Germany
+AP2775,Nakhchivan Airport,Nakhchivan,Azerbaijan
+AP2776,Bata Airport,Bata,Equatorial Guinea
+AP2777,Takoradi Airport,Takoradi,Ghana
+AP2778,Coronel FAP Alfredo Mendivil Duarte Airport,Ayacucho,Peru
+AP2779,Alferez Fap David Figueroa Fernandini Airport,Huanuco,Peru
+AP2780,Kindu Airport,Kindu,Democratic Republic of Congo
+AP2781,Persian Gulf International Airport,Khalije Fars,Iran
+AP2782,Zabol Airport,Zabol,Iran
+AP2783,Hamadan Airport,Hamadan,Iran
+AP2784,Sabzevar National Airport,Sabzevar,Iran
+AP2785,Bam Airport,Bam,Iran
+AP2786,Ilam Airport,Ilam,Iran
+AP2787,Sanandaj Airport,Sanandaj,Iran
+AP2788,Khoram Abad Airport,Khorram Abad,Iran
+AP2789,Buka Airport,Buka Island,Papua New Guinea
+AP2790,Futuna Airport,Futuna Island,Vanuatu
+AP2791,Luis Munoz Marin International Airport,San Juan,Puerto Rico
+AP2792,Cibao International Airport,Santiago,Dominican Republic
+AP2793,Richmond Airport,Richmond,Australia
+AP2794,Sydney Kingsford Smith International Airport,Sydney,Australia
+AP2795,London City Airport,London,United Kingdom
+AP2796,Victoria Regional Airport,Victoria,United States
+AP2797,Birmingham-Shuttlesworth International Airport,Birmingham,United States
+AP2798,Arturo Michelena International Airport,Valencia,Venezuela
+AP2799,Norman Y. Mineta San Jose International Airport,San Jose,United States
+AP2800,St Petersburg Clearwater International Airport,St. Petersburg,United States
+AP2801,Norman Manley International Airport,Kingston,Jamaica
+AP2802,Alberto Carnevalli Airport,Merida,Venezuela
+AP2803,Albany Airport,Albany,Australia
+AP2804,Waterloo Regional Airport,Waterloo,United States
+AP2805,Fort Smith Regional Airport,Fort Smith,United States
+AP2806,Santa Fe Municipal Airport,Santa Fe,United States
+AP2807,Alexandria International Airport,Alexandria,United States
+AP2808,JAGS McCartney International Airport,Cockburn Town,Turks and Caicos Islands
+AP2809,London Gatwick Airport,London,United Kingdom
+AP2810,Presidente Joao Batista Figueiredo Airport,Sinop,Brazil
+AP2811,London Stansted Airport,London,United Kingdom
+AP2812,Comodoro Arturo Merino Benitez International Airport,Santiago,Chile
+AP2813,Cheddi Jagan International Airport,Georgetown,Guyana
+AP2814,Mayor Buenaventura Vivas International Airport,Santo Domingo,Venezuela
+AP2815,Santa Rosa International Airport,Santa Rosa,Ecuador
+AP2816,Jaque Airport,Jaque,Panama
+AP2817,Santa Ana Airport,Santa Ana,Solomon Islands
+AP2818,F. D. Roosevelt Airport,Oranjestad,Netherlands Antilles
+AP2819,Elfin Cove Seaplane Base,Elfin Cove,United States
+AP2820,Klawock Airport,Klawock,United States
+AP2821,Charles M. Schulz Sonoma County Airport,Santa Rosa,United States
+AP2822,Florence Regional Airport,Florence,United States
+AP2823,Tri-Cities Regional TN/VA Airport,BRISTOL,United States
+AP2824,Eugene F. Correira International Airport,Georgetown,Guyana
+AP2825,General Jose Antonio Anzoategui International Airport,Barcelona,Venezuela
+AP2826,Cochin International Airport,Kochi,India
+AP2827,St Pierre Airport,St.-pierre,Saint Pierre and Miquelon
+AP2828,Atlas Brasil Cantanhede Airport,Boa Vista,Brazil
+AP2829,Tan Tan Airport,Tan Tan,Morocco
+AP2830,London Heathrow Airport,London,United Kingdom
+AP2831,Northwest Florida Beaches International Airport,Panama City,United States
+AP2832,London Luton Airport,London,United Kingdom
+AP2833,El Alto International Airport,La Paz,Bolivia
+AP2834,Massawa International Airport,Massawa,Eritrea
+AP2835,Niue International Airport,Alofi,Niue
+AP2836,San Jose Airport,San Jose,Philippines
